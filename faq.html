@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Frequently asked questions about Cycle Mart Ex-UK bicycles, bicycle condition, ordering, delivery, payments and returns in Kenya.">
+
+    <meta name="keywords"
+        content="Cycle Mart FAQ, Ex-UK bicycles Kenya, used bicycles Kenya, bicycles Nakuru, bicycle delivery Kenya">
+
+    <meta name="author" content="Cycle Mart">
+    <meta name="robots" content="index, follow">
+
+    <title>FAQ | Cycle Mart Kenya | Ex-UK Bicycles</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <style>
+
+        /* =====================================================
+           FAQ HERO
+        ===================================================== */
+
+        .faq-hero {
+            min-height: 430px;
+
+            display: flex;
+            align-items: center;
+
+            background:
+                linear-gradient(
+                    rgba(0, 0, 0, 0.70),
+                    rgba(0, 0, 0, 0.70)
+                ),
+                url("images/hero.jpg")
+                center / cover no-repeat;
+
+            color: #fff;
+        }
+
+        .faq-hero-content {
+            max-width: 720px;
+        }
+
+        .faq-label {
+            display: inline-block;
+
+            margin-bottom: 15px;
+            padding: 8px 13px;
+
+            border-radius: 4px;
+
+            background: #111;
+            color: #fff;
+
+            font-size: 10px;
+            font-weight: 800;
+
+            letter-spacing: 1.8px;
+            text-transform: uppercase;
+        }
+
+        .faq-hero h1 {
+            margin-bottom: 18px;
+
+            font-family: "Montserrat", sans-serif;
+
+            font-size: clamp(40px, 6vw, 68px);
+            line-height: 1.05;
+        }
+
+        .faq-hero h1 span {
+            color: #f2b705;
+        }
+
+        .faq-hero p {
+            max-width: 620px;
+
+            color: rgba(255, 255, 255, 0.85);
+
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+
+        /* =====================================================
+           FAQ SECTION
+        ===================================================== */
+
+        .faq-section {
+            padding: 90px 0;
+            background: #fff;
+        }
+
+        .faq-heading {
+            max-width: 700px;
+
+            margin: 0 auto 50px;
+
+            text-align: center;
+        }
+
+        .faq-heading span {
+            display: block;
+
+            margin-bottom: 10px;
+
+            color: #777;
+
+            font-size: 10px;
+            font-weight: 800;
+
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .faq-heading h2 {
+            margin-bottom: 15px;
+
+            font-family: "Montserrat", sans-serif;
+
+            font-size: clamp(30px, 4vw, 44px);
+            line-height: 1.1;
+        }
+
+        .faq-heading p {
+            color: #777;
+
+            font-size: 13px;
+            line-height: 1.8;
+        }
+
+
+        /* =====================================================
+           FAQ LIST
+        ===================================================== */
+
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: 14px;
+
+            border: 1px solid #e7e7e7;
+            border-radius: 8px;
+
+            background: #fff;
+
+            overflow: hidden;
+
+            transition: 0.25s ease;
+        }
+
+        .faq-item:hover {
+            border-color: #d2d2d2;
+
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, 0.06);
+        }
+
+        .faq-question {
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 20px;
+
+            padding: 22px 24px;
+
+            border: none;
+            outline: none;
+
+            background: #fff;
+            color: #111;
+
+            text-align: left;
+
+            font-family: "Montserrat", sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+
+            cursor: pointer;
+        }
+
+        .faq-question i {
+            flex-shrink: 0;
+
+            width: 30px;
+            height: 30px;
+
+            display: grid;
+            place-items: center;
+
+            border-radius: 50%;
+
+            background: #f4f4f4;
+
+            font-size: 11px;
+
+            transition: transform 0.25s ease;
+        }
+
+        .faq-answer {
+            display: grid;
+
+            grid-template-rows: 0fr;
+
+            transition: grid-template-rows 0.3s ease;
+        }
+
+        .faq-answer-inner {
+            overflow: hidden;
+
+            padding: 0 24px;
+
+            color: #666;
+
+            font-size: 13px;
+            line-height: 1.8;
+        }
+
+        .faq-item.active .faq-answer {
+            grid-template-rows: 1fr;
+        }
+
+        .faq-item.active .faq-answer-inner {
+            padding-bottom: 23px;
+        }
+
+        .faq-item.active .faq-question {
+            color: #111;
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+
+            background: #111;
+            color: #fff;
+        }
+
+
+        /* =====================================================
+           FAQ CATEGORIES
+        ===================================================== */
+
+        .faq-categories {
+            margin-top: 70px;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 20px;
+        }
+
+        .faq-category {
+            padding: 30px 25px;
+
+            border-radius: 8px;
+
+            background: #f7f7f7;
+
+            text-align: center;
+        }
+
+        .faq-category-icon {
+            width: 55px;
+            height: 55px;
+
+            margin: 0 auto 18px;
+
+            display: grid;
+            place-items: center;
+
+            border-radius: 50%;
+
+            background: #111;
+            color: #fff;
+
+            font-size: 20px;
+        }
+
+        .faq-category h3 {
+            margin-bottom: 10px;
+
+            font-family: "Montserrat", sans-serif;
+
+            font-size: 16px;
+        }
+
+        .faq-category p {
+            color: #777;
+
+            font-size: 11px;
+            line-height: 1.7;
+        }
+
+
+        /* =====================================================
+           CTA
+        ===================================================== */
+
+        .faq-cta {
+            padding: 80px 0;
+
+            background: #111;
+
+            color: #fff;
+
+            text-align: center;
+        }
+
+        .faq-cta-content {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .faq-cta h2 {
+            margin-bottom: 15px;
+
+            font-family: "Montserrat", sans-serif;
+
+            font-size: clamp(30px, 4vw, 45px);
+        }
+
+        .faq-cta p {
+            margin-bottom: 25px;
+
+            color: #aaa;
+
+            font-size: 13px;
+            line-height: 1.8;
+        }
+
+        .faq-cta-buttons {
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+        }
+
+        .faq-cta-buttons a {
+            min-height: 48px;
+
+            display: inline-flex;
+
+            align-items: center;
+            justify-content: center;
+
+            gap: 9px;
+
+            padding: 0 22px;
+
+            border-radius: 5px;
+
+            font-size: 11px;
+            font-weight: 800;
+
+            text-decoration: none;
+
+            transition: 0.25s ease;
+        }
+
+        .faq-whatsapp {
+            background: #25d366;
+            color: #fff;
+        }
+
+        .faq-whatsapp:hover {
+            background: #1ebe5d;
+            transform: translateY(-2px);
+        }
+
+        .faq-contact {
+            background: #fff;
+            color: #111;
+        }
+
+        .faq-contact:hover {
+            background: #eee;
+            transform: translateY(-2px);
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ===================================================== */
+
+        @media (max-width: 800px) {
+
+            .faq-categories {
+                grid-template-columns: 1fr;
+            }
+
+            .faq-section {
+                padding: 65px 0;
+            }
+
+        }
+
+        @media (max-width: 600px) {
+
+            .faq-hero {
+                min-height: 380px;
+            }
+
+            .faq-question {
+                padding: 19px;
+                font-size: 13px;
+            }
+
+            .faq-answer-inner {
+                padding-left: 19px;
+                padding-right: 19px;
+            }
+
+            .faq-cta-buttons {
+                flex-direction: column;
+            }
+
+            .faq-cta-buttons a {
+                width: 100%;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER
+    ===================================================== -->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <!-- LOGO -->
+
+            <a
+                href="index.html"
+                class="logo"
+                aria-label="Cycle Mart Home">
+
+                <img
+                    src="images/cycle-mart-logo.jpg"
+                    alt="Cycle Mart Logo">
+
+                <div class="logo-text">
+
+                    <strong class="logo-title">
+                        CYCLE
+                    </strong>
+
+                    <span class="logo-subtitle">
+                        MART
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <!-- NAVIGATION -->
+
+            <nav
+                class="navbar"
+                id="navbar"
+                aria-label="Main navigation">
+
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="shop.html">
+                            Shop
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="why-cycle-mart.html">
+                            Why Cycle Mart
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="gallery.html">
+                            Gallery
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="delivery.html">
+                            Delivery
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="faq.html"
+                            class="active">
+                            FAQ
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <!-- NAV ACTIONS -->
+
+            <div class="nav-actions">
+
+                <a
+                    href="shop.html"
+                    class="nav-icon"
+                    aria-label="Shopping Cart">
+
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                </a>
+
+                <button
+                    type="button"
+                    class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Open navigation menu">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN
+    ===================================================== -->
+
+    <main>
+
+
+        <!-- =====================================================
+             HERO
+        ===================================================== -->
+
+        <section class="faq-hero">
+
+            <div class="container">
+
+                <div class="faq-hero-content">
+
+                    <span class="faq-label">
+                        Cycle Mart
+                    </span>
+
+                    <h1>
+                        Frequently Asked
+                        <span>Questions</span>
+                    </h1>
+
+                    <p>
+                        Find answers to common questions about
+                        our Ex-UK bicycles, ordering process,
+                        bicycle condition and delivery services
+                        in Kenya.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             FAQ
+        ===================================================== -->
+
+        <section class="faq-section">
+
+            <div class="container">
+
+                <div class="faq-heading">
+
+                    <span>
+                        Need To Know?
+                    </span>
+
+                    <h2>
+                        How Can We Help?
+                    </h2>
+
+                    <p>
+                        Here are some of the questions customers
+                        commonly ask before purchasing a bicycle
+                        from Cycle Mart.
+                    </p>
+
+                </div>
+
+
+                <div class="faq-container">
+
+
+                    <!-- FAQ 1 -->
+
+                    <div class="faq-item active">
+
+                        <button
+                            class="faq-question"
+                            type="button">
+
+                            <span>
+                                What type of bicycles does Cycle Mart sell?
+                            </span>
+
+                            <i class="fa-solid fa-chevron-down"></i>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <div class="faq-answer-inner">
+
+                                Cycle Mart specializes in Ex-UK bicycles
+                                and a variety of bicycles suitable for
+                                commuting, recreation, fitness and everyday
+                                cycling.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 2 -->
+
+                    <div class="faq-item">
+
+                        <button
+                            class="faq-question"
+                            type="button">
+
+                            <span>
+                                What does Ex-UK bicycle mean?
+                            </span>
+
+                            <i class="fa-solid fa-chevron-down"></i>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <div class="faq-answer-inner">
+
+                                Ex-UK bicycles are bicycles that were
+                                previously used or owned in the United
+                                Kingdom and are subsequently brought into
+                                Kenya for resale. The condition can vary
+                                from bicycle to bicycle, so customers are
+                                encouraged to inspect the bicycle before
+                                purchase.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 3 -->
+
+                    <div class="faq-item">
+
+                        <button
+                            class="faq-question"
+                            type="button">
+
+                            <span>
+                                Are the bicycles inspected before sale?
+                            </span>
+
+                            <i class="fa-solid fa-chevron-down"></i>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <div class="faq-answer-inner">
+
+                                We aim to present each bicycle with clear
+                                information about its condition. Customers
+                                can also contact Cycle Mart for additional
+                                information or photographs of a particular
+                                bicycle before making a purchase.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 4 -->
+
+                    <div class="faq-item">
+
+                        <button
+                            class="faq-question"
+                            type="button">
+
+                            <span>
+                                Can I see the bicycle before buying?
+                            </span>
+
+                            <i class="fa-solid fa-chevron-down"></i>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <div class="faq-answer-inner">
+
+                                Yes. Customers can visit Cycle Mart in
+                                Nakuru City along Kenyatta Lane to view
+                                available bicycles and choose the one that
+                                best suits their needs.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 5 -->
+
+                    <div class="faq-item">
+
+                        <button
+                            class="faq-question"
+                            type="button">
+
+                            <span>
+                                Where is Cycle Mart located?
+                            </span>
+
+                            <i class="fa-solid fa-chevron-down"></i>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <div class="faq-answer-inner">
+
+                                Cycle Mart is located in Nakuru City along
+                                Kenyatta Lane, Kenya.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 6 -->
+
+                    <div class="faq-item">
+
+                        <button
+                            class="faq-question"
+                            type="button">
+
+                            <span>
+                                Do you offer bicycle delivery?
+                            </span>
+
+                            <i class="fa-solid fa-chevron-down"></i>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <div class="faq-answer-inner">
+
+                                Delivery is available depending on the
+                                customer's location and the bicycle being
+                                purchased. Contact us with your location
+                                so we can confirm the available delivery
+                                arrangements.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 7 -->
+
+                    <div class="faq-item">
+
+                        <button
+                            class="faq-question"
+                            type="button">
+
+                            <span>
+                                How can I order a bicycle?
+                            </span>
+
+                            <i class="fa-solid fa-chevron-down"></i>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <div class="faq-answer-inner">
+
+                                Browse the bicycles available on our shop
+                                or gallery pages and contact Cycle Mart
+                                with the bicycle you are interested in.
+                                We will provide the available purchasing
+                                and delivery information.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 8 -->
+
+                    <div class="faq-item">
+
+                        <button
+                            class="faq-question"
+                            type="button">
+
+                            <span>
+                                Can I ask for more pictures of a bicycle?
+                            </span>
+
+                            <i class="fa-solid fa-chevron-down"></i>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <div class="faq-answer-inner">
+
+                                Yes. If you are interested in a particular
+                                bicycle, contact us and ask for additional
+                                photographs or details about that bicycle.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 9 -->
+
+                    <div class="faq-item">
+
+                        <button
+                            class="faq-question"
+                            type="button">
+
+                            <span>
+                                What payment methods do you accept?
+                            </span>
+
+                            <i class="fa-solid fa-chevron-down"></i>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <div class="faq-answer-inner">
+
+                                Please contact Cycle Mart before making
+                                payment so we can confirm the current
+                                accepted payment methods and purchasing
+                                arrangements.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 10 -->
+
+                    <div class="faq-item">
+
+                        <button
+                            class="faq-question"
+                            type="button">
+
+                            <span>
+                                Can I contact Cycle Mart before ordering?
+                            </span>
+
+                            <i class="fa-solid fa-chevron-down"></i>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <div class="faq-answer-inner">
+
+                                Absolutely. We encourage customers to
+                                contact us with questions about bicycle
+                                availability, condition, pricing and
+                                delivery before making a purchase.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     FAQ CATEGORIES
+                ================================================== -->
+
+                <div class="faq-categories">
+
+
+                    <div class="faq-category">
+
+                        <div class="faq-category-icon">
+
+                            <i class="fa-solid fa-bicycle"></i>
+
+                        </div>
+
+                        <h3>
+                            Bicycles
+                        </h3>
+
+                        <p>
+                            Questions about our Ex-UK bicycles,
+                            available models and condition.
+                        </p>
+
+                    </div>
+
+
+                    <div class="faq-category">
+
+                        <div class="faq-category-icon">
+
+                            <i class="fa-solid fa-truck"></i>
+
+                        </div>
+
+                        <h3>
+                            Delivery
+                        </h3>
+
+                        <p>
+                            Information about delivery and
+                            collection arrangements.
+                        </p>
+
+                    </div>
+
+
+                    <div class="faq-category">
+
+                        <div class="faq-category-icon">
+
+                            <i class="fa-solid fa-headset"></i>
+
+                        </div>
+
+                        <h3>
+                            Support
+                        </h3>
+
+                        <p>
+                            Contact us for bicycle information,
+                            availability and purchasing assistance.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CTA
+        ===================================================== -->
+
+        <section class="faq-cta">
+
+            <div class="container">
+
+                <div class="faq-cta-content">
+
+                    <h2>
+                        Still Have Questions?
+                    </h2>
+
+                    <p>
+                        Contact Cycle Mart and speak with us about
+                        the bicycle you are interested in.
+                    </p>
+
+                    <div class="faq-cta-buttons">
+
+                        <a
+                            href="contacts.html"
+                            class="faq-contact">
+
+                            <i class="fa-solid fa-phone"></i>
+
+                            Contact Us
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ===================================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+
+                <!-- BRAND -->
+
+                <div class="footer-brand">
+
+                    <a
+                        href="index.html"
+                        class="logo">
+
+                        <img
+                            src="images/cycle-mart-logo.jpg"
+                            alt="Cycle Mart Logo">
+
+                        <div class="logo-text">
+
+                            <strong class="logo-title">
+                                CYCLE
+                            </strong>
+
+                            <span class="logo-subtitle">
+                                MART
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                    <p>
+                        Quality Ex-UK bicycles for cycling,
+                        commuting, fitness and everyday rides.
+                    </p>
+
+                </div>
+
+
+                <!-- SHOP -->
+
+                <div class="footer-column">
+
+                    <h3>
+                        Shop
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            <a href="shop.html">
+                                Bicycles
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="gallery.html">
+                                Gallery
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- COMPANY -->
+
+                <div class="footer-column">
+
+                    <h3>
+                        Company
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            <a href="about.html">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="why-cycle-mart.html">
+                                Why Cycle Mart
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="delivery.html">
+                                Delivery
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="faq.html">
+                                FAQ
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- LOCATION -->
+
+                <div class="footer-column">
+
+                    <h3>
+                        Visit Us
+                    </h3>
+
+                    <ul>
+
+                        <li>
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            Nakuru City,
+                            Kenyatta Lane
+
+                        </li>
+
+                        <li>
+
+                            <a href="contacts.html">
+                                Contact Cycle Mart
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    ©
+                    <span id="currentYear"></span>
+                    Cycle Mart.
+                    All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         MOBILE NAVIGATION
+    ===================================================== -->
+
+    <nav
+        class="mobile-bottom-nav"
+        aria-label="Mobile navigation">
+
+        <a
+            href="index.html"
+            class="mobile-nav-item">
+
+            <i class="fa-solid fa-house"></i>
+
+            <span>
+                Home
+            </span>
+
+        </a>
+
+        <a
+            href="shop.html"
+            class="mobile-nav-item">
+
+            <i class="fa-solid fa-bicycle"></i>
+
+            <span>
+                Shop
+            </span>
+
+        </a>
+
+        <a
+            href="about.html"
+            class="mobile-nav-item">
+
+            <i class="fa-solid fa-building"></i>
+
+            <span>
+                About
+            </span>
+
+        </a>
+
+        <a
+            href="gallery.html"
+            class="mobile-nav-item">
+
+            <i class="fa-solid fa-images"></i>
+
+            <span>
+                Gallery
+            </span>
+
+        </a>
+
+        <a
+            href="delivery.html"
+            class="mobile-nav-item">
+
+            <i class="fa-solid fa-truck"></i>
+
+            <span>
+                Delivery
+            </span>
+
+        </a>
+
+        <a
+            href="faq.html"
+            class="mobile-nav-item active">
+
+            <i class="fa-solid fa-circle-question"></i>
+
+            <span>
+                FAQ
+            </span>
+
+        </a>
+
+    </nav>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ===================================================== -->
+
+    <script src="js/menu.js"></script>
+
+    <script src="js/main.js"></script>
+
+
+    <script>
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            function () {
+
+                /* ============================
+                   CURRENT YEAR
+                ============================ */
+
+                const year =
+                    document.getElementById(
+                        "currentYear"
+                    );
+
+                if (year) {
+
+                    year.textContent =
+                        new Date().getFullYear();
+
+                }
+
+
+                /* ============================
+                   FAQ ACCORDION
+                ============================ */
+
+                const faqItems =
+                    document.querySelectorAll(
+                        ".faq-item"
+                    );
+
+
+                faqItems.forEach(
+                    function (item) {
+
+                        const question =
+                            item.querySelector(
+                                ".faq-question"
+                            );
+
+
+                        question.addEventListener(
+                            "click",
+                            function () {
+
+                                const wasActive =
+                                    item.classList.contains(
+                                        "active"
+                                    );
+
+
+                                faqItems.forEach(
+                                    function (otherItem) {
+
+                                        otherItem.classList.remove(
+                                            "active"
+                                        );
+
+                                    }
+                                );
+
+
+                                if (!wasActive) {
+
+                                    item.classList.add(
+                                        "active"
+                                    );
+
+                                }
+
+                            }
+                        );
+
+                    }
+                );
+
+
+                /* ============================
+                   MOBILE ACTIVE NAV
+                ============================ */
+
+                const currentPage =
+                    window.location.pathname
+                        .split("/")
+                        .pop()
+                        .toLowerCase();
+
+
+                const mobileNavItems =
+                    document.querySelectorAll(
+                        ".mobile-nav-item"
+                    );
+
+
+                mobileNavItems.forEach(
+                    function (item) {
+
+                        const linkPage =
+                            item
+                                .getAttribute("href")
+                                .split("/")
+                                .pop()
+                                .toLowerCase();
+
+
+                        if (
+                            linkPage === currentPage ||
+                            (
+                                currentPage === "" &&
+                                linkPage === "index.html"
+                            )
+                        ) {
+
+                            item.classList.add(
+                                "active"
+                            );
+
+                        }
+
+                    }
+                );
+
+            }
+        );
+
+    </script>
+
+</body>
+
+</html>
+```

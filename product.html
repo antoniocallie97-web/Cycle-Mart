@@ -1,0 +1,1577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="View quality Ex-UK bicycles available at Cycle Mart Kenya. Browse bicycle photos and contact us to order."
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <title>Ex-UK Bicycles | Cycle Mart Kenya</title>
+
+    <!-- GOOGLE FONTS -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- FONT AWESOME -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- MAIN CSS -->
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <style>
+
+        /* =====================================================
+           PRODUCT PAGE
+        ===================================================== */
+
+        .product-page {
+            padding: 70px 0 100px;
+            background: #f7f7f7;
+        }
+
+
+        /* =====================================================
+           BREADCRUMB
+        ===================================================== */
+
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 35px;
+            color: #777;
+            font-size: 12px;
+        }
+
+        .breadcrumb a {
+            color: #222;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .breadcrumb a:hover {
+            color: #e63946;
+        }
+
+        .breadcrumb i {
+            font-size: 9px;
+            color: #aaa;
+        }
+
+
+        /* =====================================================
+           PRODUCT LAYOUT
+        ===================================================== */
+
+        .product-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+            gap: 55px;
+            align-items: start;
+        }
+
+
+        /* =====================================================
+           PRODUCT GALLERY
+        ===================================================== */
+
+        .product-gallery {
+            min-width: 0;
+        }
+
+        .main-product-image {
+            position: relative;
+            height: 580px;
+            overflow: hidden;
+            border-radius: 14px;
+            background: #fff;
+            border: 1px solid #e8e8e8;
+        }
+
+        .main-product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+            padding: 25px;
+            transition: opacity 0.2s ease;
+        }
+
+        .image-counter {
+            position: absolute;
+            right: 18px;
+            bottom: 18px;
+            padding: 8px 12px;
+            border-radius: 20px;
+            background: rgba(0, 0, 0, 0.72);
+            color: #fff;
+            font-size: 11px;
+            font-weight: 700;
+        }
+
+
+        /* =====================================================
+           THUMBNAILS
+        ===================================================== */
+
+        .thumbnail-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .thumbnail {
+            height: 90px;
+            padding: 5px;
+            overflow: hidden;
+            border: 2px solid transparent;
+            border-radius: 8px;
+            background: #fff;
+            cursor: pointer;
+            transition: 0.2s ease;
+        }
+
+        .thumbnail:hover {
+            border-color: #222;
+            transform: translateY(-2px);
+        }
+
+        .thumbnail.active {
+            border-color: #e63946;
+        }
+
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            border-radius: 5px;
+        }
+
+
+        /* =====================================================
+           PRODUCT INFORMATION
+        ===================================================== */
+
+        .product-info {
+            position: sticky;
+            top: 25px;
+        }
+
+        .product-category {
+            display: inline-block;
+            margin-bottom: 12px;
+            color: #e63946;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .product-info h1 {
+            margin-bottom: 15px;
+            font-family: "Montserrat", sans-serif;
+            font-size: clamp(30px, 4vw, 48px);
+            line-height: 1.08;
+            color: #111;
+        }
+
+        .product-short-description {
+            margin-bottom: 25px;
+            color: #666;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+
+        /* =====================================================
+           PRICE
+        ===================================================== */
+
+        .product-price-box {
+            margin-bottom: 25px;
+            padding: 20px;
+            border-radius: 10px;
+            background: #111;
+            color: #fff;
+        }
+
+        .price-label {
+            display: block;
+            margin-bottom: 5px;
+            color: #aaa;
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .product-price {
+            font-family: "Montserrat", sans-serif;
+            font-size: 28px;
+            font-weight: 800;
+        }
+
+
+        /* =====================================================
+           PRODUCT FEATURES
+        ===================================================== */
+
+        .product-features {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #e5e5e5;
+            border-radius: 10px;
+            background: #fff;
+        }
+
+        .product-features h2 {
+            margin-bottom: 15px;
+            font-family: "Montserrat", sans-serif;
+            font-size: 18px;
+        }
+
+        .feature-list {
+            display: grid;
+            gap: 13px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .feature-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 11px;
+            color: #555;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        .feature-list i {
+            margin-top: 2px;
+            color: #e63946;
+        }
+
+
+        /* =====================================================
+           ORDER BUTTONS
+        ===================================================== */
+
+        .product-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        .product-actions a {
+            min-height: 52px;
+            padding: 0 22px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            border-radius: 7px;
+            font-size: 11px;
+            font-weight: 800;
+            text-decoration: none;
+            transition: 0.25s ease;
+        }
+
+        .order-whatsapp {
+            flex: 1;
+            background: #25d366;
+            color: #fff;
+        }
+
+        .order-whatsapp:hover {
+            background: #1ebe5d;
+            transform: translateY(-2px);
+        }
+
+        .order-call {
+            background: #111;
+            color: #fff;
+        }
+
+        .order-call:hover {
+            background: #333;
+            transform: translateY(-2px);
+        }
+
+
+        /* =====================================================
+           TRUST INFO
+        ===================================================== */
+
+        .product-trust {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .trust-item {
+            padding: 15px 10px;
+            border: 1px solid #e5e5e5;
+            border-radius: 8px;
+            background: #fff;
+            text-align: center;
+        }
+
+        .trust-item i {
+            display: block;
+            margin-bottom: 8px;
+            color: #e63946;
+            font-size: 18px;
+        }
+
+        .trust-item strong {
+            display: block;
+            margin-bottom: 3px;
+            color: #222;
+            font-size: 10px;
+        }
+
+        .trust-item span {
+            color: #888;
+            font-size: 8px;
+        }
+
+
+        /* =====================================================
+           DESCRIPTION SECTION
+        ===================================================== */
+
+        .product-description-section {
+            margin-top: 70px;
+            padding: 35px;
+            border-radius: 12px;
+            background: #fff;
+            border: 1px solid #e8e8e8;
+        }
+
+        .product-description-section h2 {
+            margin-bottom: 15px;
+            font-family: "Montserrat", sans-serif;
+            font-size: 25px;
+        }
+
+        .product-description-section p {
+            max-width: 900px;
+            color: #666;
+            font-size: 13px;
+            line-height: 1.8;
+        }
+
+
+        /* =====================================================
+           BIKE COLLECTION
+        ===================================================== */
+
+        .bike-collection {
+            margin-top: 70px;
+        }
+
+        .collection-heading {
+            margin-bottom: 30px;
+        }
+
+        .collection-heading span {
+            display: block;
+            margin-bottom: 8px;
+            color: #e63946;
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .collection-heading h2 {
+            font-family: "Montserrat", sans-serif;
+            font-size: 32px;
+        }
+
+        .bike-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .bike-card {
+            overflow: hidden;
+            border-radius: 10px;
+            background: #fff;
+            border: 1px solid #e8e8e8;
+            cursor: pointer;
+            transition: 0.25s ease;
+        }
+
+        .bike-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .bike-card-image {
+            height: 210px;
+            overflow: hidden;
+            background: #f2f2f2;
+        }
+
+        .bike-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .bike-card:hover img {
+            transform: scale(1.04);
+        }
+
+        .bike-card-info {
+            padding: 15px;
+        }
+
+        .bike-card-info span {
+            display: block;
+            margin-bottom: 5px;
+            color: #999;
+            font-size: 9px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .bike-card-info h3 {
+            font-family: "Montserrat", sans-serif;
+            font-size: 14px;
+        }
+
+
+        /* =====================================================
+           MOBILE
+        ===================================================== */
+
+        @media (max-width: 1000px) {
+
+            .product-layout {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .product-info {
+                position: static;
+            }
+
+            .bike-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+        }
+
+
+        @media (max-width: 700px) {
+
+            .product-page {
+                padding: 45px 0 70px;
+            }
+
+            .main-product-image {
+                height: 430px;
+            }
+
+            .thumbnail-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .thumbnail {
+                height: 75px;
+            }
+
+            .product-trust {
+                grid-template-columns: 1fr;
+            }
+
+            .bike-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .product-description-section {
+                padding: 25px 20px;
+            }
+
+        }
+
+
+        @media (max-width: 480px) {
+
+            .main-product-image {
+                height: 350px;
+            }
+
+            .thumbnail-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .thumbnail {
+                height: 80px;
+            }
+
+            .product-actions {
+                flex-direction: column;
+            }
+
+            .product-actions a {
+                width: 100%;
+            }
+
+            .bike-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .bike-card-image {
+                height: 250px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+
+            <!-- LOGO -->
+
+            <a
+                href="index.html"
+                class="logo"
+                aria-label="Cycle Mart Home"
+            >
+
+                <img
+                    src="cycle-mart-logo.jpg"
+                    alt="Cycle Mart Logo"
+                >
+
+            </a>
+
+
+            <!-- NAVIGATION -->
+
+            <nav
+                class="navbar"
+                id="navbar"
+                aria-label="Main navigation"
+            >
+
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="shop.html">
+                            Shop
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="product.html"
+                            class="active"
+                        >
+                            Bicycles
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <!-- MENU -->
+
+            <div class="nav-actions">
+
+                <button
+                    type="button"
+                    class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Open navigation menu"
+                >
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main class="product-page">
+
+        <div class="container">
+
+
+            <!-- BREADCRUMB -->
+
+            <div class="breadcrumb">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <i class="fa-solid fa-chevron-right"></i>
+
+                <a href="shop.html">
+                    Shop
+                </a>
+
+                <i class="fa-solid fa-chevron-right"></i>
+
+                <span>
+                    Ex-UK Bicycles
+                </span>
+
+            </div>
+
+
+            <!-- =================================================
+                 PRODUCT
+            ================================================== -->
+
+            <section class="product-layout">
+
+
+                <!-- =================================================
+                     GALLERY
+                ================================================== -->
+
+                <div class="product-gallery">
+
+
+                    <div class="main-product-image">
+
+                        <img
+                            id="mainProductImage"
+                            src="images/bikes/IMG-20260816-WA0022.jpg"
+                            alt="Ex-UK bicycle available at Cycle Mart"
+                        >
+
+                        <div
+                            class="image-counter"
+                            id="imageCounter"
+                        >
+                            1 / 24
+                        </div>
+
+                    </div>
+
+
+                    <!-- THUMBNAILS -->
+
+                    <div class="thumbnail-grid">
+
+
+                        <button class="thumbnail active">
+                            <img
+                                src="images/bikes/IMG-20260816-WA0022.jpg"
+                                alt="Ex-UK bicycle 1"
+                            >
+                        </button>
+
+
+                        <button class="thumbnail">
+                            <img
+                                src="images/bikes/IMG-20260816-WA0023.jpg"
+                                alt="Ex-UK bicycle 2"
+                            >
+                        </button>
+
+
+                        <button class="thumbnail">
+                            <img
+                                src="images/bikes/IMG-20260816-WA0024.jpg"
+                                alt="Ex-UK bicycle 3"
+                            >
+                        </button>
+
+
+                        <button class="thumbnail">
+                            <img
+                                src="images/bikes/IMG-20260816-WA0025.jpg"
+                                alt="Ex-UK bicycle 4"
+                            >
+                        </button>
+
+
+                        <button class="thumbnail">
+                            <img
+                                src="images/bikes/IMG-20260816-WA0026.jpg"
+                                alt="Ex-UK bicycle 5"
+                            >
+                        </button>
+
+
+                        <button class="thumbnail">
+                            <img
+                                src="images/bikes/IMG-20260816-WA0027.jpg"
+                                alt="Ex-UK bicycle 6"
+                            >
+                        </button>
+
+
+                        <button class="thumbnail">
+                            <img
+                                src="images/bikes/IMG-20260816-WA0028.jpg"
+                                alt="Ex-UK bicycle 7"
+                            >
+                        </button>
+
+
+                        <button class="thumbnail">
+                            <img
+                                src="images/bikes/IMG-20260816-WA0029.jpg"
+                                alt="Ex-UK bicycle 8"
+                            >
+                        </button>
+
+
+                        <button class="thumbnail">
+                            <img
+                                src="images/bikes/IMG-20260816-WA0030.jpg"
+                                alt="Ex-UK bicycle 9"
+                            >
+                        </button>
+
+
+                        <button class="thumbnail">
+                            <img
+                                src="images/bikes/IMG-20260816-WA0031.jpg"
+                                alt="Ex-UK bicycle 10"
+                            >
+                        </button>
+
+
+                        <button class="thumbnail">
+                            <img
+                                src="images/bikes/IMG-20260816-WA0032.jpg"
+                                alt="Ex-UK bicycle 11"
+                            >
+                        </button>
+
+
+                        <button class="thumbnail">
+                            <img
+                                src="images/bikes/IMG-20260816-WA0033.jpg"
+                                alt="Ex-UK bicycle 12"
+                            >
+                        </button>
+
+
+                        <button class="thumbnail">
+                            <img
+                                src="images/bikes/IMG-20260816-WA0034.jpg"
+                                alt="Ex-UK bicycle 13"
+                            >
+                        </button>
+
+
+                        <button class="thumbnail">
+                            <img
+                                src="images/bikes/IMG-20260816-WA0035.jpg"
+                                alt="Ex-UK bicycle 14"
+                            >
+                        </button>
+
+
+                        <button class="thumbnail">
+                            <img
+                                src="images/bikes/IMG-20260816-WA0036.jpg"
+                                alt="Ex-UK bicycle 15"
+                            >
+                        </button>
+
+
+                        <button class="thumbnail">
+                            <img
+                                src="images/bikes/IMG-20260816-WA0037.jpg"
+                                alt="Ex-UK bicycle 16"
+                            >
+                        </button>
+
+
+                        <button class="thumbnail">
+                            <img
+                                src="images/bikes/IMG-20260816-WA0038.jpg"
+                                alt="Ex-UK bicycle 17"
+                            >
+                        </button>
+
+
+                        <button class="thumbnail">
+                            <img
+                                src="images/bikes/IMG-20260816-WA0039.jpg"
+                                alt="Ex-UK bicycle 18"
+                            >
+                        </button>
+
+
+                        <button class="thumbnail">
+                            <img
+                                src="images/bikes/IMG-20260816-WA0040.jpg"
+                                alt="Ex-UK bicycle 19"
+                            >
+                        </button>
+
+
+                        <button class="thumbnail">
+                            <img
+                                src="images/bikes/IMG-20260816-WA0041.jpg"
+                                alt="Ex-UK bicycle 20"
+                            >
+                        </button>
+
+
+                        <button class="thumbnail">
+                            <img
+                                src="images/bikes/IMG-20260816-WA0042.jpg"
+                                alt="Ex-UK bicycle 21"
+                            >
+                        </button>
+
+
+                        <button class="thumbnail">
+                            <img
+                                src="images/bikes/IMG-20260816-WA0043.jpg"
+                                alt="Ex-UK bicycle 22"
+                            >
+                        </button>
+
+
+                        <button class="thumbnail">
+                            <img
+                                src="images/bikes/IMG-20260816-WA0044.jpg"
+                                alt="Ex-UK bicycle 23"
+                            >
+                        </button>
+
+
+                        <button class="thumbnail">
+                            <img
+                                src="images/bikes/IMG-20260816-WA0045.jpg"
+                                alt="Ex-UK bicycle 24"
+                            >
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     PRODUCT INFORMATION
+                ================================================== -->
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Ex-UK Bicycles
+                    </span>
+
+                    <h1>
+                        Quality Ex-UK Bicycles
+                    </h1>
+
+                    <p class="product-short-description">
+                        Explore our collection of Ex-UK bicycles
+                        available at Cycle Mart. Browse the
+                        available bikes and contact us directly
+                        for availability, specifications and
+                        ordering.
+                    </p>
+
+
+                    <!-- PRICE -->
+
+                    <div class="product-price-box">
+
+                        <span class="price-label">
+                            Price
+                        </span>
+
+                        <div class="product-price">
+                            Contact for Price
+                        </div>
+
+                    </div>
+
+
+                    <!-- FEATURES -->
+
+                    <div class="product-features">
+
+                        <h2>
+                            Bicycle Information
+                        </h2>
+
+                        <ul class="feature-list">
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+
+                                <span>
+                                    Ex-UK bicycle selection
+                                </span>
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+
+                                <span>
+                                    Multiple bicycles available
+                                    to choose from
+                                </span>
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+
+                                <span>
+                                    Contact us for current
+                                    availability
+                                </span>
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+
+                                <span>
+                                    Suitable options for
+                                    different cycling needs
+                                </span>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <!-- ACTIONS -->
+
+                    <div class="product-actions">
+
+                        <a
+                            href="https://wa.me/254750779112?text=Hello%20Cycle%20Mart%2C%20I%20am%20interested%20in%20your%20Ex-UK%20bicycles.%20Please%20send%20me%20the%20available%20bikes%20and%20prices."
+                            class="order-whatsapp"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                            Ask on WhatsApp
+
+                        </a>
+
+
+                        <a
+                            href="tel:+254750779112"
+                            class="order-call"
+                        >
+
+                            <i class="fa-solid fa-phone"></i>
+
+                            Call Us
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- TRUST -->
+
+                    <div class="product-trust">
+
+                        <div class="trust-item">
+
+                            <i class="fa-solid fa-bicycle"></i>
+
+                            <strong>
+                                Quality Bikes
+                            </strong>
+
+                            <span>
+                                Ex-UK selection
+                            </span>
+
+                        </div>
+
+
+                        <div class="trust-item">
+
+                            <i class="fa-solid fa-comments"></i>
+
+                            <strong>
+                                Easy Ordering
+                            </strong>
+
+                            <span>
+                                WhatsApp support
+                            </span>
+
+                        </div>
+
+
+                        <div class="trust-item">
+
+                            <i class="fa-solid fa-truck"></i>
+
+                            <strong>
+                                Delivery
+                            </strong>
+
+                            <span>
+                                Ask about delivery
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 DESCRIPTION
+            ================================================== -->
+
+            <section class="product-description-section">
+
+                <h2>
+                    About Our Ex-UK Bicycles
+                </h2>
+
+                <p>
+                    Cycle Mart offers a selection of Ex-UK bicycles
+                    for customers looking for quality and affordable
+                    cycling options. Browse the photos above to see
+                    the bicycles currently available. Since stock
+                    changes, contact Cycle Mart directly to confirm
+                    the bicycle you want, its condition, specifications,
+                    price and availability before ordering.
+                </p>
+
+            </section>
+
+
+            <!-- =================================================
+                 COLLECTION
+            ================================================== -->
+
+            <section class="bike-collection">
+
+                <div class="collection-heading">
+
+                    <span>
+                        Cycle Mart Collection
+                    </span>
+
+                    <h2>
+                        Available Bicycles
+                    </h2>
+
+                </div>
+
+
+                <div class="bike-grid">
+
+
+                    <article class="bike-card">
+
+                        <div class="bike-card-image">
+
+                            <img
+                                src="images/bikes/IMG-20260816-WA0022.jpg"
+                                alt="Ex-UK bicycle"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="bike-card-info">
+
+                            <span>
+                                Ex-UK
+                            </span>
+
+                            <h3>
+                                Bicycle 01
+                            </h3>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="bike-card">
+
+                        <div class="bike-card-image">
+
+                            <img
+                                src="images/bikes/IMG-20260816-WA0030.jpg"
+                                alt="Ex-UK bicycle"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="bike-card-info">
+
+                            <span>
+                                Ex-UK
+                            </span>
+
+                            <h3>
+                                Bicycle 02
+                            </h3>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="bike-card">
+
+                        <div class="bike-card-image">
+
+                            <img
+                                src="images/bikes/IMG-20260816-WA0038.jpg"
+                                alt="Ex-UK bicycle"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="bike-card-info">
+
+                            <span>
+                                Ex-UK
+                            </span>
+
+                            <h3>
+                                Bicycle 03
+                            </h3>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="bike-card">
+
+                        <div class="bike-card-image">
+
+                            <img
+                                src="images/bikes/IMG-20260816-WA0045.jpg"
+                                alt="Ex-UK bicycle"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="bike-card-info">
+
+                            <span>
+                                Ex-UK
+                            </span>
+
+                            <h3>
+                                Bicycle 04
+                            </h3>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+
+                <div class="footer-brand">
+
+                    <a
+                        href="index.html"
+                        class="logo"
+                    >
+
+                        <img
+                            src="cycle-mart-logo.jpg"
+                            alt="Cycle Mart Logo"
+                        >
+
+                    </a>
+
+                    <p>
+                        Quality Ex-UK bicycles for riders
+                        looking for reliable and affordable
+                        cycling options.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h3>
+                        Shop
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            <a href="shop.html">
+                                Bicycles
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="product.html">
+                                Ex-UK Bikes
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h3>
+                        Company
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            <a href="about.html">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h3>
+                        Contact
+                    </h3>
+
+                    <ul>
+
+                        <li>
+
+                            <i class="fa-solid fa-phone"></i>
+
+                            <a href="tel:+254750779112">
+                                +254 750 779 112
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                            <a
+                                href="https://wa.me/254750779112"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                WhatsApp
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    ©
+                    <span id="currentYear"></span>
+                    Cycle Mart.
+                    All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script>
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            function () {
+
+
+                /* =============================================
+                   IMAGE GALLERY
+                ============================================= */
+
+                const mainImage =
+                    document.getElementById(
+                        "mainProductImage"
+                    );
+
+                const counter =
+                    document.getElementById(
+                        "imageCounter"
+                    );
+
+                const thumbnails =
+                    document.querySelectorAll(
+                        ".thumbnail"
+                    );
+
+
+                thumbnails.forEach(
+                    function (thumbnail, index) {
+
+                        thumbnail.addEventListener(
+                            "click",
+                            function () {
+
+                                const image =
+                                    thumbnail.querySelector(
+                                        "img"
+                                    );
+
+                                if (!image) {
+                                    return;
+                                }
+
+
+                                mainImage.style.opacity =
+                                    "0";
+
+
+                                setTimeout(
+                                    function () {
+
+                                        mainImage.src =
+                                            image.src;
+
+                                        mainImage.alt =
+                                            image.alt;
+
+                                        mainImage.style.opacity =
+                                            "1";
+
+                                    },
+                                    120
+                                );
+
+
+                                thumbnails.forEach(
+                                    function (item) {
+
+                                        item.classList.remove(
+                                            "active"
+                                        );
+
+                                    }
+                                );
+
+
+                                thumbnail.classList.add(
+                                    "active"
+                                );
+
+
+                                counter.textContent =
+                                    (index + 1) +
+                                    " / " +
+                                    thumbnails.length;
+
+                            }
+                        );
+
+                    }
+
+
+                /* =============================================
+                   CURRENT YEAR
+                ============================================= */
+
+                const year =
+                    document.getElementById(
+                        "currentYear"
+                    );
+
+                if (year) {
+
+                    year.textContent =
+                        new Date().getFullYear();
+
+                }
+
+
+                /* =============================================
+                   MOBILE MENU
+                ============================================= */
+
+                const menuToggle =
+                    document.getElementById(
+                        "menuToggle"
+                    );
+
+                const navbar =
+                    document.getElementById(
+                        "navbar"
+                    );
+
+
+                if (
+                    menuToggle &&
+                    navbar
+                ) {
+
+                    menuToggle.addEventListener(
+                        "click",
+                        function () {
+
+                            navbar.classList.toggle(
+                                "active"
+                            );
+
+                            menuToggle.classList.toggle(
+                                "active"
+                            );
+
+                        }
+                    );
+
+                }
+
+            }
+        );
+
+    </script>
+
+</body>
+
+</html>
+```

@@ -1,0 +1,1747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Cycle Mart bicycle delivery services in Nakuru and across Kenya. Buy quality Ex-UK bicycles and arrange convenient delivery."
+    >
+
+    <meta
+        name="keywords"
+        content="bicycle delivery Nakuru, bicycle delivery Kenya, Ex-UK bicycles Kenya, Cycle Mart delivery, bikes Nakuru"
+    >
+
+    <meta name="author" content="Cycle Mart">
+
+    <meta name="robots" content="index, follow">
+
+    <link
+        rel="canonical"
+        href="https://cycle-mart.co.ke/delivery.html"
+    >
+
+    <title>Bike Delivery Kenya | Cycle Mart</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- FONT AWESOME -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet" href="css/animations.css">
+
+
+    <style>
+
+        /* =====================================================
+           DELIVERY HERO
+        ====================================================== */
+
+        .delivery-hero {
+
+            min-height: 500px;
+
+            display: flex;
+
+            align-items: center;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(0,0,0,0.82),
+                    rgba(0,0,0,0.45)
+                ),
+                url("images/bikes/IMG-20260816-WA0022.jpg")
+                center / cover no-repeat;
+
+            color: #fff;
+        }
+
+
+        .delivery-hero-content {
+
+            max-width: 700px;
+        }
+
+
+        .delivery-label {
+
+            display: inline-block;
+
+            margin-bottom: 15px;
+
+            padding: 8px 13px;
+
+            background: #e63946;
+
+            border-radius: 4px;
+
+            font-size: 10px;
+
+            font-weight: 800;
+
+            letter-spacing: 1.5px;
+
+            text-transform: uppercase;
+        }
+
+
+        .delivery-hero h1 {
+
+            margin-bottom: 18px;
+
+            font-family: "Montserrat", sans-serif;
+
+            font-size: clamp(40px, 6vw, 68px);
+
+            line-height: 1.05;
+        }
+
+
+        .delivery-hero h1 span {
+
+            color: #e63946;
+        }
+
+
+        .delivery-hero p {
+
+            max-width: 600px;
+
+            color: rgba(255,255,255,0.82);
+
+            font-size: 14px;
+
+            line-height: 1.8;
+        }
+
+
+        /* =====================================================
+           DELIVERY INTRO
+        ====================================================== */
+
+        .delivery-intro {
+
+            padding: 90px 0;
+
+            background: #fff;
+        }
+
+
+        .delivery-intro-grid {
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 70px;
+
+            align-items: center;
+        }
+
+
+        .delivery-intro-image {
+
+            overflow: hidden;
+
+            border-radius: 10px;
+
+            box-shadow:
+                0 20px 45px rgba(0,0,0,0.12);
+        }
+
+
+        .delivery-intro-image img {
+
+            width: 100%;
+
+            height: 450px;
+
+            display: block;
+
+            object-fit: cover;
+
+            transition: 0.4s ease;
+        }
+
+
+        .delivery-intro-image:hover img {
+
+            transform: scale(1.04);
+        }
+
+
+        .delivery-intro-content {
+
+            max-width: 600px;
+        }
+
+
+        .section-label {
+
+            display: block;
+
+            margin-bottom: 10px;
+
+            color: #777;
+
+            font-size: 10px;
+
+            font-weight: 800;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+        }
+
+
+        .delivery-intro-content h2 {
+
+            margin-bottom: 18px;
+
+            font-family: "Montserrat", sans-serif;
+
+            font-size: clamp(30px, 4vw, 46px);
+
+            line-height: 1.1;
+        }
+
+
+        .delivery-intro-content p {
+
+            margin-bottom: 18px;
+
+            color: #666;
+
+            font-size: 13px;
+
+            line-height: 1.8;
+        }
+
+
+        /* =====================================================
+           DELIVERY CARDS
+        ====================================================== */
+
+        .delivery-options {
+
+            padding: 90px 0;
+
+            background: #f6f6f6;
+        }
+
+
+        .section-heading {
+
+            max-width: 650px;
+
+            margin: 0 auto 45px;
+
+            text-align: center;
+        }
+
+
+        .section-heading h2 {
+
+            margin-bottom: 12px;
+
+            font-family: "Montserrat", sans-serif;
+
+            font-size: 34px;
+        }
+
+
+        .section-heading p {
+
+            color: #777;
+
+            font-size: 12px;
+
+            line-height: 1.7;
+        }
+
+
+        .delivery-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 22px;
+        }
+
+
+        .delivery-card {
+
+            overflow: hidden;
+
+            border: 1px solid #e8e8e8;
+
+            border-radius: 10px;
+
+            background: #fff;
+
+            text-align: center;
+
+            transition: 0.3s ease;
+        }
+
+
+        .delivery-card:hover {
+
+            transform: translateY(-6px);
+
+            box-shadow:
+                0 15px 35px rgba(0,0,0,0.08);
+        }
+
+
+        .delivery-card-image {
+
+            width: 100%;
+
+            height: 190px;
+
+            overflow: hidden;
+        }
+
+
+        .delivery-card-image img {
+
+            width: 100%;
+
+            height: 100%;
+
+            display: block;
+
+            object-fit: cover;
+
+            transition: 0.4s ease;
+        }
+
+
+        .delivery-card:hover .delivery-card-image img {
+
+            transform: scale(1.05);
+        }
+
+
+        .delivery-card-content {
+
+            padding: 30px 25px 35px;
+        }
+
+
+        .delivery-card-icon {
+
+            width: 65px;
+
+            height: 65px;
+
+            margin: -60px auto 20px;
+
+            position: relative;
+
+            display: grid;
+
+            place-items: center;
+
+            border-radius: 50%;
+
+            background: #111;
+
+            color: #fff;
+
+            font-size: 24px;
+
+            border: 5px solid #fff;
+        }
+
+
+        .delivery-card h3 {
+
+            margin-bottom: 10px;
+
+            font-family: "Montserrat", sans-serif;
+
+            font-size: 18px;
+        }
+
+
+        .delivery-card p {
+
+            color: #777;
+
+            font-size: 11px;
+
+            line-height: 1.7;
+        }
+
+
+        /* =====================================================
+           DELIVERY PROCESS
+        ====================================================== */
+
+        .delivery-process {
+
+            padding: 90px 0;
+
+            background: #fff;
+        }
+
+
+        .process-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 20px;
+        }
+
+
+        .process-card {
+
+            position: relative;
+
+            padding: 30px 20px;
+
+            border: 1px solid #eee;
+
+            border-radius: 8px;
+
+            background: #fff;
+        }
+
+
+        .process-number {
+
+            width: 42px;
+
+            height: 42px;
+
+            margin-bottom: 18px;
+
+            display: grid;
+
+            place-items: center;
+
+            border-radius: 50%;
+
+            background: #e63946;
+
+            color: #fff;
+
+            font-size: 13px;
+
+            font-weight: 800;
+        }
+
+
+        .process-card h3 {
+
+            margin-bottom: 10px;
+
+            font-family: "Montserrat", sans-serif;
+
+            font-size: 16px;
+        }
+
+
+        .process-card p {
+
+            color: #777;
+
+            font-size: 11px;
+
+            line-height: 1.7;
+        }
+
+
+        /* =====================================================
+           DELIVERY AREAS
+        ====================================================== */
+
+        .delivery-areas {
+
+            padding: 80px 0;
+
+            background: #111;
+
+            color: #fff;
+        }
+
+
+        .areas-content {
+
+            max-width: 850px;
+
+            margin: auto;
+
+            text-align: center;
+        }
+
+
+        .areas-content .section-label {
+
+            color: #aaa;
+        }
+
+
+        .areas-content h2 {
+
+            margin-bottom: 15px;
+
+            font-family: "Montserrat", sans-serif;
+
+            font-size: 38px;
+        }
+
+
+        .areas-content p {
+
+            margin-bottom: 25px;
+
+            color: #aaa;
+
+            font-size: 13px;
+
+            line-height: 1.8;
+        }
+
+
+        .area-tags {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            justify-content: center;
+
+            gap: 10px;
+        }
+
+
+        .area-tag {
+
+            padding: 10px 15px;
+
+            border: 1px solid #333;
+
+            border-radius: 5px;
+
+            color: #ddd;
+
+            font-size: 10px;
+
+            font-weight: 600;
+        }
+
+
+        /* =====================================================
+           DELIVERY CTA
+        ====================================================== */
+
+        .delivery-cta {
+
+            padding: 90px 0;
+
+            background: #f5f5f5;
+        }
+
+
+        .cta-box {
+
+            padding: 55px 40px;
+
+            border-radius: 12px;
+
+            background:
+                linear-gradient(
+                    rgba(0,0,0,0.78),
+                    rgba(0,0,0,0.78)
+                ),
+                url("images/bikes/IMG-20260816-WA0038.jpg")
+                center / cover no-repeat;
+
+            color: #fff;
+
+            text-align: center;
+        }
+
+
+        .cta-box h2 {
+
+            margin-bottom: 12px;
+
+            font-family: "Montserrat", sans-serif;
+
+            font-size: 38px;
+        }
+
+
+        .cta-box p {
+
+            max-width: 650px;
+
+            margin: 0 auto 25px;
+
+            color: #ddd;
+
+            font-size: 12px;
+
+            line-height: 1.7;
+        }
+
+
+        .cta-buttons {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            justify-content: center;
+
+            gap: 10px;
+        }
+
+
+        .cta-buttons a {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 8px;
+
+            min-height: 46px;
+
+            padding: 0 20px;
+
+            border-radius: 5px;
+
+            font-size: 10px;
+
+            font-weight: 800;
+
+            text-decoration: none;
+
+            transition: 0.25s ease;
+        }
+
+
+        .cta-whatsapp {
+
+            background: #25d366;
+
+            color: #fff;
+        }
+
+
+        .cta-whatsapp:hover {
+
+            background: #1ebe5d;
+
+            transform: translateY(-2px);
+        }
+
+
+        .cta-call {
+
+            background: #fff;
+
+            color: #111;
+        }
+
+
+        .cta-call:hover {
+
+            background: #eee;
+
+            transform: translateY(-2px);
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ====================================================== */
+
+        @media (max-width: 900px) {
+
+            .delivery-intro-grid {
+
+                grid-template-columns: 1fr;
+
+                gap: 40px;
+            }
+
+
+            .delivery-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+
+            .process-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+        }
+
+
+        @media (max-width: 600px) {
+
+            .delivery-hero {
+
+                min-height: 480px;
+            }
+
+
+            .delivery-intro,
+            .delivery-options,
+            .delivery-process,
+            .delivery-areas,
+            .delivery-cta {
+
+                padding: 60px 0;
+            }
+
+
+            .delivery-grid {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .process-grid {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .delivery-intro-image img {
+
+                height: 320px;
+            }
+
+
+            .delivery-card-image {
+
+                height: 220px;
+            }
+
+
+            .cta-box {
+
+                padding: 40px 20px;
+            }
+
+
+            .cta-box h2 {
+
+                font-size: 30px;
+            }
+
+
+            .cta-buttons {
+
+                flex-direction: column;
+            }
+
+
+            .cta-buttons a {
+
+                width: 100%;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <!-- LOGO -->
+
+            <a
+                href="index.html"
+                class="logo"
+                aria-label="Cycle Mart Home"
+            >
+
+                <img
+                    src="images/logo/cycle-mart-logo.jpg"
+                    alt="Cycle Mart Logo"
+                >
+
+                <div class="logo-text">
+
+                    <strong class="logo-title">
+                        CYCLE
+                    </strong>
+
+                    <span class="logo-subtitle">
+                        MART
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <!-- NAVIGATION -->
+
+            <nav
+                class="navbar"
+                id="navbar"
+                aria-label="Main navigation"
+            >
+
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="shop.html">
+                            Shop
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="product.html">
+                            Products
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="delivery.html"
+                            class="active"
+                        >
+                            Delivery
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="gallery.html">
+                            Gallery
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contacts.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <!-- NAV ACTIONS -->
+
+            <div class="nav-actions">
+
+                <a
+                    href="shop.html"
+                    class="nav-icon"
+                    aria-label="Shop bicycles"
+                >
+
+                    <i class="fa-solid fa-bicycle"></i>
+
+                </a>
+
+
+                <button
+                    type="button"
+                    class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Open navigation menu"
+                >
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- =====================================================
+             HERO
+        ====================================================== -->
+
+        <section class="delivery-hero">
+
+            <div class="container">
+
+                <div class="delivery-hero-content">
+
+                    <span class="delivery-label">
+                        Cycle Mart Delivery
+                    </span>
+
+                    <h1>
+                        Your Bike,
+                        <span>Delivered.</span>
+                    </h1>
+
+                    <p>
+                        Buy your preferred Ex-UK bicycle from
+                        Cycle Mart and arrange convenient delivery
+                        from our location in Nakuru to your
+                        destination in Kenya.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             INTRODUCTION
+        ====================================================== -->
+
+        <section class="delivery-intro">
+
+            <div class="container">
+
+                <div class="delivery-intro-grid">
+
+
+                    <div class="delivery-intro-image">
+
+                        <img
+                            src="images/bikes/IMG-20260816-WA0023.jpg"
+                            alt="Quality Ex-UK bicycle at Cycle Mart"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+
+                    <div class="delivery-intro-content">
+
+                        <span class="section-label">
+                            Easy & Convenient
+                        </span>
+
+                        <h2>
+                            We Make Getting Your Bike Easy
+                        </h2>
+
+                        <p>
+                            Once you choose your bicycle, our team
+                            can help you arrange a convenient delivery
+                            option to your location.
+                        </p>
+
+                        <p>
+                            Cycle Mart is located in Nakuru City along
+                            Kenyatta Lane, making it convenient for
+                            customers within Nakuru to visit, view
+                            bicycles and make their purchase.
+                        </p>
+
+                        <p>
+                            Customers outside Nakuru can contact us
+                            to discuss available delivery arrangements
+                            before completing their order.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             DELIVERY OPTIONS
+        ====================================================== -->
+
+        <section class="delivery-options">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        Delivery Options
+                    </span>
+
+                    <h2>
+                        Choose What Works For You
+                    </h2>
+
+                    <p>
+                        We offer convenient options depending on
+                        your location and how you would like to
+                        receive your bicycle.
+                    </p>
+
+                </div>
+
+
+                <div class="delivery-grid">
+
+
+                    <!-- CARD 1 -->
+
+                    <article class="delivery-card">
+
+                        <div class="delivery-card-image">
+
+                            <img
+                                src="images/bikes/IMG-20260816-WA0024.jpg"
+                                alt="Bicycle pickup at Cycle Mart"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="delivery-card-content">
+
+                            <div class="delivery-card-icon">
+
+                                <i class="fa-solid fa-store"></i>
+
+                            </div>
+
+                            <h3>
+                                Pick Up In Nakuru
+                            </h3>
+
+                            <p>
+                                Visit our location along Kenyatta Lane
+                                in Nakuru City and collect your bicycle
+                                in person.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- CARD 2 -->
+
+                    <article class="delivery-card">
+
+                        <div class="delivery-card-image">
+
+                            <img
+                                src="images/bikes/IMG-20260816-WA0030.jpg"
+                                alt="Bicycle local delivery"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="delivery-card-content">
+
+                            <div class="delivery-card-icon">
+
+                                <i class="fa-solid fa-truck"></i>
+
+                            </div>
+
+                            <h3>
+                                Local Delivery
+                            </h3>
+
+                            <p>
+                                Customers within Nakuru can contact us
+                                to arrange a convenient local delivery
+                                option.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- CARD 3 -->
+
+                    <article class="delivery-card">
+
+                        <div class="delivery-card-image">
+
+                            <img
+                                src="images/bikes/IMG-20260816-WA0038.jpg"
+                                alt="Ex-UK bicycle transport and delivery"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="delivery-card-content">
+
+                            <div class="delivery-card-icon">
+
+                                <i class="fa-solid fa-road"></i>
+
+                            </div>
+
+                            <h3>
+                                Upcountry Delivery
+                            </h3>
+
+                            <p>
+                                If you are outside Nakuru, contact us
+                                to discuss available transport and
+                                delivery arrangements.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             HOW IT WORKS
+        ====================================================== -->
+
+        <section class="delivery-process">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        How It Works
+                    </span>
+
+                    <h2>
+                        From Our Shop To You
+                    </h2>
+
+                    <p>
+                        Getting your bicycle from Cycle Mart is
+                        simple.
+                    </p>
+
+                </div>
+
+
+                <div class="process-grid">
+
+
+                    <article class="process-card">
+
+                        <div class="process-number">
+                            01
+                        </div>
+
+                        <h3>
+                            Choose Your Bike
+                        </h3>
+
+                        <p>
+                            Browse our available bicycles and
+                            select the model that suits you.
+                        </p>
+
+                    </article>
+
+
+                    <article class="process-card">
+
+                        <div class="process-number">
+                            02
+                        </div>
+
+                        <h3>
+                            Contact Us
+                        </h3>
+
+                        <p>
+                            Contact Cycle Mart to confirm
+                            availability and discuss your order.
+                        </p>
+
+                    </article>
+
+
+                    <article class="process-card">
+
+                        <div class="process-number">
+                            03
+                        </div>
+
+                        <h3>
+                            Arrange Delivery
+                        </h3>
+
+                        <p>
+                            Tell us your location and we will
+                            discuss the available delivery option.
+                        </p>
+
+                    </article>
+
+
+                    <article class="process-card">
+
+                        <div class="process-number">
+                            04
+                        </div>
+
+                        <h3>
+                            Receive Your Bike
+                        </h3>
+
+                        <p>
+                            Your bicycle is prepared and sent
+                            according to the agreed arrangement.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             DELIVERY AREAS
+        ====================================================== -->
+
+        <section class="delivery-areas">
+
+            <div class="container">
+
+                <div class="areas-content">
+
+                    <span class="section-label">
+                        Serving Customers
+                    </span>
+
+                    <h2>
+                        Nakuru & Beyond
+                    </h2>
+
+                    <p>
+                        Cycle Mart is based in Nakuru City, but
+                        customers from other parts of Kenya can
+                        contact us to discuss available bicycle
+                        delivery arrangements.
+                    </p>
+
+
+                    <div class="area-tags">
+
+                        <span class="area-tag">
+                            Nakuru
+                        </span>
+
+                        <span class="area-tag">
+                            Naivasha
+                        </span>
+
+                        <span class="area-tag">
+                            Eldoret
+                        </span>
+
+                        <span class="area-tag">
+                            Nairobi
+                        </span>
+
+                        <span class="area-tag">
+                            Kisumu
+                        </span>
+
+                        <span class="area-tag">
+                            Kericho
+                        </span>
+
+                        <span class="area-tag">
+                            Bomet
+                        </span>
+
+                        <span class="area-tag">
+                            Other Areas
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CTA
+        ====================================================== -->
+
+        <section class="delivery-cta">
+
+            <div class="container">
+
+                <div class="cta-box">
+
+                    <h2>
+                        Found Your Bike?
+                    </h2>
+
+                    <p>
+                        Contact Cycle Mart today to confirm
+                        availability and arrange collection or
+                        delivery of your bicycle.
+                    </p>
+
+
+                    <div class="cta-buttons">
+
+                        <a
+                            href="https://wa.me/254762346683?text=Hello%20Cycle%20Mart%2C%20I%20would%20like%20to%20ask%20about%20bike%20delivery"
+                            class="cta-whatsapp"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                            WhatsApp Us
+
+                        </a>
+
+
+                        <a
+                            href="tel:+254762346683"
+                            class="cta-call"
+                        >
+
+                            <i class="fa-solid fa-phone"></i>
+
+                            Call Us
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+
+                <div class="footer-brand">
+
+                    <a
+                        href="index.html"
+                        class="logo"
+                    >
+
+                        <img
+                            src="images/logo/cycle-mart-logo.jpg"
+                            alt="Cycle Mart"
+                        >
+
+                        <div class="logo-text">
+
+                            <strong class="logo-title">
+                                CYCLE
+                            </strong>
+
+                            <span class="logo-subtitle">
+                                MART
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                    <p>
+                        Quality Ex-UK bicycles for riders
+                        looking for reliable and affordable bikes.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h3>
+                        Shop
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            <a href="shop.html">
+                                Shop Bikes
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="product.html">
+                                Products
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="gallery.html">
+                                Gallery
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h3>
+                        Company
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            <a href="about.html">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="why-cycle-mart.html">
+                                Why Cycle Mart
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="delivery.html">
+                                Delivery
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h3>
+                        Contact
+                    </h3>
+
+                    <ul>
+
+                        <li>
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            Nakuru City, Kenyatta Lane
+
+                        </li>
+
+
+                        <li>
+
+                            <i class="fa-solid fa-phone"></i>
+
+                            <a href="tel:+254762346683">
+                                +254 762 346 683
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                            <a
+                                href="https://wa.me/254762346683"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                WhatsApp Us
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    ©
+                    <span id="currentYear"></span>
+                    Cycle Mart.
+                    All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         MOBILE NAVIGATION
+    ====================================================== -->
+
+    <nav
+        class="mobile-bottom-nav"
+        aria-label="Mobile navigation"
+    >
+
+        <a
+            href="index.html"
+            class="mobile-nav-item"
+        >
+
+            <i class="fa-solid fa-house"></i>
+
+            <span>
+                Home
+            </span>
+
+        </a>
+
+
+        <a
+            href="shop.html"
+            class="mobile-nav-item"
+        >
+
+            <i class="fa-solid fa-bicycle"></i>
+
+            <span>
+                Shop
+            </span>
+
+        </a>
+
+
+        <a
+            href="product.html"
+            class="mobile-nav-item"
+        >
+
+            <i class="fa-solid fa-list"></i>
+
+            <span>
+                Products
+            </span>
+
+        </a>
+
+
+        <a
+            href="about.html"
+            class="mobile-nav-item"
+        >
+
+            <i class="fa-solid fa-circle-info"></i>
+
+            <span>
+                About
+            </span>
+
+        </a>
+
+
+        <a
+            href="delivery.html"
+            class="mobile-nav-item active"
+        >
+
+            <i class="fa-solid fa-truck"></i>
+
+            <span>
+                Delivery
+            </span>
+
+        </a>
+
+
+        <a
+            href="contacts.html"
+            class="mobile-nav-item"
+        >
+
+            <i class="fa-solid fa-phone"></i>
+
+            <span>
+                Contact
+            </span>
+
+        </a>
+
+    </nav>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/menu.js"></script>
+
+    <script src="js/main.js"></script>
+
+
+    <script>
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            function () {
+
+                const year =
+                    document.getElementById(
+                        "currentYear"
+                    );
+
+                if (year) {
+
+                    year.textContent =
+                        new Date().getFullYear();
+
+                }
+
+
+                const currentPage =
+                    window.location.pathname
+                        .split("/")
+                        .pop()
+                        .toLowerCase();
+
+
+                document
+                    .querySelectorAll(
+                        ".mobile-nav-item"
+                    )
+                    .forEach(
+                        function (item) {
+
+                            const linkPage =
+                                item
+                                    .getAttribute("href")
+                                    .split("/")
+                                    .pop()
+                                    .toLowerCase();
+
+
+                            if (
+                                linkPage === currentPage
+                            ) {
+
+                                item.classList.add(
+                                    "active"
+                                );
+
+                            }
+
+                        }
+                    );
+
+            }
+        );
+
+    </script>
+
+</body>
+
+</html>
+```

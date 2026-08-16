@@ -1,0 +1,2108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Explore the Cycle Mart bicycle gallery. View our collection of ex-UK bicycles available in Nakuru City, Kenya."
+    >
+
+    <meta
+        name="keywords"
+        content="Cycle Mart gallery, bicycles Nakuru, ex UK bikes Kenya, bicycles Kenya, bike shop Nakuru"
+    >
+
+    <meta name="author" content="Cycle Mart">
+
+    <meta name="robots" content="index, follow">
+
+    <link
+        rel="canonical"
+        href="https://cyclemart.co.ke/gallery.html"
+    >
+
+    <title>Gallery | Cycle Mart | Ex-UK Bicycles in Nakuru</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- FONT AWESOME -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- SITE CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <style>
+
+        /* =====================================================
+           GALLERY PAGE
+        ===================================================== */
+
+        .gallery-page {
+            background: #fff;
+        }
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .gallery-hero {
+
+            min-height: 560px;
+
+            display: flex;
+
+            align-items: center;
+
+            position: relative;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(0, 0, 0, 0.88),
+                    rgba(0, 0, 0, 0.58),
+                    rgba(0, 0, 0, 0.28)
+                ),
+                url("images/hero.jpg")
+                center / cover no-repeat;
+
+            color: #fff;
+        }
+
+        .gallery-hero-content {
+            max-width: 720px;
+        }
+
+        .gallery-label {
+
+            display: inline-block;
+
+            margin-bottom: 18px;
+
+            padding: 9px 14px;
+
+            border-radius: 4px;
+
+            background: #f5c400;
+
+            color: #111;
+
+            font-size: 10px;
+
+            font-weight: 900;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+        }
+
+        .gallery-hero h1 {
+
+            margin-bottom: 20px;
+
+            font-family: "Montserrat", sans-serif;
+
+            font-size: clamp(42px, 7vw, 74px);
+
+            line-height: 1.02;
+        }
+
+        .gallery-hero h1 span {
+            color: #f5c400;
+        }
+
+        .gallery-hero p {
+
+            max-width: 620px;
+
+            color: rgba(255, 255, 255, 0.84);
+
+            font-size: 14px;
+
+            line-height: 1.8;
+        }
+
+        /* =====================================================
+           GALLERY INTRO
+        ===================================================== */
+
+        .gallery-intro {
+
+            padding: 85px 0 45px;
+
+            text-align: center;
+
+            background: #fff;
+        }
+
+        .section-label {
+
+            display: block;
+
+            margin-bottom: 10px;
+
+            color: #888;
+
+            font-size: 10px;
+
+            font-weight: 800;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+        }
+
+        .gallery-intro h2 {
+
+            margin-bottom: 15px;
+
+            font-family: "Montserrat", sans-serif;
+
+            font-size: clamp(30px, 4vw, 44px);
+
+            color: #111;
+        }
+
+        .gallery-intro p {
+
+            max-width: 650px;
+
+            margin: auto;
+
+            color: #777;
+
+            font-size: 13px;
+
+            line-height: 1.8;
+        }
+
+        /* =====================================================
+           FILTER BUTTONS
+        ===================================================== */
+
+        .gallery-filters {
+
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 10px;
+
+            padding: 0 0 45px;
+        }
+
+        .gallery-filter {
+
+            padding: 11px 18px;
+
+            border: 1px solid #ddd;
+
+            border-radius: 5px;
+
+            background: #fff;
+
+            color: #555;
+
+            font-size: 10px;
+
+            font-weight: 800;
+
+            cursor: pointer;
+
+            transition: 0.25s ease;
+        }
+
+        .gallery-filter:hover,
+        .gallery-filter.active {
+
+            border-color: #111;
+
+            background: #111;
+
+            color: #fff;
+        }
+
+        /* =====================================================
+           GALLERY GRID
+        ===================================================== */
+
+        .gallery-section {
+
+            padding: 0 0 100px;
+
+            background: #fff;
+        }
+
+        .gallery-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 18px;
+        }
+
+        .gallery-item {
+
+            position: relative;
+
+            height: 300px;
+
+            overflow: hidden;
+
+            border-radius: 8px;
+
+            background: #eee;
+
+            cursor: pointer;
+
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+        }
+
+        .gallery-item:hover {
+
+            transform: translateY(-4px);
+
+            box-shadow:
+                0 15px 35px rgba(0, 0, 0, 0.12);
+        }
+
+        .gallery-item img {
+
+            width: 100%;
+
+            height: 100%;
+
+            display: block;
+
+            object-fit: cover;
+
+            transition:
+                transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+
+            transform: scale(1.07);
+        }
+
+        .gallery-overlay {
+
+            position: absolute;
+
+            left: 0;
+
+            right: 0;
+
+            bottom: 0;
+
+            padding: 45px 18px 18px;
+
+            background:
+                linear-gradient(
+                    transparent,
+                    rgba(0, 0, 0, 0.85)
+                );
+
+            color: #fff;
+
+            opacity: 0;
+
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-overlay h3 {
+
+            margin-bottom: 5px;
+
+            font-family: "Montserrat", sans-serif;
+
+            font-size: 15px;
+        }
+
+        .gallery-overlay p {
+
+            color: #ddd;
+
+            font-size: 10px;
+        }
+
+        .gallery-view-icon {
+
+            position: absolute;
+
+            top: 15px;
+
+            right: 15px;
+
+            width: 40px;
+
+            height: 40px;
+
+            display: grid;
+
+            place-items: center;
+
+            border-radius: 50%;
+
+            background: rgba(0, 0, 0, 0.65);
+
+            color: #fff;
+
+            font-size: 14px;
+
+            opacity: 0;
+
+            transition: 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-view-icon {
+            opacity: 1;
+        }
+
+        /* =====================================================
+           FEATURED IMAGE
+        ===================================================== */
+
+        .gallery-item.featured {
+
+            grid-column: span 2;
+
+            grid-row: span 2;
+
+            height: 618px;
+        }
+
+        /* =====================================================
+           LIGHTBOX
+        ===================================================== */
+
+        .lightbox {
+
+            position: fixed;
+
+            inset: 0;
+
+            z-index: 999999;
+
+            display: none;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 25px;
+
+            background: rgba(0, 0, 0, 0.94);
+        }
+
+        .lightbox.show {
+            display: flex;
+        }
+
+        .lightbox-image {
+
+            max-width: 92vw;
+
+            max-height: 88vh;
+
+            object-fit: contain;
+
+            border-radius: 5px;
+
+            box-shadow:
+                0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .lightbox-close {
+
+            position: absolute;
+
+            top: 20px;
+
+            right: 25px;
+
+            width: 48px;
+
+            height: 48px;
+
+            display: grid;
+
+            place-items: center;
+
+            border: 0;
+
+            border-radius: 50%;
+
+            background: rgba(255, 255, 255, 0.12);
+
+            color: #fff;
+
+            font-size: 22px;
+
+            cursor: pointer;
+        }
+
+        .lightbox-close:hover {
+            background: #f5c400;
+            color: #111;
+        }
+
+        .lightbox-caption {
+
+            position: absolute;
+
+            bottom: 20px;
+
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            color: #fff;
+
+            font-size: 12px;
+
+            text-align: center;
+        }
+
+        /* =====================================================
+           CTA
+        ===================================================== */
+
+        .gallery-cta {
+
+            padding: 80px 0;
+
+            background: #f5c400;
+
+            text-align: center;
+
+            color: #111;
+        }
+
+        .gallery-cta h2 {
+
+            margin-bottom: 12px;
+
+            font-family: "Montserrat", sans-serif;
+
+            font-size: clamp(30px, 5vw, 46px);
+        }
+
+        .gallery-cta p {
+
+            max-width: 600px;
+
+            margin: 0 auto 25px;
+
+            font-size: 13px;
+
+            line-height: 1.8;
+        }
+
+        .gallery-cta a {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 9px;
+
+            padding: 14px 23px;
+
+            border-radius: 5px;
+
+            background: #111;
+
+            color: #fff;
+
+            font-size: 11px;
+
+            font-weight: 800;
+
+            text-decoration: none;
+
+            transition: 0.25s ease;
+        }
+
+        .gallery-cta a:hover {
+
+            background: #333;
+
+            transform: translateY(-2px);
+        }
+
+        /* =====================================================
+           RESPONSIVE
+        ===================================================== */
+
+        @media (max-width: 1000px) {
+
+            .gallery-grid {
+
+                grid-template-columns:
+                    repeat(3, 1fr);
+            }
+
+            .gallery-item.featured {
+
+                grid-column: span 2;
+
+                grid-row: span 2;
+            }
+        }
+
+        @media (max-width: 700px) {
+
+            .gallery-hero {
+
+                min-height: 500px;
+            }
+
+            .gallery-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+
+                gap: 12px;
+            }
+
+            .gallery-item {
+
+                height: 240px;
+            }
+
+            .gallery-item.featured {
+
+                grid-column: span 2;
+
+                height: 400px;
+            }
+
+            .gallery-overlay {
+
+                opacity: 1;
+            }
+
+            .gallery-view-icon {
+
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            .gallery-intro {
+
+                padding-top: 60px;
+            }
+
+            .gallery-section {
+
+                padding-bottom: 60px;
+            }
+
+            .gallery-grid {
+
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-item,
+            .gallery-item.featured {
+
+                grid-column: span 1;
+
+                grid-row: span 1;
+
+                height: 300px;
+            }
+
+            .gallery-filters {
+
+                padding-left: 15px;
+
+                padding-right: 15px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body class="gallery-page">
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a
+                href="index.html"
+                class="logo"
+                aria-label="Cycle Mart Home"
+            >
+
+                <img
+                    src="images/cycle-mart-logo.jpg"
+                    alt="Cycle Mart Logo"
+                >
+
+                <div class="logo-text">
+
+                    <strong class="logo-title">
+                        CYCLE
+                    </strong>
+
+                    <span class="logo-subtitle">
+                        MART
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <nav
+                class="navbar"
+                id="navbar"
+                aria-label="Main navigation"
+            >
+
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="shop.html">
+                            Shop
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="product.html">
+                            Products
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="why-cycle-mart.html">
+                            Why Cycle Mart
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="gallery.html"
+                            class="active"
+                        >
+                            Gallery
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contacts.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <div class="nav-actions">
+
+                <a
+                    href="shop.html"
+                    class="nav-icon"
+                    aria-label="Shop"
+                >
+                    <i class="fa-solid fa-bicycle"></i>
+                </a>
+
+                <button
+                    type="button"
+                    class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Open navigation menu"
+                >
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- HERO -->
+
+        <section class="gallery-hero">
+
+            <div class="container">
+
+                <div class="gallery-hero-content">
+
+                    <span class="gallery-label">
+                        Cycle Mart Gallery
+                    </span>
+
+                    <h1>
+                        Explore Our
+                        <span>Bikes.</span>
+                    </h1>
+
+                    <p>
+                        Take a look at some of the bicycles
+                        available at Cycle Mart in Nakuru City.
+                        Browse our collection and find your
+                        next ride.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- INTRO -->
+
+        <section class="gallery-intro">
+
+            <div class="container">
+
+                <span class="section-label">
+                    OUR COLLECTION
+                </span>
+
+                <h2>
+                    Bicycle Gallery
+                </h2>
+
+                <p>
+                    Explore our selection of ex-UK bicycles.
+                    Click any image to view it in full size.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FILTERS -->
+
+        <div class="container">
+
+            <div
+                class="gallery-filters"
+                aria-label="Gallery filters"
+            >
+
+                <button
+                    class="gallery-filter active"
+                    data-filter="all"
+                    type="button"
+                >
+                    All Bikes
+                </button>
+
+                <button
+                    class="gallery-filter"
+                    data-filter="bike"
+                    type="button"
+                >
+                    Bicycles
+                </button>
+
+                <button
+                    class="gallery-filter"
+                    data-filter="collection"
+                    type="button"
+                >
+                    Collection
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- GALLERY -->
+
+        <section class="gallery-section">
+
+            <div class="container">
+
+                <div class="gallery-grid" id="galleryGrid">
+
+
+                    <!-- 01 -->
+
+                    <article
+                        class="gallery-item featured"
+                        data-category="bike"
+                        data-title="Cycle Mart Bicycle"
+                    >
+
+                        <img
+                            src="images/bikes/IMG-20260816-WA0022.jpg"
+                            alt="Cycle Mart ex-UK bicycle"
+                            loading="eager"
+                        >
+
+                        <div class="gallery-view-icon">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                        <div class="gallery-overlay">
+
+                            <h3>
+                                Featured Bicycle
+                            </h3>
+
+                            <p>
+                                Explore this bicycle from our collection.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 02 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="bike"
+                        data-title="Ex-UK Bicycle"
+                    >
+
+                        <img
+                            src="images/bikes/IMG-20260816-WA0023.jpg"
+                            alt="Ex-UK bicycle at Cycle Mart"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-view-icon">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                        <div class="gallery-overlay">
+
+                            <h3>
+                                Ex-UK Bicycle
+                            </h3>
+
+                            <p>
+                                Cycle Mart collection.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 03 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="bike"
+                        data-title="Cycle Mart Bike"
+                    >
+
+                        <img
+                            src="images/bikes/IMG-20260816-WA0024.jpg"
+                            alt="Cycle Mart bike"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-view-icon">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                        <div class="gallery-overlay">
+
+                            <h3>
+                                Cycle Mart Bike
+                            </h3>
+
+                            <p>
+                                Available bicycle.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 04 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="collection"
+                        data-title="Bicycle Collection"
+                    >
+
+                        <img
+                            src="images/bikes/IMG-20260816-WA0025.jpg"
+                            alt="Bicycle collection"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-view-icon">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                        <div class="gallery-overlay">
+
+                            <h3>
+                                Bicycle Collection
+                            </h3>
+
+                            <p>
+                                Browse our available bikes.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 05 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="bike"
+                        data-title="Ex-UK Bike"
+                    >
+
+                        <img
+                            src="images/bikes/IMG-20260816-WA0026.jpg"
+                            alt="Ex-UK bike"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-view-icon">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                        <div class="gallery-overlay">
+
+                            <h3>
+                                Ex-UK Bike
+                            </h3>
+
+                            <p>
+                                Cycle Mart bicycle.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 06 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="bike"
+                        data-title="Bicycle"
+                    >
+
+                        <img
+                            src="images/bikes/IMG-20260816-WA0027.jpg"
+                            alt="Bicycle available at Cycle Mart"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-view-icon">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                        <div class="gallery-overlay">
+
+                            <h3>
+                                Bicycle
+                            </h3>
+
+                            <p>
+                                View our collection.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 07 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="collection"
+                        data-title="Cycle Mart Collection"
+                    >
+
+                        <img
+                            src="images/bikes/IMG-20260816-WA0028.jpg"
+                            alt="Cycle Mart bicycle collection"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-view-icon">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                        <div class="gallery-overlay">
+
+                            <h3>
+                                Our Collection
+                            </h3>
+
+                            <p>
+                                Explore available bicycles.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 08 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="bike"
+                        data-title="Cycle Mart Bicycle"
+                    >
+
+                        <img
+                            src="images/bikes/IMG-20260816-WA0029.jpg"
+                            alt="Cycle Mart bicycle"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-view-icon">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                        <div class="gallery-overlay">
+
+                            <h3>
+                                Bicycle
+                            </h3>
+
+                            <p>
+                                Available at Cycle Mart.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 09 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="bike"
+                        data-title="Ex-UK Bicycle"
+                    >
+
+                        <img
+                            src="images/bikes/IMG-20260816-WA0030.jpg"
+                            alt="Ex-UK bicycle"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-view-icon">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                        <div class="gallery-overlay">
+
+                            <h3>
+                                Ex-UK Bicycle
+                            </h3>
+
+                            <p>
+                                Cycle Mart collection.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 10 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="bike"
+                        data-title="Bicycle"
+                    >
+
+                        <img
+                            src="images/bikes/IMG-20260816-WA0031.jpg"
+                            alt="Bicycle at Cycle Mart"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-view-icon">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                        <div class="gallery-overlay">
+
+                            <h3>
+                                Bicycle
+                            </h3>
+
+                            <p>
+                                Quality bicycle selection.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 11 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="collection"
+                        data-title="Bike Collection"
+                    >
+
+                        <img
+                            src="images/bikes/IMG-20260816-WA0032.jpg"
+                            alt="Bike collection at Cycle Mart"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-view-icon">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                        <div class="gallery-overlay">
+
+                            <h3>
+                                Bike Collection
+                            </h3>
+
+                            <p>
+                                Explore Cycle Mart bikes.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 12 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="bike"
+                        data-title="Ex-UK Bicycle"
+                    >
+
+                        <img
+                            src="images/bikes/IMG-20260816-WA0033.jpg"
+                            alt="Ex-UK bicycle at Cycle Mart"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-view-icon">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                        <div class="gallery-overlay">
+
+                            <h3>
+                                Ex-UK Bicycle
+                            </h3>
+
+                            <p>
+                                View this bicycle.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 13 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="bike"
+                        data-title="Cycle Mart Bike"
+                    >
+
+                        <img
+                            src="images/bikes/IMG-20260816-WA0034.jpg"
+                            alt="Cycle Mart bike"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-view-icon">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                        <div class="gallery-overlay">
+
+                            <h3>
+                                Cycle Mart Bike
+                            </h3>
+
+                            <p>
+                                Available from our collection.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 14 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="collection"
+                        data-title="Bicycle Collection"
+                    >
+
+                        <img
+                            src="images/bikes/IMG-20260816-WA0035.jpg"
+                            alt="Bicycle collection at Cycle Mart"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-view-icon">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                        <div class="gallery-overlay">
+
+                            <h3>
+                                Bicycle Collection
+                            </h3>
+
+                            <p>
+                                Explore available bikes.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 15 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="bike"
+                        data-title="Bicycle"
+                    >
+
+                        <img
+                            src="images/bikes/IMG-20260816-WA0036.jpg"
+                            alt="Bicycle available at Cycle Mart"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-view-icon">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                        <div class="gallery-overlay">
+
+                            <h3>
+                                Bicycle
+                            </h3>
+
+                            <p>
+                                View our available bicycles.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 16 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="bike"
+                        data-title="Ex-UK Bike"
+                    >
+
+                        <img
+                            src="images/bikes/IMG-20260816-WA0037.jpg"
+                            alt="Ex-UK bike"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-view-icon">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                        <div class="gallery-overlay">
+
+                            <h3>
+                                Ex-UK Bike
+                            </h3>
+
+                            <p>
+                                Cycle Mart selection.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 17 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="collection"
+                        data-title="Cycle Mart Collection"
+                    >
+
+                        <img
+                            src="images/bikes/IMG-20260816-WA0038.jpg"
+                            alt="Cycle Mart bicycle collection"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-view-icon">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                        <div class="gallery-overlay">
+
+                            <h3>
+                                Cycle Mart Collection
+                            </h3>
+
+                            <p>
+                                Explore our bikes.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 18 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="bike"
+                        data-title="Bicycle"
+                    >
+
+                        <img
+                            src="images/bikes/IMG-20260816-WA0039.jpg"
+                            alt="Bicycle at Cycle Mart"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-view-icon">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                        <div class="gallery-overlay">
+
+                            <h3>
+                                Bicycle
+                            </h3>
+
+                            <p>
+                                Browse our collection.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 19 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="bike"
+                        data-title="Ex-UK Bicycle"
+                    >
+
+                        <img
+                            src="images/bikes/IMG-20260816-WA0040.jpg"
+                            alt="Ex-UK bicycle"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-view-icon">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                        <div class="gallery-overlay">
+
+                            <h3>
+                                Ex-UK Bicycle
+                            </h3>
+
+                            <p>
+                                Available at Cycle Mart.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 20 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="collection"
+                        data-title="Bicycle Collection"
+                    >
+
+                        <img
+                            src="images/bikes/IMG-20260816-WA0041.jpg"
+                            alt="Bicycle collection"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-view-icon">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                        <div class="gallery-overlay">
+
+                            <h3>
+                                Bicycle Collection
+                            </h3>
+
+                            <p>
+                                Explore our available bikes.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 21 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="bike"
+                        data-title="Cycle Mart Bicycle"
+                    >
+
+                        <img
+                            src="images/bikes/IMG-20260816-WA0042.jpg"
+                            alt="Cycle Mart bicycle"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-view-icon">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                        <div class="gallery-overlay">
+
+                            <h3>
+                                Cycle Mart Bicycle
+                            </h3>
+
+                            <p>
+                                View this bicycle.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 22 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="bike"
+                        data-title="Ex-UK Bike"
+                    >
+
+                        <img
+                            src="images/bikes/IMG-20260816-WA0043.jpg"
+                            alt="Ex-UK bike"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-view-icon">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                        <div class="gallery-overlay">
+
+                            <h3>
+                                Ex-UK Bike
+                            </h3>
+
+                            <p>
+                                Cycle Mart collection.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 23 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="collection"
+                        data-title="Bicycle Collection"
+                    >
+
+                        <img
+                            src="images/bikes/IMG-20260816-WA0044.jpg"
+                            alt="Bicycle collection at Cycle Mart"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-view-icon">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                        <div class="gallery-overlay">
+
+                            <h3>
+                                Bicycle Collection
+                            </h3>
+
+                            <p>
+                                Browse our available bikes.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 24 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="bike"
+                        data-title="Cycle Mart Bicycle"
+                    >
+
+                        <img
+                            src="images/bikes/IMG-20260816-WA0045.jpg"
+                            alt="Cycle Mart bicycle"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-view-icon">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                        <div class="gallery-overlay">
+
+                            <h3>
+                                Cycle Mart Bicycle
+                            </h3>
+
+                            <p>
+                                Find your next ride.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CTA -->
+
+        <section class="gallery-cta">
+
+            <div class="container">
+
+                <h2>
+                    Found a Bike You Like?
+                </h2>
+
+                <p>
+                    Browse our products or visit Cycle Mart
+                    in Nakuru City along Kenyatta Lane.
+                </p>
+
+                <a href="shop.html">
+
+                    View Bikes
+
+                    <i class="fa-solid fa-bicycle"></i>
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         LIGHTBOX
+    ====================================================== -->
+
+    <div
+        class="lightbox"
+        id="lightbox"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Image viewer"
+    >
+
+        <button
+            type="button"
+            class="lightbox-close"
+            id="lightboxClose"
+            aria-label="Close image"
+        >
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+
+        <img
+            class="lightbox-image"
+            id="lightboxImage"
+            src=""
+            alt=""
+        >
+
+
+        <div
+            class="lightbox-caption"
+            id="lightboxCaption"
+        ></div>
+
+    </div>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+
+                <div class="footer-brand">
+
+                    <a
+                        href="index.html"
+                        class="logo"
+                    >
+
+                        <img
+                            src="images/cycle-mart-logo.jpg"
+                            alt="Cycle Mart Logo"
+                        >
+
+                        <div class="logo-text">
+
+                            <strong class="logo-title">
+                                CYCLE
+                            </strong>
+
+                            <span class="logo-subtitle">
+                                MART
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                    <p>
+                        Quality ex-UK bicycles for riders
+                        looking for their next ride.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h3>
+                        Shop
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            <a href="shop.html">
+                                Bicycles
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="product.html">
+                                Products
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h3>
+                        Explore
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            <a href="about.html">
+                                About
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="why-cycle-mart.html">
+                                Why Cycle Mart
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="gallery.html">
+                                Gallery
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h3>
+                        Location
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Nakuru City
+                        </li>
+
+                        <li>
+                            Kenyatta Lane
+                        </li>
+
+                        <li>
+                            Kenya
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+
+                    ©
+                    <span id="currentYear"></span>
+                    Cycle Mart.
+                    All rights reserved.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/menu.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+
+        /* =====================================================
+           CURRENT YEAR
+        ====================================================== */
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            function () {
+
+                const year =
+                    document.getElementById("currentYear");
+
+                if (year) {
+
+                    year.textContent =
+                        new Date().getFullYear();
+
+                }
+
+            }
+        );
+
+
+        /* =====================================================
+           GALLERY FILTER
+        ====================================================== */
+
+        const filterButtons =
+            document.querySelectorAll(".gallery-filter");
+
+        const galleryItems =
+            document.querySelectorAll(".gallery-item");
+
+
+        filterButtons.forEach(
+            function (button) {
+
+                button.addEventListener(
+                    "click",
+                    function () {
+
+                        filterButtons.forEach(
+                            function (btn) {
+
+                                btn.classList.remove("active");
+
+                            }
+                        );
+
+                        button.classList.add("active");
+
+
+                        const filter =
+                            button.getAttribute("data-filter");
+
+
+                        galleryItems.forEach(
+                            function (item) {
+
+                                const category =
+                                    item.getAttribute(
+                                        "data-category"
+                                    );
+
+
+                                if (
+                                    filter === "all" ||
+                                    category === filter
+                                ) {
+
+                                    item.style.display =
+                                        "block";
+
+                                } else {
+
+                                    item.style.display =
+                                        "none";
+
+                                }
+
+                            }
+                        );
+
+                    }
+                );
+
+            }
+        );
+
+
+        /* =====================================================
+           LIGHTBOX
+        ====================================================== */
+
+        const lightbox =
+            document.getElementById("lightbox");
+
+        const lightboxImage =
+            document.getElementById("lightboxImage");
+
+        const lightboxCaption =
+            document.getElementById("lightboxCaption");
+
+        const lightboxClose =
+            document.getElementById("lightboxClose");
+
+
+        galleryItems.forEach(
+            function (item) {
+
+                item.addEventListener(
+                    "click",
+                    function () {
+
+                        const image =
+                            item.querySelector("img");
+
+                        if (!image) return;
+
+
+                        lightboxImage.src =
+                            image.src;
+
+                        lightboxImage.alt =
+                            image.alt;
+
+
+                        lightboxCaption.textContent =
+                            item.getAttribute("data-title") ||
+                            image.alt;
+
+
+                        lightbox.classList.add("show");
+
+                        document.body.style.overflow =
+                            "hidden";
+
+                    }
+                );
+
+            }
+        );
+
+
+        function closeLightbox() {
+
+            lightbox.classList.remove("show");
+
+            document.body.style.overflow = "";
+
+            lightboxImage.src = "";
+
+        }
+
+
+        lightboxClose.addEventListener(
+            "click",
+            closeLightbox
+        );
+
+
+        lightbox.addEventListener(
+            "click",
+            function (event) {
+
+                if (event.target === lightbox) {
+
+                    closeLightbox();
+
+                }
+
+            }
+        );
+
+
+        document.addEventListener(
+            "keydown",
+            function (event) {
+
+                if (event.key === "Escape") {
+
+                    closeLightbox();
+
+                }
+
+            }
+        );
+
+    </script>
+
+</body>
+
+</html>
+```
