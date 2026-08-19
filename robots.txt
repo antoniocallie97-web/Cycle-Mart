@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cyclemart.co.ke/sitemap.xml
