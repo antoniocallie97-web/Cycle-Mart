@@ -113,27 +113,19 @@
             white-space: nowrap;
         }
 
-        .logo span {
-            color: #8bc34a;
+        .logo-image {
+            width: 48px;
+            height: 48px;
+
+            object-fit: contain;
+
+            border-radius: 8px;
+
+            display: block;
         }
 
-        .logo-icon {
-            width: 42px;
-            height: 42px;
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: center;
-
-            background: #8bc34a;
-
-            color: #111;
-
-            border-radius: 50%;
-
-            font-size: 21px;
+        .logo span {
+            color: #8bc34a;
         }
 
 
@@ -162,63 +154,6 @@
         .nav a:hover,
         .nav a.active {
             color: #8bc34a;
-        }
-
-
-        /* =========================================================
-           CART BUTTON
-        ========================================================= */
-
-        .cart-button {
-            position: relative;
-
-            border: none;
-
-            background: #8bc34a;
-
-            color: #111;
-
-            padding: 11px 18px;
-
-            border-radius: 7px;
-
-            cursor: pointer;
-
-            font-weight: 700;
-
-            transition: 0.3s;
-        }
-
-        .cart-button:hover {
-            background: #a4dc63;
-
-            transform: translateY(-2px);
-        }
-
-        .cart-count {
-            position: absolute;
-
-            top: -8px;
-            right: -8px;
-
-            width: 22px;
-            height: 22px;
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: center;
-
-            background: #e53935;
-
-            color: white;
-
-            border-radius: 50%;
-
-            font-size: 12px;
-
-            font-weight: bold;
         }
 
 
@@ -563,14 +498,19 @@
             color: #222;
         }
 
-        .add-cart {
+
+        /* =========================================================
+           VIEW PRODUCT BUTTON
+        ========================================================= */
+
+        .view-product {
             border: none;
 
             background: #111;
 
             color: white;
 
-            padding: 10px 13px;
+            padding: 10px 15px;
 
             border-radius: 6px;
 
@@ -583,7 +523,7 @@
             transition: 0.3s;
         }
 
-        .add-cart:hover {
+        .view-product:hover {
             background: #8bc34a;
 
             color: #111;
@@ -612,49 +552,6 @@
 
         .no-results p {
             color: #777;
-        }
-
-
-        /* =========================================================
-           CART MESSAGE
-        ========================================================= */
-
-        .cart-message {
-            position: fixed;
-
-            right: 25px;
-
-            bottom: 25px;
-
-            background: #111;
-
-            color: white;
-
-            padding: 15px 22px;
-
-            border-radius: 8px;
-
-            z-index: 2000;
-
-            transform: translateY(120px);
-
-            opacity: 0;
-
-            transition: 0.4s ease;
-
-            box-shadow:
-                0 8px 25px
-                rgba(0, 0, 0, 0.25);
-        }
-
-        .cart-message.show {
-            transform: translateY(0);
-
-            opacity: 1;
-        }
-
-        .cart-message strong {
-            color: #8bc34a;
         }
 
 
@@ -787,10 +684,10 @@
                 font-size: 20px;
             }
 
-            .logo-icon {
-                width: 36px;
+            .logo-image {
+                width: 40px;
 
-                height: 36px;
+                height: 40px;
             }
 
             .nav {
@@ -829,16 +726,6 @@
                 grid-template-columns: 1fr;
             }
 
-            .cart-message {
-                left: 15px;
-
-                right: 15px;
-
-                bottom: 15px;
-
-                text-align: center;
-            }
-
         }
 
     </style>
@@ -860,9 +747,11 @@
 
             <a href="index.html" class="logo">
 
-                <div class="logo-icon">
-                    🚲
-                </div>
+                <img
+                    src="images/logo/cycle-mart-logo.jpg"
+                    alt="Cycle Mart Logo"
+                    class="logo-image"
+                >
 
                 Cycle <span>Mart</span>
 
@@ -890,29 +779,11 @@
                     Deliveries
                 </a>
 
-                <a href="contact.html">
+                <a href="contacts.html">
                     Contact
                 </a>
 
             </nav>
-
-
-            <button
-                class="cart-button"
-                onclick="viewCart()"
-            >
-
-                🛒 Cart
-
-                <span
-                    class="cart-count"
-                    id="cartCount"
-                >
-                    0
-                </span>
-
-            </button>
-
 
         </div>
 
@@ -1101,17 +972,6 @@
 
 
     <!-- =========================================================
-         CART MESSAGE
-    ========================================================= -->
-
-    <div
-        class="cart-message"
-        id="cartMessage"
-    ></div>
-
-
-
-    <!-- =========================================================
          FOOTER
     ========================================================= -->
 
@@ -1161,7 +1021,7 @@
                     Deliveries
                 </a>
 
-                <a href="contact.html">
+                <a href="contacts.html">
                     Contact
                 </a>
 
@@ -1780,7 +1640,6 @@
         ];
 
 
-
         /* =========================================================
            ELEMENTS
         ========================================================= */
@@ -1814,7 +1673,6 @@
             document.getElementById(
                 "priceFilter"
             );
-
 
 
         /* =========================================================
@@ -1900,12 +1758,11 @@
                                 KSh ${product.price.toLocaleString()}
                             </div>
 
-
                             <button
-                                class="add-cart"
-                                onclick="addToCart(${product.id})"
+                                class="view-product"
+                                onclick="viewProduct(${product.id})"
                             >
-                                Add to Cart
+                                View Product
                             </button>
 
                         </div>
@@ -1923,6 +1780,17 @@
 
         }
 
+
+        /* =========================================================
+           VIEW PRODUCT
+        ========================================================= */
+
+        function viewProduct(productId) {
+
+            window.location.href =
+                "product.html?id=" + productId;
+
+        }
 
 
         /* =========================================================
@@ -1980,7 +1848,6 @@
                 });
 
 
-
             /* LOW TO HIGH */
 
             if (sort === "low") {
@@ -1993,7 +1860,6 @@
             }
 
 
-
             /* HIGH TO LOW */
 
             if (sort === "high") {
@@ -2004,7 +1870,6 @@
                 );
 
             }
-
 
 
             /* HIGHEST RATING */
@@ -2024,7 +1889,6 @@
             );
 
         }
-
 
 
         /* =========================================================
@@ -2047,156 +1911,6 @@
         );
 
 
-
-        /* =========================================================
-           CART
-        ========================================================= */
-
-        let cart =
-            JSON.parse(
-                localStorage.getItem(
-                    "cycleMartCart"
-                )
-            ) || [];
-
-
-
-        /* =========================================================
-           UPDATE CART COUNT
-        ========================================================= */
-
-        function updateCartCount() {
-
-            const total =
-                cart.reduce(
-                    (sum, item) =>
-                        sum + item.quantity,
-                    0
-                );
-
-
-            document.getElementById(
-                "cartCount"
-            ).textContent =
-                total;
-
-        }
-
-
-
-        /* =========================================================
-           ADD TO CART
-        ========================================================= */
-
-        function addToCart(productId) {
-
-            const product =
-                products.find(
-                    item =>
-                        item.id === productId
-                );
-
-
-            if (!product) {
-                return;
-            }
-
-
-            const existing =
-                cart.find(
-                    item =>
-                        item.id === productId
-                );
-
-
-            if (existing) {
-
-                existing.quantity++;
-
-            } else {
-
-                cart.push({
-
-                    id: product.id,
-
-                    name: product.name,
-
-                    price: product.price,
-
-                    image: product.image,
-
-                    quantity: 1
-
-                });
-
-            }
-
-
-            localStorage.setItem(
-                "cycleMartCart",
-                JSON.stringify(cart)
-            );
-
-
-            updateCartCount();
-
-
-            showCartMessage(
-                `${product.name} added to your cart.`
-            );
-
-        }
-
-
-
-        /* =========================================================
-           CART MESSAGE
-        ========================================================= */
-
-        function showCartMessage(
-            message
-        ) {
-
-            const messageBox =
-                document.getElementById(
-                    "cartMessage"
-                );
-
-
-            messageBox.innerHTML =
-                `<strong>✓</strong> ${message}`;
-
-
-            messageBox.classList.add(
-                "show"
-            );
-
-
-            setTimeout(() => {
-
-                messageBox.classList.remove(
-                    "show"
-                );
-
-            }, 2500);
-
-        }
-
-
-
-        /* =========================================================
-           VIEW CART
-        ========================================================= */
-
-        function viewCart() {
-
-            window.location.href =
-                "cart.html";
-
-        }
-
-
-
         /* =========================================================
            INITIALIZE
         ========================================================= */
@@ -2205,12 +1919,9 @@
             products
         );
 
-        updateCartCount();
-
     </script>
 
 
 </body>
 
 </html>
-```

@@ -1,8 +1,8 @@
-css
 /* =========================================================
    CYCLE MART
    MAIN WEBSITE STYLESHEET
    EX-UK BICYCLES | NAKURU, KENYA
+   CART SYSTEM REMOVED
    ========================================================= */
 
 
@@ -103,64 +103,83 @@ ul {
     top: 0;
     z-index: 9999;
     width: 100%;
+
     background: rgba(255, 255, 255, 0.97);
+
     border-bottom: 1px solid #eeeeee;
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+
+    box-shadow:
+        0 3px 15px rgba(0, 0, 0, 0.05);
+
     backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
 .nav-container {
     min-height: 78px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     gap: 30px;
 }
 
 
 /* =========================================================
-   LOGO
+   5. LOGO
    ========================================================= */
 
 .logo {
     display: inline-flex;
     align-items: center;
+
     gap: 10px;
+
     flex-shrink: 0;
 }
 
 .logo img {
     width: 52px;
     height: 52px;
+
     object-fit: contain;
+
     border-radius: 8px;
 }
 
 .logo-text {
     display: flex;
     flex-direction: column;
+
     line-height: 1;
 }
 
 .logo-title {
     font-family: "Montserrat", Arial, sans-serif;
+
     font-size: 22px;
     font-weight: 900;
+
     letter-spacing: 1px;
+
     color: #111111;
 }
 
 .logo-subtitle {
     margin-top: 4px;
+
     color: #777777;
+
     font-size: 9px;
     font-weight: 800;
+
     letter-spacing: 3px;
 }
 
 
 /* =========================================================
-   NAVIGATION
+   6. NAVIGATION
    ========================================================= */
 
 .navbar {
@@ -170,26 +189,36 @@ ul {
 .nav-links {
     display: flex;
     align-items: center;
+
     gap: 28px;
 }
 
 .nav-links a {
     position: relative;
+
     padding: 8px 0;
+
     color: #333333;
+
     font-size: 12px;
     font-weight: 700;
+
     transition: var(--transition);
 }
 
 .nav-links a::after {
     content: "";
+
     position: absolute;
+
     left: 0;
     bottom: 0;
+
     width: 0;
     height: 2px;
+
     background: var(--secondary);
+
     transition: var(--transition);
 }
 
@@ -205,119 +234,139 @@ ul {
 
 
 /* =========================================================
-   NAV ACTIONS
+   7. NAV ACTIONS
+   CART REMOVED
    ========================================================= */
 
 .nav-actions {
     display: flex;
     align-items: center;
+
     gap: 12px;
 }
 
-.nav-icon {
-    width: 42px;
-    height: 42px;
-    display: grid;
-    place-items: center;
-    border-radius: 50%;
-    background: #f5f5f5;
-    color: #111111;
-    transition: var(--transition);
-}
 
-.nav-icon:hover {
-    background: var(--secondary);
-    transform: translateY(-2px);
-}
+/* =========================================================
+   8. MOBILE MENU BUTTON
+   ========================================================= */
 
 .menu-toggle {
     display: none;
+
     width: 42px;
     height: 42px;
+
     border: none;
+
     background: #111111;
+
     border-radius: 6px;
+
     padding: 9px;
 }
 
 .menu-toggle span {
     display: block;
-    height: 2px;
+
     width: 100%;
+    height: 2px;
+
     margin: 5px 0;
+
     background: #ffffff;
+
     transition: var(--transition);
 }
 
 
 /* =========================================================
-   5. BUTTONS
+   9. BUTTONS
    ========================================================= */
 
 .btn {
     display: inline-flex;
+
     align-items: center;
     justify-content: center;
+
     gap: 9px;
+
     min-height: 48px;
+
     padding: 0 22px;
+
     border-radius: var(--radius-sm);
+
     border: 2px solid transparent;
+
     font-size: 12px;
     font-weight: 800;
+
     transition: var(--transition);
 }
 
 .btn-primary {
     background: var(--secondary);
+
     color: #111111;
 }
 
 .btn-primary:hover {
     background: var(--secondary-dark);
+
     transform: translateY(-2px);
+
     box-shadow: var(--shadow-sm);
 }
 
 .btn-dark {
     background: #111111;
+
     color: #ffffff;
 }
 
 .btn-dark:hover {
     background: #2b2b2b;
+
     transform: translateY(-2px);
 }
 
 .btn-outline {
     border-color: #111111;
+
     background: transparent;
+
     color: #111111;
 }
 
 .btn-outline:hover {
     background: #111111;
+
     color: #ffffff;
 }
 
 .btn-whatsapp {
     background: var(--success);
+
     color: #ffffff;
 }
 
 .btn-whatsapp:hover {
     background: #1ebe5d;
+
     transform: translateY(-2px);
 }
 
 
 /* =========================================================
-   6. HERO
+   10. HERO
    ========================================================= */
 
 .hero {
     position: relative;
+
     min-height: 700px;
+
     display: flex;
     align-items: center;
 
@@ -336,27 +385,40 @@ ul {
 
 .hero-content {
     max-width: 720px;
+
     padding: 80px 0;
 }
 
 .hero-label {
     display: inline-block;
+
     margin-bottom: 18px;
+
     padding: 8px 13px;
+
     border-radius: 4px;
+
     background: var(--secondary);
+
     color: #111111;
+
     font-size: 10px;
     font-weight: 900;
+
     letter-spacing: 1.5px;
+
     text-transform: uppercase;
 }
 
 .hero h1 {
     margin-bottom: 20px;
+
     font-family: "Montserrat", Arial, sans-serif;
+
     font-size: clamp(42px, 7vw, 76px);
+
     font-weight: 900;
+
     line-height: 1.02;
 }
 
@@ -366,27 +428,35 @@ ul {
 
 .hero p {
     max-width: 620px;
+
     margin-bottom: 30px;
+
     color: rgba(255, 255, 255, 0.86);
+
     font-size: 15px;
+
     line-height: 1.8;
 }
 
 .hero-buttons {
     display: flex;
+
     flex-wrap: wrap;
+
     gap: 12px;
 }
 
 
 /* =========================================================
-   7. PAGE HERO
+   11. PAGE HERO
    ========================================================= */
 
 .page-hero {
     min-height: 330px;
+
     display: flex;
     align-items: center;
+
     background:
         linear-gradient(
             rgba(0, 0, 0, 0.72),
@@ -394,32 +464,41 @@ ul {
         ),
         url("../images/hero.jpg")
         center / cover no-repeat;
+
     color: #ffffff;
+
     text-align: center;
 }
 
 .page-hero-content {
     max-width: 800px;
+
     margin: auto;
 }
 
 .page-hero h1 {
     margin-bottom: 12px;
+
     font-family: "Montserrat", Arial, sans-serif;
+
     font-size: clamp(34px, 5vw, 58px);
+
     font-weight: 900;
 }
 
 .page-hero p {
     max-width: 650px;
+
     margin: auto;
+
     color: #dddddd;
+
     font-size: 14px;
 }
 
 
 /* =========================================================
-   8. SECTION DEFAULTS
+   12. SECTION DEFAULTS
    ========================================================= */
 
 .section {
@@ -432,22 +511,30 @@ ul {
 
 .section-dark {
     background: #111111;
+
     color: #ffffff;
 }
 
 .section-heading {
     max-width: 700px;
+
     margin: 0 auto 50px;
+
     text-align: center;
 }
 
 .section-label {
     display: block;
+
     margin-bottom: 10px;
+
     color: #777777;
+
     font-size: 10px;
     font-weight: 900;
+
     letter-spacing: 2px;
+
     text-transform: uppercase;
 }
 
@@ -457,15 +544,21 @@ ul {
 
 .section-heading h2 {
     margin-bottom: 14px;
+
     font-family: "Montserrat", Arial, sans-serif;
+
     font-size: clamp(30px, 4vw, 46px);
+
     font-weight: 900;
+
     line-height: 1.1;
 }
 
 .section-heading p {
     color: #777777;
+
     font-size: 13px;
+
     line-height: 1.8;
 }
 
@@ -475,89 +568,120 @@ ul {
 
 
 /* =========================================================
-   9. FEATURE CARDS
+   13. FEATURE CARDS
    ========================================================= */
 
 .features-grid {
     display: grid;
+
     grid-template-columns: repeat(4, 1fr);
+
     gap: 20px;
 }
 
 .feature-card {
     padding: 30px 24px;
+
     border: 1px solid #eeeeee;
+
     border-radius: var(--radius-md);
+
     background: #ffffff;
+
     text-align: center;
+
     transition: var(--transition);
 }
 
 .feature-card:hover {
     transform: translateY(-6px);
+
     box-shadow: var(--shadow-md);
 }
 
 .feature-icon {
     width: 65px;
     height: 65px;
+
     margin: 0 auto 18px;
+
     display: grid;
     place-items: center;
+
     border-radius: 50%;
+
     background: #fff7cf;
+
     color: #111111;
+
     font-size: 25px;
 }
 
 .feature-card h3 {
     margin-bottom: 10px;
+
     font-family: "Montserrat", Arial, sans-serif;
+
     font-size: 17px;
 }
 
 .feature-card p {
     color: #777777;
+
     font-size: 12px;
+
     line-height: 1.7;
 }
 
 
 /* =========================================================
-   10. PRODUCT GRID
+   14. PRODUCT GRID
+   NO CART SYSTEM
    ========================================================= */
 
 .products-grid,
 .shop-grid {
     display: grid;
+
     grid-template-columns: repeat(4, 1fr);
+
     gap: 24px;
 }
 
 .product-card {
     overflow: hidden;
+
     border: 1px solid #eeeeee;
+
     border-radius: var(--radius-md);
+
     background: #ffffff;
+
     transition: var(--transition);
 }
 
 .product-card:hover {
     transform: translateY(-7px);
+
     box-shadow: var(--shadow-lg);
 }
 
 .product-image {
     position: relative;
+
     height: 270px;
+
     overflow: hidden;
+
     background: #f3f3f3;
 }
 
 .product-image img {
     width: 100%;
     height: 100%;
+
     object-fit: cover;
+
     transition: transform 0.5s ease;
 }
 
@@ -567,14 +691,22 @@ ul {
 
 .product-badge {
     position: absolute;
+
     top: 15px;
     left: 15px;
+
     padding: 6px 10px;
+
     border-radius: 4px;
+
     background: var(--secondary);
+
     color: #111111;
+
     font-size: 9px;
+
     font-weight: 900;
+
     text-transform: uppercase;
 }
 
@@ -584,49 +716,73 @@ ul {
 
 .product-category {
     display: block;
+
     margin-bottom: 6px;
+
     color: #999999;
+
     font-size: 9px;
+
     font-weight: 800;
+
     letter-spacing: 1px;
+
     text-transform: uppercase;
 }
 
 .product-info h3 {
     margin-bottom: 8px;
+
     font-family: "Montserrat", Arial, sans-serif;
+
     font-size: 18px;
 }
 
 .product-info p {
     margin-bottom: 15px;
+
     color: #777777;
+
     font-size: 11px;
+
     line-height: 1.7;
 }
 
 .product-price {
     margin-bottom: 15px;
+
     font-family: "Montserrat", Arial, sans-serif;
+
     font-size: 21px;
+
     font-weight: 900;
 }
 
+
+/* =========================================================
+   PRODUCT ACTIONS
+   VIEW / ENQUIRE / WHATSAPP
+   ========================================================= */
+
 .product-actions {
     display: flex;
+
     gap: 8px;
 }
 
 .product-actions .btn {
     flex: 1;
+
     min-height: 43px;
+
     padding: 0 12px;
+
     font-size: 10px;
 }
 
 
 /* =========================================================
-   11. PRODUCT DETAIL
+   15. PRODUCT DETAIL
    ========================================================= */
 
 .product-detail {
@@ -635,37 +791,51 @@ ul {
 
 .product-detail-grid {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
+
     gap: 70px;
+
     align-items: start;
 }
 
 .product-gallery-main {
     overflow: hidden;
+
     border-radius: var(--radius-lg);
+
     background: #f5f5f5;
 }
 
 .product-gallery-main img {
     width: 100%;
     height: 550px;
+
     object-fit: cover;
 }
 
 .product-thumbnails {
     display: grid;
+
     grid-template-columns: repeat(5, 1fr);
+
     gap: 10px;
+
     margin-top: 12px;
 }
 
 .product-thumbnails img {
     width: 100%;
     height: 85px;
+
     object-fit: cover;
+
     border: 2px solid transparent;
+
     border-radius: 6px;
+
     cursor: pointer;
+
     transition: var(--transition);
 }
 
@@ -676,36 +846,51 @@ ul {
 
 .product-detail-info h1 {
     margin-bottom: 12px;
+
     font-family: "Montserrat", Arial, sans-serif;
+
     font-size: clamp(30px, 4vw, 48px);
+
     line-height: 1.1;
 }
 
 .product-detail-price {
     margin-bottom: 22px;
+
     font-family: "Montserrat", Arial, sans-serif;
+
     font-size: 28px;
+
     font-weight: 900;
 }
 
 .product-detail-info > p {
     margin-bottom: 25px;
+
     color: #666666;
+
     font-size: 14px;
+
     line-height: 1.9;
 }
 
 .product-specs {
     margin: 25px 0;
+
     border-top: 1px solid #eeeeee;
 }
 
 .spec-row {
     display: flex;
+
     justify-content: space-between;
+
     gap: 20px;
+
     padding: 13px 0;
+
     border-bottom: 1px solid #eeeeee;
+
     font-size: 12px;
 }
 
@@ -719,25 +904,31 @@ ul {
 
 
 /* =========================================================
-   12. ABOUT SECTION
+   16. ABOUT SECTION
    ========================================================= */
 
 .about-grid {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
+
     gap: 70px;
+
     align-items: center;
 }
 
 .about-image {
     overflow: hidden;
+
     border-radius: var(--radius-lg);
 }
 
 .about-image img {
     width: 100%;
     height: 500px;
+
     object-fit: cover;
+
     transition: transform 0.6s ease;
 }
 
@@ -747,36 +938,50 @@ ul {
 
 .about-content h2 {
     margin-bottom: 20px;
+
     font-family: "Montserrat", Arial, sans-serif;
+
     font-size: clamp(30px, 4vw, 46px);
+
     line-height: 1.1;
 }
 
 .about-content p {
     margin-bottom: 18px;
+
     color: #666666;
+
     font-size: 13px;
+
     line-height: 1.9;
 }
 
 
 /* =========================================================
-   13. WHY CYCLE MART
+   17. WHY CYCLE MART
    ========================================================= */
 
 .why-grid {
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
+
     gap: 22px;
 }
 
 .why-card {
     position: relative;
+
     min-height: 260px;
+
     overflow: hidden;
+
     display: flex;
+
     align-items: flex-end;
+
     padding: 25px;
+
     border-radius: var(--radius-md);
 
     background:
@@ -810,54 +1015,77 @@ ul {
 
 .why-card h3 {
     margin-bottom: 7px;
+
     font-family: "Montserrat", Arial, sans-serif;
+
     font-size: 20px;
 }
 
 .why-card p {
     color: #dddddd;
+
     font-size: 11px;
 }
 
 
 /* =========================================================
-   14. GALLERY
+   18. GALLERY
    ========================================================= */
 
 .gallery-grid {
     display: grid;
+
     grid-template-columns: repeat(4, 1fr);
+
     gap: 15px;
 }
 
 .gallery-item {
     position: relative;
+
     overflow: hidden;
+
     aspect-ratio: 1 / 1;
+
     border-radius: 8px;
+
     background: #eeeeee;
+
     cursor: pointer;
 }
 
 .gallery-item img {
     width: 100%;
     height: 100%;
+
     object-fit: cover;
+
     transition: transform 0.5s ease;
 }
 
 .gallery-item::after {
     content: "\f00e";
+
     position: absolute;
+
     inset: 0;
+
     display: grid;
+
     place-items: center;
+
     background: rgba(0, 0, 0, 0.42);
+
     color: #ffffff;
+
     font-family: "Font Awesome 6 Free";
+
     font-weight: 900;
+
     font-size: 24px;
+
     opacity: 0;
+
     transition: var(--transition);
 }
 
@@ -871,11 +1099,12 @@ ul {
 
 
 /* =========================================================
-   15. DELIVERY
+   19. DELIVERY
    ========================================================= */
 
 .delivery-box {
     padding: 55px;
+
     border-radius: var(--radius-lg);
 
     background:
@@ -891,31 +1120,45 @@ ul {
 
 .delivery-box h2 {
     max-width: 700px;
+
     margin-bottom: 15px;
+
     font-family: "Montserrat", Arial, sans-serif;
+
     font-size: clamp(30px, 4vw, 48px);
+
     line-height: 1.1;
 }
 
 .delivery-box p {
     max-width: 650px;
+
     margin-bottom: 25px;
+
     color: #dddddd;
+
     font-size: 13px;
+
     line-height: 1.8;
 }
 
 .delivery-list {
     display: grid;
+
     gap: 12px;
+
     margin-bottom: 30px;
 }
 
 .delivery-list li {
     display: flex;
+
     align-items: center;
+
     gap: 10px;
+
     color: #eeeeee;
+
     font-size: 12px;
 }
 
@@ -925,34 +1168,50 @@ ul {
 
 
 /* =========================================================
-   16. FAQ
+   20. FAQ
    ========================================================= */
 
 .faq-container {
     max-width: 850px;
+
     margin: auto;
 }
 
 .faq-item {
     margin-bottom: 12px;
+
     border: 1px solid #e7e7e7;
+
     border-radius: 8px;
+
     background: #ffffff;
+
     overflow: hidden;
 }
 
 .faq-question {
     width: 100%;
+
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
+
     gap: 20px;
+
     padding: 20px;
+
     border: none;
+
     background: #ffffff;
+
     color: #111111;
+
     text-align: left;
+
     font-size: 13px;
+
     font-weight: 800;
 }
 
@@ -962,16 +1221,25 @@ ul {
 
 .faq-answer {
     max-height: 0;
+
     overflow: hidden;
+
     padding: 0 20px;
+
     color: #777777;
+
     font-size: 12px;
+
     line-height: 1.8;
-    transition: max-height 0.35s ease, padding 0.35s ease;
+
+    transition:
+        max-height 0.35s ease,
+        padding 0.35s ease;
 }
 
 .faq-item.active .faq-answer {
     max-height: 300px;
+
     padding: 0 20px 20px;
 }
 
@@ -981,62 +1249,83 @@ ul {
 
 
 /* =========================================================
-   17. CONTACT
+   21. CONTACT
    ========================================================= */
 
 .contact-grid {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
+
     gap: 60px;
+
     align-items: start;
 }
 
 .contact-info h2,
 .contact-form-wrapper h2 {
     margin-bottom: 15px;
+
     font-family: "Montserrat", Arial, sans-serif;
+
     font-size: 38px;
 }
 
 .contact-info > p {
     margin-bottom: 25px;
+
     color: #666666;
+
     font-size: 13px;
+
     line-height: 1.8;
 }
 
 .contact-items {
     display: grid;
+
     gap: 15px;
 }
 
 .contact-item {
     display: flex;
+
     align-items: center;
+
     gap: 13px;
 }
 
 .contact-item-icon {
     width: 46px;
     height: 46px;
+
     flex-shrink: 0;
+
     display: grid;
+
     place-items: center;
+
     border-radius: 7px;
+
     background: #fff7cf;
+
     color: #111111;
 }
 
 .contact-item strong {
     display: block;
+
     margin-bottom: 2px;
+
     font-size: 11px;
+
     text-transform: uppercase;
 }
 
 .contact-item a,
 .contact-item span {
     color: #666666;
+
     font-size: 12px;
 }
 
@@ -1046,14 +1335,18 @@ ul {
 
 
 /* =========================================================
-   CONTACT FORM
+   22. CONTACT FORM
    ========================================================= */
 
 .contact-form {
     padding: 35px;
+
     border: 1px solid #eeeeee;
+
     border-radius: var(--radius-lg);
+
     background: #ffffff;
+
     box-shadow: var(--shadow-sm);
 }
 
@@ -1063,9 +1356,13 @@ ul {
 
 .form-group label {
     display: block;
+
     margin-bottom: 7px;
+
     color: #333333;
+
     font-size: 11px;
+
     font-weight: 800;
 }
 
@@ -1073,18 +1370,27 @@ ul {
 .form-group textarea,
 .form-group select {
     width: 100%;
+
     border: 1px solid #dddddd;
+
     border-radius: 6px;
+
     padding: 13px 14px;
+
     outline: none;
+
     background: #ffffff;
+
     color: #111111;
+
     font-size: 12px;
+
     transition: var(--transition);
 }
 
 .form-group textarea {
     min-height: 140px;
+
     resize: vertical;
 }
 
@@ -1092,35 +1398,44 @@ ul {
 .form-group textarea:focus,
 .form-group select:focus {
     border-color: var(--secondary);
-    box-shadow: 0 0 0 3px rgba(245, 196, 0, 0.12);
+
+    box-shadow:
+        0 0 0 3px rgba(245, 196, 0, 0.12);
 }
 
 
 /* =========================================================
-   18. LOCATION / MAP
+   23. LOCATION / MAP
    ========================================================= */
 
 .map-container {
     width: 100%;
+
     min-height: 400px;
+
     overflow: hidden;
+
     border-radius: var(--radius-lg);
+
     background: #eeeeee;
 }
 
 .map-container iframe {
     width: 100%;
+
     height: 400px;
+
     border: 0;
 }
 
 
 /* =========================================================
-   19. CTA
+   24. CTA
    ========================================================= */
 
 .cta {
     padding: 80px 0;
+
     background:
         linear-gradient(
             90deg,
@@ -1129,49 +1444,68 @@ ul {
         ),
         url("../images/bikes/IMG-20260816-WA0040.jpg")
         center / cover no-repeat;
+
     color: #ffffff;
 }
 
 .cta-content {
     max-width: 750px;
+
     margin: auto;
+
     text-align: center;
 }
 
 .cta h2 {
     margin-bottom: 15px;
+
     font-family: "Montserrat", Arial, sans-serif;
+
     font-size: clamp(30px, 5vw, 52px);
+
     line-height: 1.1;
 }
 
 .cta p {
     margin-bottom: 25px;
+
     color: #dddddd;
+
     font-size: 13px;
 }
 
 .cta-buttons {
     display: flex;
+
     justify-content: center;
+
     flex-wrap: wrap;
+
     gap: 12px;
 }
 
 
 /* =========================================================
-   20. FOOTER
+   25. FOOTER
    ========================================================= */
 
 .footer {
     padding: 70px 0 25px;
+
     background: #111111;
+
     color: #ffffff;
 }
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+
+    grid-template-columns:
+        1.5fr
+        1fr
+        1fr
+        1.2fr;
+
     gap: 50px;
 }
 
@@ -1185,25 +1519,33 @@ ul {
 
 .footer-brand p {
     max-width: 300px;
+
     margin-top: 18px;
+
     color: #999999;
+
     font-size: 12px;
+
     line-height: 1.8;
 }
 
 .footer-column h3 {
     margin-bottom: 17px;
+
     font-family: "Montserrat", Arial, sans-serif;
+
     font-size: 14px;
 }
 
 .footer-column ul {
     display: grid;
+
     gap: 10px;
 }
 
 .footer-column li {
     color: #999999;
+
     font-size: 11px;
 }
 
@@ -1217,24 +1559,31 @@ ul {
 
 .footer-column i {
     width: 18px;
+
     color: var(--secondary);
 }
 
 .footer-bottom {
     margin-top: 45px;
+
     padding-top: 22px;
+
     border-top: 1px solid #292929;
+
     text-align: center;
 }
 
 .footer-bottom p {
     color: #777777;
+
     font-size: 10px;
 }
 
 
 /* =========================================================
-   21. MOBILE BOTTOM NAV
+   26. MOBILE BOTTOM NAVIGATION
+   6 ITEMS
+   HOME / SHOP / ABOUT / GALLERY / DELIVERY / FAQ
    ========================================================= */
 
 .mobile-bottom-nav {
@@ -1243,61 +1592,74 @@ ul {
 
 
 /* =========================================================
-   22. FLOATING WHATSAPP
+   27. FLOATING WHATSAPP
    ========================================================= */
 
 .floating-whatsapp {
     position: fixed;
+
     right: 20px;
     bottom: 20px;
+
     z-index: 9998;
 
     width: 56px;
     height: 56px;
 
     display: grid;
+
     place-items: center;
 
     border-radius: 50%;
+
     background: #25d366;
+
     color: #ffffff;
 
     font-size: 25px;
 
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.20);
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.20);
 
     transition: var(--transition);
 }
 
 .floating-whatsapp:hover {
     transform: scale(1.08);
+
     background: #1ebe5d;
 }
 
 
 /* =========================================================
-   23. SCROLL TO TOP
+   28. SCROLL TO TOP
    ========================================================= */
 
 .scroll-top {
     position: fixed;
+
     right: 20px;
     bottom: 90px;
+
     z-index: 9997;
 
     width: 42px;
     height: 42px;
 
     display: grid;
+
     place-items: center;
 
     border: none;
+
     border-radius: 50%;
 
     background: #111111;
+
     color: #ffffff;
 
     opacity: 0;
+
     visibility: hidden;
 
     transition: var(--transition);
@@ -1305,17 +1667,19 @@ ul {
 
 .scroll-top.show {
     opacity: 1;
+
     visibility: visible;
 }
 
 .scroll-top:hover {
     background: var(--secondary);
+
     color: #111111;
 }
 
 
 /* =========================================================
-   24. ANIMATIONS
+   29. ANIMATIONS
    ========================================================= */
 
 .fade-up {
@@ -1323,15 +1687,19 @@ ul {
 }
 
 @keyframes fadeUp {
+
     from {
         opacity: 0;
+
         transform: translateY(25px);
     }
 
     to {
         opacity: 1;
+
         transform: translateY(0);
     }
+
 }
 
 .fade-in {
@@ -1339,6 +1707,7 @@ ul {
 }
 
 @keyframes fadeIn {
+
     from {
         opacity: 0;
     }
@@ -1346,11 +1715,12 @@ ul {
     to {
         opacity: 1;
     }
+
 }
 
 
 /* =========================================================
-   25. TABLET
+   30. TABLET
    ========================================================= */
 
 @media (max-width: 1050px) {
@@ -1375,11 +1745,12 @@ ul {
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
 }
 
 
 /* =========================================================
-   26. MOBILE NAVIGATION
+   31. MOBILE NAVIGATION
    ========================================================= */
 
 @media (max-width: 850px) {
@@ -1390,7 +1761,9 @@ ul {
 
     .navbar {
         position: absolute;
+
         top: 70px;
+
         left: 0;
         right: 0;
 
@@ -1399,7 +1772,9 @@ ul {
         padding: 20px;
 
         background: #ffffff;
+
         border-top: 1px solid #eeeeee;
+
         box-shadow: var(--shadow-md);
     }
 
@@ -1409,7 +1784,9 @@ ul {
 
     .nav-links {
         flex-direction: column;
+
         align-items: stretch;
+
         gap: 0;
     }
 
@@ -1419,6 +1796,7 @@ ul {
 
     .nav-links a {
         display: block;
+
         padding: 15px 5px;
     }
 
@@ -1434,6 +1812,7 @@ ul {
     .about-grid,
     .contact-grid {
         grid-template-columns: 1fr;
+
         gap: 40px;
     }
 
@@ -1449,11 +1828,12 @@ ul {
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
 }
 
 
 /* =========================================================
-   27. SMALL MOBILE
+   32. SMALL MOBILE
    ========================================================= */
 
 @media (max-width: 600px) {
@@ -1487,11 +1867,6 @@ ul {
         font-size: 7px;
     }
 
-    .nav-icon {
-        width: 38px;
-        height: 38px;
-    }
-
     .hero {
         min-height: 650px;
     }
@@ -1510,6 +1885,7 @@ ul {
 
     .hero-buttons {
         flex-direction: column;
+
         align-items: stretch;
     }
 
@@ -1526,6 +1902,7 @@ ul {
 
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
+
         gap: 8px;
     }
 
@@ -1563,33 +1940,41 @@ ul {
 
     .footer-grid {
         grid-template-columns: 1fr;
+
         gap: 35px;
     }
 
     .floating-whatsapp {
         right: 15px;
+
         bottom: 82px;
     }
 
     .scroll-top {
         right: 15px;
+
         bottom: 145px;
     }
 
 
-    /* MOBILE BOTTOM NAV */
+    /* =====================================================
+       MOBILE BOTTOM NAV
+       ===================================================== */
 
     .mobile-bottom-nav {
         position: fixed;
+
         left: 0;
         right: 0;
         bottom: 0;
+
         z-index: 99999;
 
         height: 68px;
 
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+
+        grid-template-columns: repeat(6, 1fr);
 
         background: rgba(255, 255, 255, 0.97);
 
@@ -1599,19 +1984,25 @@ ul {
             0 -5px 25px rgba(0, 0, 0, 0.10);
 
         backdrop-filter: blur(12px);
+
         -webkit-backdrop-filter: blur(12px);
     }
 
     .mobile-nav-item {
         display: flex;
+
         flex-direction: column;
+
         align-items: center;
+
         justify-content: center;
+
         gap: 4px;
 
         color: #777777;
 
         font-size: 8px;
+
         font-weight: 800;
 
         transition: var(--transition);
@@ -1629,11 +2020,12 @@ ul {
     .mobile-nav-item.active i {
         color: var(--secondary-dark);
     }
+
 }
 
 
 /* =========================================================
-   28. EXTRA SMALL DEVICES
+   33. EXTRA SMALL DEVICES
    ========================================================= */
 
 @media (max-width: 400px) {
@@ -1660,6 +2052,8 @@ ul {
 
     .mobile-bottom-nav {
         height: 64px;
+
+        grid-template-columns: repeat(6, 1fr);
     }
 
     .mobile-nav-item {
@@ -1669,10 +2063,10 @@ ul {
     .mobile-nav-item i {
         font-size: 15px;
     }
+
 }
 
 
 /* =========================================================
    END OF CYCLE MART CSS
    ========================================================= */
-```

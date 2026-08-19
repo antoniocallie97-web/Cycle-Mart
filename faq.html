@@ -2,37 +2,61 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
+    <meta
+        name="description"
         content="Frequently asked questions about Cycle Mart Ex-UK bicycles, bicycle condition, ordering, delivery, payments and returns in Kenya.">
 
-    <meta name="keywords"
+    <meta
+        name="keywords"
         content="Cycle Mart FAQ, Ex-UK bicycles Kenya, used bicycles Kenya, bicycles Nakuru, bicycle delivery Kenya">
 
     <meta name="author" content="Cycle Mart">
+
     <meta name="robots" content="index, follow">
 
     <title>FAQ | Cycle Mart Kenya | Ex-UK Bicycles</title>
 
-    <!-- Google Fonts -->
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
 
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800;900&display=swap"
         rel="stylesheet">
 
-    <!-- Font Awesome -->
+
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
+
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <!-- Main CSS -->
+
+    <!-- =====================================================
+         MAIN CSS
+    ====================================================== -->
+
     <link rel="stylesheet" href="css/style.css">
+
     <link rel="stylesheet" href="css/responsive.css">
+
     <link rel="stylesheet" href="css/animations.css">
+
 
     <style>
 
@@ -41,9 +65,11 @@
         ===================================================== */
 
         .faq-hero {
+
             min-height: 430px;
 
             display: flex;
+
             align-items: center;
 
             background:
@@ -57,48 +83,69 @@
             color: #fff;
         }
 
+
         .faq-hero-content {
+
             max-width: 720px;
+
         }
 
+
         .faq-label {
+
             display: inline-block;
 
             margin-bottom: 15px;
+
             padding: 8px 13px;
 
             border-radius: 4px;
 
             background: #111;
+
             color: #fff;
 
             font-size: 10px;
+
             font-weight: 800;
 
             letter-spacing: 1.8px;
+
             text-transform: uppercase;
+
         }
 
+
         .faq-hero h1 {
+
             margin-bottom: 18px;
 
             font-family: "Montserrat", sans-serif;
 
             font-size: clamp(40px, 6vw, 68px);
+
             line-height: 1.05;
+
         }
+
 
         .faq-hero h1 span {
+
             color: #f2b705;
+
         }
 
+
         .faq-hero p {
+
             max-width: 620px;
 
             color: rgba(255, 255, 255, 0.85);
 
             font-size: 14px;
+
             line-height: 1.8;
+
         }
 
 
@@ -107,19 +154,27 @@
         ===================================================== */
 
         .faq-section {
+
             padding: 90px 0;
+
             background: #fff;
+
         }
 
+
         .faq-heading {
+
             max-width: 700px;
 
             margin: 0 auto 50px;
 
             text-align: center;
+
         }
 
+
         .faq-heading span {
+
             display: block;
 
             margin-bottom: 10px;
@@ -127,26 +182,37 @@
             color: #777;
 
             font-size: 10px;
+
             font-weight: 800;
 
             letter-spacing: 2px;
+
             text-transform: uppercase;
+
         }
 
+
         .faq-heading h2 {
+
             margin-bottom: 15px;
 
             font-family: "Montserrat", sans-serif;
 
             font-size: clamp(30px, 4vw, 44px);
+
             line-height: 1.1;
+
         }
 
+
         .faq-heading p {
+
             color: #777;
 
             font-size: 13px;
+
             line-height: 1.8;
+
         }
 
 
@@ -155,14 +221,20 @@
         ===================================================== */
 
         .faq-container {
+
             max-width: 900px;
+
             margin: 0 auto;
+
         }
 
+
         .faq-item {
+
             margin-bottom: 14px;
 
             border: 1px solid #e7e7e7;
+
             border-radius: 8px;
 
             background: #fff;
@@ -170,20 +242,29 @@
             overflow: hidden;
 
             transition: 0.25s ease;
+
         }
 
+
         .faq-item:hover {
+
             border-color: #d2d2d2;
 
             box-shadow:
-                0 10px 30px rgba(0, 0, 0, 0.06);
+                0 10px 30px
+                rgba(0, 0, 0, 0.06);
+
         }
 
+
         .faq-question {
+
             width: 100%;
 
             display: flex;
+
             align-items: center;
+
             justify-content: space-between;
 
             gap: 20px;
@@ -191,27 +272,36 @@
             padding: 22px 24px;
 
             border: none;
+
             outline: none;
 
             background: #fff;
+
             color: #111;
 
             text-align: left;
 
             font-family: "Montserrat", sans-serif;
+
             font-size: 14px;
+
             font-weight: 700;
 
             cursor: pointer;
+
         }
 
+
         .faq-question i {
+
             flex-shrink: 0;
 
             width: 30px;
+
             height: 30px;
 
             display: grid;
+
             place-items: center;
 
             border-radius: 50%;
@@ -221,17 +311,23 @@
             font-size: 11px;
 
             transition: transform 0.25s ease;
+
         }
 
+
         .faq-answer {
+
             display: grid;
 
             grid-template-rows: 0fr;
 
             transition: grid-template-rows 0.3s ease;
+
         }
 
+
         .faq-answer-inner {
+
             overflow: hidden;
 
             padding: 0 24px;
@@ -239,26 +335,41 @@
             color: #666;
 
             font-size: 13px;
+
             line-height: 1.8;
+
         }
+
 
         .faq-item.active .faq-answer {
+
             grid-template-rows: 1fr;
+
         }
+
 
         .faq-item.active .faq-answer-inner {
+
             padding-bottom: 23px;
+
         }
+
 
         .faq-item.active .faq-question {
+
             color: #111;
+
         }
 
+
         .faq-item.active .faq-question i {
+
             transform: rotate(180deg);
 
             background: #111;
+
             color: #fff;
+
         }
 
 
@@ -267,6 +378,7 @@
         ===================================================== */
 
         .faq-categories {
+
             margin-top: 70px;
 
             display: grid;
@@ -275,9 +387,12 @@
                 repeat(3, 1fr);
 
             gap: 20px;
+
         }
 
+
         .faq-category {
+
             padding: 30px 25px;
 
             border-radius: 8px;
@@ -285,38 +400,52 @@
             background: #f7f7f7;
 
             text-align: center;
+
         }
 
+
         .faq-category-icon {
+
             width: 55px;
+
             height: 55px;
 
             margin: 0 auto 18px;
 
             display: grid;
+
             place-items: center;
 
             border-radius: 50%;
 
             background: #111;
+
             color: #fff;
 
             font-size: 20px;
+
         }
 
+
         .faq-category h3 {
+
             margin-bottom: 10px;
 
             font-family: "Montserrat", sans-serif;
 
             font-size: 16px;
+
         }
 
+
         .faq-category p {
+
             color: #777;
 
             font-size: 11px;
+
             line-height: 1.7;
+
         }
 
 
@@ -325,6 +454,7 @@
         ===================================================== */
 
         .faq-cta {
+
             padding: 80px 0;
 
             background: #111;
@@ -332,31 +462,45 @@
             color: #fff;
 
             text-align: center;
+
         }
+
 
         .faq-cta-content {
+
             max-width: 700px;
+
             margin: auto;
+
         }
 
+
         .faq-cta h2 {
+
             margin-bottom: 15px;
 
             font-family: "Montserrat", sans-serif;
 
             font-size: clamp(30px, 4vw, 45px);
+
         }
 
+
         .faq-cta p {
+
             margin-bottom: 25px;
 
             color: #aaa;
 
             font-size: 13px;
+
             line-height: 1.8;
+
         }
 
+
         .faq-cta-buttons {
+
             display: flex;
 
             justify-content: center;
@@ -364,14 +508,18 @@
             flex-wrap: wrap;
 
             gap: 12px;
+
         }
 
+
         .faq-cta-buttons a {
+
             min-height: 48px;
 
             display: inline-flex;
 
             align-items: center;
+
             justify-content: center;
 
             gap: 9px;
@@ -381,31 +529,31 @@
             border-radius: 5px;
 
             font-size: 11px;
+
             font-weight: 800;
 
             text-decoration: none;
 
             transition: 0.25s ease;
+
         }
 
-        .faq-whatsapp {
-            background: #25d366;
-            color: #fff;
-        }
-
-        .faq-whatsapp:hover {
-            background: #1ebe5d;
-            transform: translateY(-2px);
-        }
 
         .faq-contact {
+
             background: #fff;
+
             color: #111;
+
         }
 
+
         .faq-contact:hover {
+
             background: #eee;
+
             transform: translateY(-2px);
+
         }
 
 
@@ -416,37 +564,59 @@
         @media (max-width: 800px) {
 
             .faq-categories {
+
                 grid-template-columns: 1fr;
+
             }
 
+
             .faq-section {
+
                 padding: 65px 0;
+
             }
 
         }
 
+
         @media (max-width: 600px) {
 
             .faq-hero {
+
                 min-height: 380px;
+
             }
+
 
             .faq-question {
+
                 padding: 19px;
+
                 font-size: 13px;
+
             }
+
 
             .faq-answer-inner {
+
                 padding-left: 19px;
+
                 padding-right: 19px;
+
             }
+
 
             .faq-cta-buttons {
+
                 flex-direction: column;
+
             }
 
+
             .faq-cta-buttons a {
+
                 width: 100%;
+
             }
 
         }
@@ -466,6 +636,7 @@
     <header class="header">
 
         <div class="container nav-container">
+
 
             <!-- LOGO -->
 
@@ -503,48 +674,69 @@
                 <ul class="nav-links">
 
                     <li>
+
                         <a href="index.html">
                             Home
                         </a>
+
                     </li>
 
+
                     <li>
+
                         <a href="shop.html">
                             Shop
                         </a>
+
                     </li>
 
+
                     <li>
+
                         <a href="about.html">
                             About
                         </a>
+
                     </li>
 
+
                     <li>
+
                         <a href="why-cycle-mart.html">
                             Why Cycle Mart
                         </a>
+
                     </li>
 
+
                     <li>
+
                         <a href="gallery.html">
                             Gallery
                         </a>
+
                     </li>
 
+
                     <li>
-                        <a
-                            href="delivery.html">
+
+                        <a href="delivery.html">
                             Delivery
                         </a>
+
                     </li>
 
+
                     <li>
+
                         <a
                             href="faq.html"
                             class="active">
+
                             FAQ
+
                         </a>
+
                     </li>
 
                 </ul>
@@ -552,18 +744,12 @@
             </nav>
 
 
-            <!-- NAV ACTIONS -->
+            <!-- =================================================
+                 MOBILE MENU BUTTON
+                 CART REMOVED
+            ================================================== -->
 
             <div class="nav-actions">
-
-                <a
-                    href="shop.html"
-                    class="nav-icon"
-                    aria-label="Shopping Cart">
-
-                    <i class="fa-solid fa-cart-shopping"></i>
-
-                </a>
 
                 <button
                     type="button"
@@ -572,7 +758,9 @@
                     aria-label="Open navigation menu">
 
                     <span></span>
+
                     <span></span>
+
                     <span></span>
 
                 </button>
@@ -591,9 +779,9 @@
     <main>
 
 
-        <!-- =====================================================
+        <!-- =================================================
              HERO
-        ===================================================== -->
+        ================================================== -->
 
         <section class="faq-hero">
 
@@ -605,16 +793,25 @@
                         Cycle Mart
                     </span>
 
+
                     <h1>
+
                         Frequently Asked
-                        <span>Questions</span>
+
+                        <span>
+                            Questions
+                        </span>
+
                     </h1>
 
+
                     <p>
+
                         Find answers to common questions about
                         our Ex-UK bicycles, ordering process,
                         bicycle condition and delivery services
                         in Kenya.
+
                     </p>
 
                 </div>
@@ -624,13 +821,14 @@
         </section>
 
 
-        <!-- =====================================================
+        <!-- =================================================
              FAQ
-        ===================================================== -->
+        ================================================== -->
 
         <section class="faq-section">
 
             <div class="container">
+
 
                 <div class="faq-heading">
 
@@ -638,14 +836,18 @@
                         Need To Know?
                     </span>
 
+
                     <h2>
                         How Can We Help?
                     </h2>
 
+
                     <p>
+
                         Here are some of the questions customers
                         commonly ask before purchasing a bicycle
                         from Cycle Mart.
+
                     </p>
 
                 </div>
@@ -669,6 +871,7 @@
                             <i class="fa-solid fa-chevron-down"></i>
 
                         </button>
+
 
                         <div class="faq-answer">
 
@@ -701,6 +904,7 @@
                             <i class="fa-solid fa-chevron-down"></i>
 
                         </button>
+
 
                         <div class="faq-answer">
 
@@ -737,6 +941,7 @@
 
                         </button>
 
+
                         <div class="faq-answer">
 
                             <div class="faq-answer-inner">
@@ -770,6 +975,7 @@
 
                         </button>
 
+
                         <div class="faq-answer">
 
                             <div class="faq-answer-inner">
@@ -802,6 +1008,7 @@
 
                         </button>
 
+
                         <div class="faq-answer">
 
                             <div class="faq-answer-inner">
@@ -831,6 +1038,7 @@
                             <i class="fa-solid fa-chevron-down"></i>
 
                         </button>
+
 
                         <div class="faq-answer">
 
@@ -865,6 +1073,7 @@
 
                         </button>
 
+
                         <div class="faq-answer">
 
                             <div class="faq-answer-inner">
@@ -898,6 +1107,7 @@
 
                         </button>
 
+
                         <div class="faq-answer">
 
                             <div class="faq-answer-inner">
@@ -928,6 +1138,7 @@
                             <i class="fa-solid fa-chevron-down"></i>
 
                         </button>
+
 
                         <div class="faq-answer">
 
@@ -960,6 +1171,7 @@
                             <i class="fa-solid fa-chevron-down"></i>
 
                         </button>
+
 
                         <div class="faq-answer">
 
@@ -994,13 +1206,17 @@
 
                         </div>
 
+
                         <h3>
                             Bicycles
                         </h3>
 
+
                         <p>
+
                             Questions about our Ex-UK bicycles,
                             available models and condition.
+
                         </p>
 
                     </div>
@@ -1014,13 +1230,17 @@
 
                         </div>
 
+
                         <h3>
                             Delivery
                         </h3>
 
+
                         <p>
+
                             Information about delivery and
                             collection arrangements.
+
                         </p>
 
                     </div>
@@ -1034,13 +1254,17 @@
 
                         </div>
 
+
                         <h3>
                             Support
                         </h3>
 
+
                         <p>
+
                             Contact us for bicycle information,
                             availability and purchasing assistance.
+
                         </p>
 
                     </div>
@@ -1052,9 +1276,9 @@
         </section>
 
 
-        <!-- =====================================================
+        <!-- =================================================
              CTA
-        ===================================================== -->
+        ================================================== -->
 
         <section class="faq-cta">
 
@@ -1062,14 +1286,19 @@
 
                 <div class="faq-cta-content">
 
+
                     <h2>
                         Still Have Questions?
                     </h2>
 
+
                     <p>
+
                         Contact Cycle Mart and speak with us about
                         the bicycle you are interested in.
+
                     </p>
+
 
                     <div class="faq-cta-buttons">
 
@@ -1117,11 +1346,13 @@
                             src="images/cycle-mart-logo.jpg"
                             alt="Cycle Mart Logo">
 
+
                         <div class="logo-text">
 
                             <strong class="logo-title">
                                 CYCLE
                             </strong>
+
 
                             <span class="logo-subtitle">
                                 MART
@@ -1131,9 +1362,12 @@
 
                     </a>
 
+
                     <p>
+
                         Quality Ex-UK bicycles for cycling,
                         commuting, fitness and everyday rides.
+
                     </p>
 
                 </div>
@@ -1147,18 +1381,24 @@
                         Shop
                     </h3>
 
+
                     <ul>
 
                         <li>
+
                             <a href="shop.html">
                                 Bicycles
                             </a>
+
                         </li>
 
+
                         <li>
+
                             <a href="gallery.html">
                                 Gallery
                             </a>
+
                         </li>
 
                     </ul>
@@ -1174,30 +1414,42 @@
                         Company
                     </h3>
 
+
                     <ul>
 
                         <li>
+
                             <a href="about.html">
                                 About Us
                             </a>
+
                         </li>
 
+
                         <li>
+
                             <a href="why-cycle-mart.html">
                                 Why Cycle Mart
                             </a>
+
                         </li>
 
+
                         <li>
+
                             <a href="delivery.html">
                                 Delivery
                             </a>
+
                         </li>
 
+
                         <li>
+
                             <a href="faq.html">
                                 FAQ
                             </a>
+
                         </li>
 
                     </ul>
@@ -1213,6 +1465,7 @@
                         Visit Us
                     </h3>
 
+
                     <ul>
 
                         <li>
@@ -1223,6 +1476,7 @@
                             Kenyatta Lane
 
                         </li>
+
 
                         <li>
 
@@ -1242,10 +1496,15 @@
             <div class="footer-bottom">
 
                 <p>
+
                     ©
+
                     <span id="currentYear"></span>
+
                     Cycle Mart.
+
                     All rights reserved.
+
                 </p>
 
             </div>
@@ -1256,12 +1515,13 @@
 
 
     <!-- =====================================================
-         MOBILE NAVIGATION
+         MOBILE BOTTOM NAVIGATION
     ===================================================== -->
 
     <nav
         class="mobile-bottom-nav"
         aria-label="Mobile navigation">
+
 
         <a
             href="index.html"
@@ -1275,6 +1535,7 @@
 
         </a>
 
+
         <a
             href="shop.html"
             class="mobile-nav-item">
@@ -1286,6 +1547,7 @@
             </span>
 
         </a>
+
 
         <a
             href="about.html"
@@ -1299,6 +1561,7 @@
 
         </a>
 
+
         <a
             href="gallery.html"
             class="mobile-nav-item">
@@ -1311,6 +1574,7 @@
 
         </a>
 
+
         <a
             href="delivery.html"
             class="mobile-nav-item">
@@ -1322,6 +1586,7 @@
             </span>
 
         </a>
+
 
         <a
             href="faq.html"
@@ -1353,6 +1618,7 @@
             "DOMContentLoaded",
             function () {
 
+
                 /* ============================
                    CURRENT YEAR
                 ============================ */
@@ -1361,6 +1627,7 @@
                     document.getElementById(
                         "currentYear"
                     );
+
 
                 if (year) {
 
@@ -1383,6 +1650,7 @@
                 faqItems.forEach(
                     function (item) {
 
+
                         const question =
                             item.querySelector(
                                 ".faq-question"
@@ -1392,6 +1660,7 @@
                         question.addEventListener(
                             "click",
                             function () {
+
 
                                 const wasActive =
                                     item.classList.contains(
@@ -1445,6 +1714,7 @@
                 mobileNavItems.forEach(
                     function (item) {
 
+
                         const linkPage =
                             item
                                 .getAttribute("href")
@@ -1454,11 +1724,14 @@
 
 
                         if (
+
                             linkPage === currentPage ||
+
                             (
                                 currentPage === "" &&
                                 linkPage === "index.html"
                             )
+
                         ) {
 
                             item.classList.add(
@@ -1475,7 +1748,7 @@
 
     </script>
 
+
 </body>
 
 </html>
-```
