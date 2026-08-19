@@ -27,7 +27,11 @@
 
     <title>Gallery | Cycle Mart | Ex-UK Bicycles in Nakuru</title>
 
-    <!-- GOOGLE FONTS -->
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -36,16 +40,25 @@
         rel="stylesheet"
     >
 
-    <!-- FONT AWESOME -->
+
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
+
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     >
 
-    <!-- SITE CSS -->
+
+    <!-- =====================================================
+         SITE CSS
+    ====================================================== -->
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/animations.css">
+
 
     <style>
 
@@ -56,6 +69,7 @@
         .gallery-page {
             background: #fff;
         }
+
 
         /* =====================================================
            HERO
@@ -84,9 +98,11 @@
             color: #fff;
         }
 
+
         .gallery-hero-content {
             max-width: 720px;
         }
+
 
         .gallery-label {
 
@@ -111,6 +127,7 @@
             text-transform: uppercase;
         }
 
+
         .gallery-hero h1 {
 
             margin-bottom: 20px;
@@ -122,9 +139,11 @@
             line-height: 1.02;
         }
 
+
         .gallery-hero h1 span {
             color: #f5c400;
         }
+
 
         .gallery-hero p {
 
@@ -136,6 +155,7 @@
 
             line-height: 1.8;
         }
+
 
         /* =====================================================
            GALLERY INTRO
@@ -149,6 +169,7 @@
 
             background: #fff;
         }
+
 
         .section-label {
 
@@ -167,6 +188,7 @@
             text-transform: uppercase;
         }
 
+
         .gallery-intro h2 {
 
             margin-bottom: 15px;
@@ -177,6 +199,7 @@
 
             color: #111;
         }
+
 
         .gallery-intro p {
 
@@ -190,6 +213,7 @@
 
             line-height: 1.8;
         }
+
 
         /* =====================================================
            FILTER BUTTONS
@@ -207,6 +231,7 @@
 
             padding: 0 0 45px;
         }
+
 
         .gallery-filter {
 
@@ -229,6 +254,7 @@
             transition: 0.25s ease;
         }
 
+
         .gallery-filter:hover,
         .gallery-filter.active {
 
@@ -238,6 +264,7 @@
 
             color: #fff;
         }
+
 
         /* =====================================================
            GALLERY GRID
@@ -250,6 +277,7 @@
             background: #fff;
         }
 
+
         .gallery-grid {
 
             display: grid;
@@ -259,6 +287,7 @@
 
             gap: 18px;
         }
+
 
         .gallery-item {
 
@@ -279,6 +308,7 @@
                 box-shadow 0.3s ease;
         }
 
+
         .gallery-item:hover {
 
             transform: translateY(-4px);
@@ -286,6 +316,7 @@
             box-shadow:
                 0 15px 35px rgba(0, 0, 0, 0.12);
         }
+
 
         .gallery-item img {
 
@@ -301,10 +332,11 @@
                 transform 0.5s ease;
         }
 
-        .gallery-item:hover img {
 
+        .gallery-item:hover img {
             transform: scale(1.07);
         }
+
 
         .gallery-overlay {
 
@@ -331,9 +363,11 @@
             transition: opacity 0.3s ease;
         }
 
+
         .gallery-item:hover .gallery-overlay {
             opacity: 1;
         }
+
 
         .gallery-overlay h3 {
 
@@ -344,12 +378,14 @@
             font-size: 15px;
         }
 
+
         .gallery-overlay p {
 
             color: #ddd;
 
             font-size: 10px;
         }
+
 
         .gallery-view-icon {
 
@@ -380,9 +416,11 @@
             transition: 0.3s ease;
         }
 
+
         .gallery-item:hover .gallery-view-icon {
             opacity: 1;
         }
+
 
         /* =====================================================
            FEATURED IMAGE
@@ -396,6 +434,7 @@
 
             height: 618px;
         }
+
 
         /* =====================================================
            LIGHTBOX
@@ -420,9 +459,11 @@
             background: rgba(0, 0, 0, 0.94);
         }
 
+
         .lightbox.show {
             display: flex;
         }
+
 
         .lightbox-image {
 
@@ -437,6 +478,7 @@
             box-shadow:
                 0 20px 60px rgba(0, 0, 0, 0.5);
         }
+
 
         .lightbox-close {
 
@@ -467,10 +509,14 @@
             cursor: pointer;
         }
 
+
         .lightbox-close:hover {
+
             background: #f5c400;
+
             color: #111;
         }
+
 
         .lightbox-caption {
 
@@ -489,6 +535,7 @@
             text-align: center;
         }
 
+
         /* =====================================================
            CTA
         ===================================================== */
@@ -504,6 +551,7 @@
             color: #111;
         }
 
+
         .gallery-cta h2 {
 
             margin-bottom: 12px;
@@ -512,6 +560,7 @@
 
             font-size: clamp(30px, 5vw, 46px);
         }
+
 
         .gallery-cta p {
 
@@ -523,6 +572,7 @@
 
             line-height: 1.8;
         }
+
 
         .gallery-cta a {
 
@@ -549,12 +599,14 @@
             transition: 0.25s ease;
         }
 
+
         .gallery-cta a:hover {
 
             background: #333;
 
             transform: translateY(-2px);
         }
+
 
         /* =====================================================
            RESPONSIVE
@@ -575,6 +627,7 @@
                 grid-row: span 2;
             }
         }
+
 
         @media (max-width: 700px) {
 
@@ -613,6 +666,7 @@
                 opacity: 1;
             }
         }
+
 
         @media (max-width: 480px) {
 
@@ -666,6 +720,8 @@
 
         <div class="container nav-container">
 
+            <!-- LOGO -->
+
             <a
                 href="index.html"
                 class="logo"
@@ -673,7 +729,7 @@
             >
 
                 <img
-                    src="images/cycle-mart-logo.jpg"
+                    src="images/logo/cycle-mart-logo.jpg"
                     alt="Cycle Mart Logo"
                 >
 
@@ -691,6 +747,8 @@
 
             </a>
 
+
+            <!-- NAVIGATION -->
 
             <nav
                 class="navbar"
@@ -750,6 +808,8 @@
             </nav>
 
 
+            <!-- NAV ACTIONS -->
+
             <div class="nav-actions">
 
                 <a
@@ -787,7 +847,9 @@
     <main>
 
 
-        <!-- HERO -->
+        <!-- =====================================================
+             HERO
+        ====================================================== -->
 
         <section class="gallery-hero">
 
@@ -818,7 +880,9 @@
         </section>
 
 
-        <!-- INTRO -->
+        <!-- =====================================================
+             INTRO
+        ====================================================== -->
 
         <section class="gallery-intro">
 
@@ -842,7 +906,9 @@
         </section>
 
 
-        <!-- FILTERS -->
+        <!-- =====================================================
+             FILTERS
+        ====================================================== -->
 
         <div class="container">
 
@@ -880,13 +946,18 @@
         </div>
 
 
-        <!-- GALLERY -->
+        <!-- =====================================================
+             GALLERY
+        ====================================================== -->
 
         <section class="gallery-section">
 
             <div class="container">
 
-                <div class="gallery-grid" id="galleryGrid">
+                <div
+                    class="gallery-grid"
+                    id="galleryGrid"
+                >
 
 
                     <!-- 01 -->
@@ -1687,7 +1758,9 @@
         </section>
 
 
-        <!-- CTA -->
+        <!-- =====================================================
+             CTA
+        ====================================================== -->
 
         <section class="gallery-cta">
 
@@ -1768,6 +1841,8 @@
             <div class="footer-grid">
 
 
+                <!-- FOOTER LOGO -->
+
                 <div class="footer-brand">
 
                     <a
@@ -1776,7 +1851,7 @@
                     >
 
                         <img
-                            src="images/cycle-mart-logo.jpg"
+                            src="images/logo/cycle-mart-logo.jpg"
                             alt="Cycle Mart Logo"
                         >
 
@@ -1802,6 +1877,8 @@
                 </div>
 
 
+                <!-- SHOP -->
+
                 <div class="footer-column">
 
                     <h3>
@@ -1826,6 +1903,8 @@
 
                 </div>
 
+
+                <!-- EXPLORE -->
 
                 <div class="footer-column">
 
@@ -1857,6 +1936,8 @@
 
                 </div>
 
+
+                <!-- LOCATION -->
 
                 <div class="footer-column">
 
@@ -1911,11 +1992,12 @@
     <script src="js/menu.js"></script>
     <script src="js/main.js"></script>
 
+
     <script>
 
         /* =====================================================
            CURRENT YEAR
-        ====================================================== */
+        ===================================================== */
 
         document.addEventListener(
             "DOMContentLoaded",
@@ -1937,7 +2019,7 @@
 
         /* =====================================================
            GALLERY FILTER
-        ====================================================== */
+        ===================================================== */
 
         const filterButtons =
             document.querySelectorAll(".gallery-filter");
@@ -1960,6 +2042,7 @@
 
                             }
                         );
+
 
                         button.classList.add("active");
 
@@ -2004,7 +2087,7 @@
 
         /* =====================================================
            LIGHTBOX
-        ====================================================== */
+        ===================================================== */
 
         const lightbox =
             document.getElementById("lightbox");
@@ -2046,6 +2129,7 @@
 
                         lightbox.classList.add("show");
 
+
                         document.body.style.overflow =
                             "hidden";
 
@@ -2055,6 +2139,10 @@
             }
         );
 
+
+        /* =====================================================
+           CLOSE LIGHTBOX
+        ===================================================== */
 
         function closeLightbox() {
 
@@ -2105,4 +2193,3 @@
 </body>
 
 </html>
-```
