@@ -2,9 +2,13 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <meta
         name="description"
@@ -62,33 +66,50 @@
             width: 100%;
             background: #111;
             color: white;
+
             position: sticky;
             top: 0;
+
             z-index: 1000;
-            box-shadow: 0 3px 18px rgba(0, 0, 0, 0.18);
+
+            box-shadow:
+                0 3px 18px rgba(0, 0, 0, 0.18);
         }
 
         .header-container {
             max-width: 1250px;
+
             margin: auto;
+
             padding: 15px 25px;
 
             display: flex;
+
             align-items: center;
+
             justify-content: space-between;
 
             gap: 25px;
         }
 
+
+        /* =========================================================
+           LOGO
+        ========================================================= */
+
         .logo {
             display: flex;
+
             align-items: center;
+
             gap: 10px;
 
             font-size: 25px;
+
             font-weight: 800;
 
             color: white;
+
             white-space: nowrap;
         }
 
@@ -101,10 +122,13 @@
             height: 42px;
 
             display: flex;
+
             align-items: center;
+
             justify-content: center;
 
             background: #8bc34a;
+
             color: #111;
 
             border-radius: 50%;
@@ -119,13 +143,17 @@
 
         .nav {
             display: flex;
+
             align-items: center;
+
             gap: 25px;
         }
 
         .nav a {
             color: #ddd;
+
             font-size: 15px;
+
             font-weight: 600;
 
             transition: 0.3s;
@@ -147,6 +175,7 @@
             border: none;
 
             background: #8bc34a;
+
             color: #111;
 
             padding: 11px 18px;
@@ -162,6 +191,7 @@
 
         .cart-button:hover {
             background: #a4dc63;
+
             transform: translateY(-2px);
         }
 
@@ -175,15 +205,19 @@
             height: 22px;
 
             display: flex;
+
             align-items: center;
+
             justify-content: center;
 
             background: #e53935;
+
             color: white;
 
             border-radius: 50%;
 
             font-size: 12px;
+
             font-weight: bold;
         }
 
@@ -196,14 +230,19 @@
             min-height: 340px;
 
             background:
+
                 linear-gradient(
                     rgba(0, 0, 0, 0.72),
                     rgba(0, 0, 0, 0.72)
                 ),
-                url("images/bikes/images.jpeg") center/cover no-repeat;
+
+                url("images/bikes/images.jpeg")
+                center / cover no-repeat;
 
             display: flex;
+
             align-items: center;
+
             justify-content: center;
 
             text-align: center;
@@ -219,7 +258,9 @@
 
         .hero-content h1 {
             font-size: clamp(40px, 6vw, 64px);
+
             margin-bottom: 12px;
+
             font-weight: 800;
         }
 
@@ -286,9 +327,7 @@
             display: grid;
 
             grid-template-columns:
-                1.5fr
-                1fr
-                1fr;
+                1.5fr 1fr 1fr;
 
             gap: 15px;
         }
@@ -350,7 +389,7 @@
 
 
         /* =========================================================
-           PRODUCT GRID
+           PRODUCTS GRID
         ========================================================= */
 
         .products-grid {
@@ -377,7 +416,8 @@
             border: 1px solid #eee;
 
             box-shadow:
-                0 5px 20px rgba(0, 0, 0, 0.07);
+                0 5px 20px
+                rgba(0, 0, 0, 0.07);
 
             transition: 0.3s ease;
         }
@@ -386,7 +426,8 @@
             transform: translateY(-6px);
 
             box-shadow:
-                0 15px 32px rgba(0, 0, 0, 0.12);
+                0 15px 32px
+                rgba(0, 0, 0, 0.12);
         }
 
 
@@ -398,6 +439,7 @@
             position: relative;
 
             width: 100%;
+
             height: 230px;
 
             background: #f0f2f3;
@@ -407,13 +449,15 @@
 
         .product-image img {
             width: 100%;
+
             height: 100%;
 
             object-fit: cover;
 
             display: block;
 
-            transition: transform 0.5s ease;
+            transition:
+                transform 0.5s ease;
         }
 
         .product-card:hover
@@ -430,9 +474,11 @@
             position: absolute;
 
             top: 12px;
+
             left: 12px;
 
             background: #8bc34a;
+
             color: #111;
 
             padding: 5px 10px;
@@ -448,7 +494,7 @@
 
 
         /* =========================================================
-           PRODUCT INFORMATION
+           PRODUCT INFO
         ========================================================= */
 
         .product-info {
@@ -496,7 +542,7 @@
 
 
         /* =========================================================
-           PRICE + BUTTON
+           PRODUCT PRICE
         ========================================================= */
 
         .product-bottom {
@@ -577,9 +623,11 @@
             position: fixed;
 
             right: 25px;
+
             bottom: 25px;
 
             background: #111;
+
             color: white;
 
             padding: 15px 22px;
@@ -595,7 +643,8 @@
             transition: 0.4s ease;
 
             box-shadow:
-                0 8px 25px rgba(0, 0, 0, 0.25);
+                0 8px 25px
+                rgba(0, 0, 0, 0.25);
         }
 
         .cart-message.show {
@@ -696,6 +745,7 @@
                 grid-template-columns:
                     repeat(2, 1fr);
             }
+
         }
 
 
@@ -723,6 +773,7 @@
                 grid-template-columns:
                     repeat(2, 1fr);
             }
+
         }
 
 
@@ -738,6 +789,7 @@
 
             .logo-icon {
                 width: 36px;
+
                 height: 36px;
             }
 
@@ -779,11 +831,14 @@
 
             .cart-message {
                 left: 15px;
+
                 right: 15px;
+
                 bottom: 15px;
 
                 text-align: center;
             }
+
         }
 
     </style>
@@ -824,12 +879,15 @@
                     About
                 </a>
 
-                <a href="shop.html" class="active">
+                <a
+                    href="shop.html"
+                    class="active"
+                >
                     Shop
                 </a>
 
-                <a href="services.html">
-                    Services
+                <a href="delivery.html">
+                    Deliveries
                 </a>
 
                 <a href="contact.html">
@@ -886,7 +944,7 @@
 
 
     <!-- =========================================================
-         SHOP
+         SHOP SECTION
     ========================================================= -->
 
     <main class="shop-section">
@@ -908,7 +966,7 @@
 
 
         <!-- =====================================================
-             FILTERS
+             FILTER BAR
         ===================================================== -->
 
         <div class="filter-bar">
@@ -992,10 +1050,17 @@
         <div class="products-top">
 
             <p>
+
                 Showing
-                <strong id="productCount">59</strong>
+
+                <strong id="productCount">
+                    59
+                </strong>
+
                 bicycles
+
             </p>
+
 
             <p>
                 Quality bicycles • Affordable prices
@@ -1092,8 +1157,8 @@
                     Shop
                 </a>
 
-                <a href="services.html">
-                    Services
+                <a href="delivery.html">
+                    Deliveries
                 </a>
 
                 <a href="contact.html">
@@ -1176,14 +1241,10 @@
 
 
         /* =========================================================
-           ALL 59 PRODUCTS
+           59 BICYCLES
         ========================================================= */
 
         const products = [
-
-            /* -----------------------------------------------------
-               ORIGINAL IMAGES
-            ----------------------------------------------------- */
 
             {
                 id: 1,
@@ -1500,11 +1561,6 @@
                 image: "images/bikes/images (34).jpeg"
             },
 
-
-            /* -----------------------------------------------------
-               WHATSAPP IMAGES
-            ----------------------------------------------------- */
-
             {
                 id: 36,
                 name: "Kids Bike 02",
@@ -1730,22 +1786,34 @@
         ========================================================= */
 
         const productsGrid =
-            document.getElementById("productsGrid");
+            document.getElementById(
+                "productsGrid"
+            );
 
         const productCount =
-            document.getElementById("productCount");
+            document.getElementById(
+                "productCount"
+            );
 
         const noResults =
-            document.getElementById("noResults");
+            document.getElementById(
+                "noResults"
+            );
 
         const searchInput =
-            document.getElementById("searchInput");
+            document.getElementById(
+                "searchInput"
+            );
 
         const categoryFilter =
-            document.getElementById("categoryFilter");
+            document.getElementById(
+                "categoryFilter"
+            );
 
         const priceFilter =
-            document.getElementById("priceFilter");
+            document.getElementById(
+                "priceFilter"
+            );
 
 
 
@@ -1757,26 +1825,33 @@
 
             productsGrid.innerHTML = "";
 
-            productCount.textContent = items.length;
+            productCount.textContent =
+                items.length;
 
 
             if (items.length === 0) {
 
-                noResults.style.display = "block";
+                noResults.style.display =
+                    "block";
 
                 return;
             }
 
 
-            noResults.style.display = "none";
+            noResults.style.display =
+                "none";
 
 
             items.forEach(product => {
 
                 const card =
-                    document.createElement("article");
+                    document.createElement(
+                        "article"
+                    );
 
-                card.className = "product-card";
+
+                card.className =
+                    "product-card";
 
 
                 card.innerHTML = `
@@ -1840,7 +1915,9 @@
                 `;
 
 
-                productsGrid.appendChild(card);
+                productsGrid.appendChild(
+                    card
+                );
 
             });
 
@@ -1871,6 +1948,7 @@
             let filtered =
                 products.filter(product => {
 
+
                     const matchesSearch =
 
                         product.name
@@ -1890,7 +1968,8 @@
 
                         ||
 
-                        product.category === category;
+                        product.category ===
+                        category;
 
 
                     return (
@@ -1902,7 +1981,7 @@
 
 
 
-            /* PRICE LOW TO HIGH */
+            /* LOW TO HIGH */
 
             if (sort === "low") {
 
@@ -1915,7 +1994,7 @@
 
 
 
-            /* PRICE HIGH TO LOW */
+            /* HIGH TO LOW */
 
             if (sort === "high") {
 
@@ -1940,7 +2019,9 @@
             }
 
 
-            displayProducts(filtered);
+            displayProducts(
+                filtered
+            );
 
         }
 
@@ -1996,7 +2077,8 @@
 
             document.getElementById(
                 "cartCount"
-            ).textContent = total;
+            ).textContent =
+                total;
 
         }
 
@@ -2071,7 +2153,9 @@
            CART MESSAGE
         ========================================================= */
 
-        function showCartMessage(message) {
+        function showCartMessage(
+            message
+        ) {
 
             const messageBox =
                 document.getElementById(
@@ -2083,7 +2167,9 @@
                 `<strong>✓</strong> ${message}`;
 
 
-            messageBox.classList.add("show");
+            messageBox.classList.add(
+                "show"
+            );
 
 
             setTimeout(() => {
@@ -2112,10 +2198,12 @@
 
 
         /* =========================================================
-           INITIALIZE SHOP
+           INITIALIZE
         ========================================================= */
 
-        displayProducts(products);
+        displayProducts(
+            products
+        );
 
         updateCartCount();
 
