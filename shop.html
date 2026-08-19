@@ -2,121 +2,28 @@
 <html lang="en">
 
 <head>
-
-    <!-- =====================================================
-         BASIC SEO
-    ====================================================== -->
-
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta
         name="description"
-        content="Shop quality Ex-UK bicycles at Cycle Mart. Browse mountain bikes, road bikes, hybrid bikes, kids bikes and more."
+        content="Shop quality bicycles at Cycle Mart. Explore mountain, road, hybrid, city and kids bicycles at affordable prices."
     >
 
     <meta
         name="keywords"
-        content="Cycle Mart, bicycles Kenya, Ex UK bicycles Kenya, used bicycles Kenya, mountain bikes Kenya, road bikes Kenya, bicycles for sale Kenya"
+        content="Cycle Mart, bicycles, bikes, mountain bikes, road bikes, hybrid bikes, city bikes, kids bikes"
     >
 
-    <meta
-        name="author"
-        content="Cycle Mart"
-    >
+    <title>Shop Bicycles | Cycle Mart</title>
 
-    <meta
-        name="robots"
-        content="index, follow"
-    >
-
-    <link
-        rel="canonical"
-        href="https://cyclemart.co.ke/shop.html"
-    >
-
-    <!-- =====================================================
-         TITLE
-    ====================================================== -->
-
-    <title>Shop Bicycles | Cycle Mart Kenya</title>
-
-    <!-- =====================================================
-         OPEN GRAPH
-    ====================================================== -->
-
-    <meta
-        property="og:type"
-        content="website"
-    >
-
-    <meta
-        property="og:title"
-        content="Shop Bicycles | Cycle Mart Kenya"
-    >
-
-    <meta
-        property="og:description"
-        content="Browse quality Ex-UK bicycles available at Cycle Mart Kenya."
-    >
-
-    <meta
-        property="og:url"
-        content="https://cyclemart.co.ke/shop.html"
-    >
-
-    <meta
-        property="og:site_name"
-        content="Cycle Mart"
-    >
-
-    <meta
-        property="og:image"
-        content="https://cyclemart.co.ke/hero.jpg"
-    >
-
-    <!-- =====================================================
-         GOOGLE FONTS
-    ====================================================== -->
-
-    <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com"
-    >
-
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800;900&display=swap"
-        rel="stylesheet"
-    >
-
-    <!-- =====================================================
-         FONT AWESOME
-    ====================================================== -->
-
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    >
-
-    <!-- =====================================================
-         PAGE STYLES
-    ====================================================== -->
 
     <style>
 
-        /* =====================================================
+        /* =========================================================
            RESET
-        ====================================================== */
+        ========================================================= */
 
         * {
             margin: 0;
@@ -129,42 +36,47 @@
         }
 
         body {
-            font-family: "Inter", sans-serif;
-            background: #f7f8fa;
-            color: #151515;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f7f8;
+            color: #1b1b1b;
             line-height: 1.6;
-        }
-
-        img {
-            max-width: 100%;
         }
 
         a {
             text-decoration: none;
+            color: inherit;
         }
 
-        .container {
-            width: min(1180px, 92%);
-            margin: auto;
+        button,
+        input,
+        select {
+            font-family: inherit;
         }
 
-        /* =====================================================
+
+        /* =========================================================
            HEADER
-        ====================================================== */
+        ========================================================= */
 
         .header {
+            width: 100%;
+            background: #111;
+            color: white;
             position: sticky;
             top: 0;
-            z-index: 9999;
-            background: #ffffff;
-            border-bottom: 1px solid #e9e9e9;
+            z-index: 1000;
+            box-shadow: 0 3px 18px rgba(0, 0, 0, 0.18);
         }
 
-        .nav-container {
-            min-height: 78px;
+        .header-container {
+            max-width: 1250px;
+            margin: auto;
+            padding: 15px 25px;
+
             display: flex;
             align-items: center;
             justify-content: space-between;
+
             gap: 25px;
         }
 
@@ -172,547 +84,706 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            color: #111;
-        }
 
-        .logo img {
-            width: 52px;
-            height: 52px;
-            border-radius: 8px;
-            object-fit: cover;
-        }
-
-        .logo-text {
-            display: flex;
-            flex-direction: column;
-            line-height: 1;
-        }
-
-        .logo-title {
-            font-family: "Montserrat", sans-serif;
-            font-size: 21px;
-            font-weight: 900;
-            letter-spacing: -0.5px;
-        }
-
-        .logo-subtitle {
-            margin-top: 4px;
-            color: #f58220;
-            font-size: 9px;
+            font-size: 25px;
             font-weight: 800;
-            letter-spacing: 2px;
+
+            color: white;
+            white-space: nowrap;
         }
 
-        .navbar ul {
-            display: flex;
-            align-items: center;
-            gap: 28px;
-            list-style: none;
+        .logo span {
+            color: #8bc34a;
         }
 
-        .navbar a {
-            color: #333;
-            font-size: 12px;
-            font-weight: 700;
-            transition: 0.25s ease;
-        }
-
-        .navbar a:hover,
-        .navbar a.active {
-            color: #f58220;
-        }
-
-        .nav-actions {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .cart-button {
+        .logo-icon {
             width: 42px;
             height: 42px;
-            display: grid;
-            place-items: center;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: #8bc34a;
+            color: #111;
+
             border-radius: 50%;
-            background: #f58220;
-            color: #fff;
+
+            font-size: 21px;
+        }
+
+
+        /* =========================================================
+           NAVIGATION
+        ========================================================= */
+
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .nav a {
+            color: #ddd;
             font-size: 15px;
+            font-weight: 600;
+
+            transition: 0.3s;
+        }
+
+        .nav a:hover,
+        .nav a.active {
+            color: #8bc34a;
+        }
+
+
+        /* =========================================================
+           CART BUTTON
+        ========================================================= */
+
+        .cart-button {
+            position: relative;
+
+            border: none;
+
+            background: #8bc34a;
+            color: #111;
+
+            padding: 11px 18px;
+
+            border-radius: 7px;
+
+            cursor: pointer;
+
+            font-weight: 700;
+
+            transition: 0.3s;
+        }
+
+        .cart-button:hover {
+            background: #a4dc63;
+            transform: translateY(-2px);
         }
 
         .cart-count {
-            position: relative;
-            top: -13px;
-            left: -10px;
-            width: 17px;
-            height: 17px;
-            display: grid;
-            place-items: center;
-            border-radius: 50%;
-            background: #111;
-            color: #fff;
-            font-size: 8px;
-            font-weight: 800;
-        }
+            position: absolute;
 
-        /* =====================================================
-           SHOP HERO
-        ====================================================== */
+            top: -8px;
+            right: -8px;
 
-        .shop-hero {
-
-            min-height: 430px;
+            width: 22px;
+            height: 22px;
 
             display: flex;
-
             align-items: center;
+            justify-content: center;
+
+            background: #e53935;
+            color: white;
+
+            border-radius: 50%;
+
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+
+        /* =========================================================
+           HERO
+        ========================================================= */
+
+        .shop-hero {
+            min-height: 340px;
 
             background:
                 linear-gradient(
-                    90deg,
-                    rgba(0, 0, 0, 0.78),
-                    rgba(0, 0, 0, 0.35)
+                    rgba(0, 0, 0, 0.72),
+                    rgba(0, 0, 0, 0.72)
                 ),
-                url("hero.jpg")
-                center / cover no-repeat;
+                url("images/bikes/images.jpeg") center/cover no-repeat;
 
-            color: #fff;
-        }
-
-        .shop-hero-content {
-            max-width: 700px;
-        }
-
-        .shop-label {
-            display: inline-block;
-            margin-bottom: 14px;
-            padding: 7px 12px;
-            border-radius: 3px;
-            background: #f58220;
-            color: #fff;
-            font-size: 9px;
-            font-weight: 800;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-        }
-
-        .shop-hero h1 {
-            margin-bottom: 15px;
-            font-family: "Montserrat", sans-serif;
-            font-size: clamp(38px, 6vw, 68px);
-            line-height: 1.05;
-        }
-
-        .shop-hero h1 span {
-            color: #f58220;
-        }
-
-        .shop-hero p {
-            max-width: 600px;
-            color: rgba(255,255,255,0.85);
-            font-size: 14px;
-            line-height: 1.8;
-        }
-
-        /* =====================================================
-           SHOP TOOLBAR
-        ====================================================== */
-
-        .shop-section {
-            padding: 75px 0;
-        }
-
-        .shop-toolbar {
-            margin-bottom: 35px;
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            gap: 20px;
+            justify-content: center;
+
+            text-align: center;
+
+            color: white;
+
+            padding: 60px 20px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero-content h1 {
+            font-size: clamp(40px, 6vw, 64px);
+            margin-bottom: 12px;
+            font-weight: 800;
+        }
+
+        .hero-content h1 span {
+            color: #8bc34a;
+        }
+
+        .hero-content p {
+            max-width: 650px;
+
+            margin: auto;
+
+            color: #ddd;
+
+            font-size: 18px;
+        }
+
+
+        /* =========================================================
+           SHOP SECTION
+        ========================================================= */
+
+        .shop-section {
+            max-width: 1250px;
+
+            margin: auto;
+
+            padding: 55px 25px 80px;
+        }
+
+        .shop-heading {
+            text-align: center;
+
+            margin-bottom: 35px;
         }
 
         .shop-heading h2 {
-            margin-bottom: 5px;
-            font-family: "Montserrat", sans-serif;
-            font-size: 30px;
+            font-size: 36px;
+
+            margin-bottom: 8px;
         }
 
         .shop-heading p {
             color: #777;
-            font-size: 12px;
         }
 
-        .category-select {
-            min-width: 190px;
-            padding: 12px 15px;
+
+        /* =========================================================
+           FILTER BAR
+        ========================================================= */
+
+        .filter-bar {
+            background: white;
+
+            border-radius: 12px;
+
+            padding: 20px;
+
+            margin-bottom: 30px;
+
+            box-shadow:
+                0 5px 25px rgba(0, 0, 0, 0.07);
+
+            display: grid;
+
+            grid-template-columns:
+                1.5fr
+                1fr
+                1fr;
+
+            gap: 15px;
+        }
+
+        .search-box input,
+        .filter-select {
+            width: 100%;
+
+            height: 48px;
+
             border: 1px solid #ddd;
-            border-radius: 5px;
-            background: #fff;
-            color: #333;
-            font-family: inherit;
-            font-size: 11px;
+
+            border-radius: 7px;
+
+            padding: 0 15px;
+
+            font-size: 14px;
+
             outline: none;
+
+            background: white;
         }
 
-        /* =====================================================
-           PRODUCTS GRID
-        ====================================================== */
+        .search-box input:focus,
+        .filter-select:focus {
+            border-color: #8bc34a;
+
+            box-shadow:
+                0 0 0 3px
+                rgba(139, 195, 74, 0.13);
+        }
+
+
+        /* =========================================================
+           PRODUCTS TOP
+        ========================================================= */
+
+        .products-top {
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            margin-bottom: 20px;
+
+            gap: 15px;
+        }
+
+        .products-top p {
+            color: #666;
+
+            font-size: 14px;
+        }
+
+        .products-top strong {
+            color: #111;
+        }
+
+
+        /* =========================================================
+           PRODUCT GRID
+        ========================================================= */
 
         .products-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
             gap: 22px;
         }
 
+
+        /* =========================================================
+           PRODUCT CARD
+        ========================================================= */
+
         .product-card {
+            background: white;
+
+            border-radius: 12px;
+
             overflow: hidden;
-            border: 1px solid #e9e9e9;
-            border-radius: 10px;
-            background: #fff;
+
+            border: 1px solid #eee;
+
+            box-shadow:
+                0 5px 20px rgba(0, 0, 0, 0.07);
+
             transition: 0.3s ease;
         }
 
         .product-card:hover {
             transform: translateY(-6px);
+
             box-shadow:
-                0 18px 40px rgba(0,0,0,0.09);
+                0 15px 32px rgba(0, 0, 0, 0.12);
         }
+
+
+        /* =========================================================
+           PRODUCT IMAGE
+        ========================================================= */
 
         .product-image {
             position: relative;
-            height: 260px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+
+            width: 100%;
+            height: 230px;
+
+            background: #f0f2f3;
+
             overflow: hidden;
-            background: #f1f2f4;
         }
 
         .product-image img {
             width: 100%;
             height: 100%;
+
             object-fit: cover;
+
             display: block;
-            transition: 0.4s ease;
+
+            transition: transform 0.5s ease;
         }
 
-        .product-card:hover .product-image img {
-            transform: scale(1.05);
+        .product-card:hover
+        .product-image img {
+            transform: scale(1.06);
         }
 
-        .product-badge {
+
+        /* =========================================================
+           CATEGORY BADGE
+        ========================================================= */
+
+        .category-badge {
             position: absolute;
-            top: 14px;
-            left: 14px;
-            padding: 6px 9px;
-            border-radius: 3px;
-            background: #f58220;
-            color: #fff;
-            font-size: 8px;
+
+            top: 12px;
+            left: 12px;
+
+            background: #8bc34a;
+            color: #111;
+
+            padding: 5px 10px;
+
+            border-radius: 20px;
+
+            font-size: 11px;
+
             font-weight: 800;
-            letter-spacing: 0.8px;
+
             text-transform: uppercase;
-            z-index: 2;
         }
+
+
+        /* =========================================================
+           PRODUCT INFORMATION
+        ========================================================= */
 
         .product-info {
-            padding: 20px;
-        }
-
-        .product-category {
-            display: block;
-            margin-bottom: 6px;
-            color: #999;
-            font-size: 9px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            padding: 18px;
         }
 
         .product-info h3 {
-            margin-bottom: 8px;
-            font-family: "Montserrat", sans-serif;
             font-size: 17px;
+
+            line-height: 1.3;
+
+            margin-bottom: 6px;
+
+            color: #222;
         }
 
-        .product-description {
-            min-height: 48px;
-            margin-bottom: 14px;
-            color: #777;
-            font-size: 10px;
-            line-height: 1.6;
+        .product-category {
+            color: #888;
+
+            font-size: 13px;
+
+            margin-bottom: 10px;
         }
+
+
+        /* =========================================================
+           RATING
+        ========================================================= */
+
+        .rating {
+            color: #f4b400;
+
+            font-size: 14px;
+
+            margin-bottom: 10px;
+        }
+
+        .rating span {
+            color: #777;
+
+            font-size: 12px;
+
+            margin-left: 5px;
+        }
+
+
+        /* =========================================================
+           PRICE + BUTTON
+        ========================================================= */
 
         .product-bottom {
             display: flex;
+
             align-items: center;
+
             justify-content: space-between;
+
             gap: 10px;
         }
 
-        .product-price {
-            color: #f58220;
-            font-family: "Montserrat", sans-serif;
-            font-size: 17px;
+        .price {
+            font-size: 18px;
+
             font-weight: 800;
+
+            color: #222;
         }
 
-        .product-button {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 7px;
+        .add-cart {
+            border: none;
+
+            background: #111;
+
+            color: white;
+
             padding: 10px 13px;
-            border-radius: 5px;
-            background: #111;
-            color: #fff;
-            font-size: 9px;
-            font-weight: 800;
-            transition: 0.25s ease;
-        }
 
-        .product-button:hover {
-            background: #f58220;
-        }
+            border-radius: 6px;
 
-        /* =====================================================
-           WHY SHOP
-        ====================================================== */
+            cursor: pointer;
 
-        .why-shop {
-            padding: 80px 0;
-            background: #111;
-            color: #fff;
-        }
-
-        .why-heading {
-            max-width: 650px;
-            margin: 0 auto 40px;
-            text-align: center;
-        }
-
-        .why-heading span {
-            color: #f58220;
-            font-size: 9px;
-            font-weight: 800;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-
-        .why-heading h2 {
-            margin-top: 8px;
-            font-family: "Montserrat", sans-serif;
-            font-size: 34px;
-        }
-
-        .why-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .why-card {
-            padding: 30px 25px;
-            border: 1px solid rgba(255,255,255,0.1);
-            border-radius: 8px;
-            background: #181818;
-            text-align: center;
-        }
-
-        .why-card i {
-            width: 55px;
-            height: 55px;
-            display: grid;
-            place-items: center;
-            margin: 0 auto 18px;
-            border-radius: 50%;
-            background: rgba(245,130,32,0.15);
-            color: #f58220;
-            font-size: 20px;
-        }
-
-        .why-card h3 {
-            margin-bottom: 8px;
-            font-family: "Montserrat", sans-serif;
-            font-size: 16px;
-        }
-
-        .why-card p {
-            color: #aaa;
-            font-size: 10px;
-            line-height: 1.7;
-        }
-
-        /* =====================================================
-           CTA
-        ====================================================== */
-
-        .shop-cta {
-            padding: 80px 0;
-            background: #f58220;
-            color: #fff;
-            text-align: center;
-        }
-
-        .shop-cta h2 {
-            margin-bottom: 10px;
-            font-family: "Montserrat", sans-serif;
-            font-size: 38px;
-        }
-
-        .shop-cta p {
-            max-width: 600px;
-            margin: 0 auto 25px;
             font-size: 12px;
-            opacity: 0.9;
+
+            font-weight: 700;
+
+            transition: 0.3s;
         }
 
-        .cta-button {
-            display: inline-flex;
-            align-items: center;
-            gap: 9px;
-            padding: 14px 23px;
-            border-radius: 5px;
-            background: #111;
-            color: #fff;
-            font-size: 10px;
-            font-weight: 800;
-            transition: 0.25s ease;
-        }
+        .add-cart:hover {
+            background: #8bc34a;
 
-        .cta-button:hover {
-            background: #fff;
             color: #111;
         }
 
-        /* =====================================================
+
+        /* =========================================================
+           NO RESULTS
+        ========================================================= */
+
+        .no-results {
+            display: none;
+
+            text-align: center;
+
+            padding: 60px 20px;
+
+            background: white;
+
+            border-radius: 12px;
+        }
+
+        .no-results h3 {
+            margin-bottom: 8px;
+        }
+
+        .no-results p {
+            color: #777;
+        }
+
+
+        /* =========================================================
+           CART MESSAGE
+        ========================================================= */
+
+        .cart-message {
+            position: fixed;
+
+            right: 25px;
+            bottom: 25px;
+
+            background: #111;
+            color: white;
+
+            padding: 15px 22px;
+
+            border-radius: 8px;
+
+            z-index: 2000;
+
+            transform: translateY(120px);
+
+            opacity: 0;
+
+            transition: 0.4s ease;
+
+            box-shadow:
+                0 8px 25px rgba(0, 0, 0, 0.25);
+        }
+
+        .cart-message.show {
+            transform: translateY(0);
+
+            opacity: 1;
+        }
+
+        .cart-message strong {
+            color: #8bc34a;
+        }
+
+
+        /* =========================================================
            FOOTER
-        ====================================================== */
+        ========================================================= */
 
         .footer {
-            padding: 60px 0 20px;
-            background: #090909;
-            color: #fff;
+            background: #111;
+
+            color: white;
+
+            padding: 55px 25px 25px;
         }
 
-        .footer-grid {
+        .footer-container {
+            max-width: 1250px;
+
+            margin: auto;
+
             display: grid;
-            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+
+            grid-template-columns:
+                1.5fr 1fr 1fr 1fr;
+
             gap: 40px;
-            padding-bottom: 40px;
         }
 
-        .footer-brand p {
-            max-width: 300px;
-            margin-top: 18px;
-            color: #888;
-            font-size: 11px;
-            line-height: 1.8;
+        .footer h3 {
+            color: #8bc34a;
+
+            margin-bottom: 15px;
         }
 
-        .footer-column h3 {
-            margin-bottom: 17px;
-            font-family: "Montserrat", sans-serif;
-            font-size: 13px;
+        .footer p {
+            color: #aaa;
+
+            font-size: 14px;
+
+            margin-bottom: 8px;
         }
 
-        .footer-column ul {
-            display: grid;
-            gap: 10px;
-            list-style: none;
+        .footer a {
+            display: block;
+
+            color: #aaa;
+
+            font-size: 14px;
+
+            margin-bottom: 8px;
+
+            transition: 0.3s;
         }
 
-        .footer-column a,
-        .footer-column li {
-            color: #888;
-            font-size: 10px;
-            transition: 0.25s ease;
-        }
-
-        .footer-column a:hover {
-            color: #f58220;
+        .footer a:hover {
+            color: #8bc34a;
         }
 
         .footer-bottom {
+            max-width: 1250px;
+
+            margin: 35px auto 0;
+
             padding-top: 20px;
-            border-top: 1px solid #222;
+
+            border-top: 1px solid #333;
+
             text-align: center;
+
+            color: #777;
+
+            font-size: 13px;
         }
 
-        .footer-bottom p {
-            color: #666;
-            font-size: 9px;
-        }
 
-        /* =====================================================
-           MOBILE NAV
-        ====================================================== */
-
-        .mobile-nav {
-            display: none;
-        }
-
-        /* =====================================================
+        /* =========================================================
            RESPONSIVE
-        ====================================================== */
+        ========================================================= */
 
-        @media (max-width: 1000px) {
+        @media (max-width: 1050px) {
 
             .products-grid {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns:
+                    repeat(3, 1fr);
             }
 
-            .footer-grid {
-                grid-template-columns: repeat(2, 1fr);
+            .footer-container {
+                grid-template-columns:
+                    repeat(2, 1fr);
             }
-
         }
+
 
         @media (max-width: 800px) {
 
-            .navbar {
-                display: none;
+            .header-container {
+                flex-wrap: wrap;
             }
 
-            .shop-toolbar {
-                align-items: flex-start;
-                flex-direction: column;
-            }
+            .nav {
+                order: 3;
 
-            .category-select {
                 width: 100%;
+
+                justify-content: center;
+
+                gap: 18px;
             }
 
-            .why-grid {
+            .filter-bar {
                 grid-template-columns: 1fr;
             }
 
+            .products-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
         }
 
-        @media (max-width: 600px) {
 
-            .shop-hero {
-                min-height: 380px;
+        @media (max-width: 520px) {
+
+            .header-container {
+                padding: 12px 15px;
+            }
+
+            .logo {
+                font-size: 20px;
+            }
+
+            .logo-icon {
+                width: 36px;
+                height: 36px;
+            }
+
+            .nav {
+                justify-content: flex-start;
+
+                overflow-x: auto;
+
+                padding-bottom: 5px;
+            }
+
+            .nav a {
+                white-space: nowrap;
+
+                font-size: 13px;
             }
 
             .shop-section {
-                padding: 55px 0;
+                padding: 40px 15px 60px;
             }
 
             .products-grid {
                 grid-template-columns: 1fr;
             }
 
-            .footer-grid {
+            .product-image {
+                height: 270px;
+            }
+
+            .products-top {
+                flex-direction: column;
+
+                align-items: flex-start;
+            }
+
+            .footer-container {
                 grid-template-columns: 1fr;
             }
 
-            .shop-cta h2 {
-                font-size: 30px;
-            }
+            .cart-message {
+                left: 15px;
+                right: 15px;
+                bottom: 15px;
 
-            .product-image {
-                height: 280px;
+                text-align: center;
             }
-
         }
 
     </style>
@@ -722,1846 +793,1334 @@
 
 <body>
 
-    <!-- =====================================================
+
+    <!-- =========================================================
          HEADER
-    ====================================================== -->
+    ========================================================= -->
 
     <header class="header">
 
-        <div class="container nav-container">
+        <div class="header-container">
 
-            <!-- LOGO -->
 
-            <a
-                href="index.html"
-                class="logo"
-                aria-label="Cycle Mart Home"
-            >
+            <a href="index.html" class="logo">
 
-                <!-- LOGO FROM IMAGES/LOGO -->
-                <img
-                    src="images/logo/cycle-mart-logo.jpg"
-                    alt="Cycle Mart Logo"
-                >
-
-                <div class="logo-text">
-
-                    <strong class="logo-title">
-                        CYCLE MART
-                    </strong>
-
-                    <span class="logo-subtitle">
-                        EX-UK BICYCLES
-                    </span>
-
+                <div class="logo-icon">
+                    🚲
                 </div>
+
+                Cycle <span>Mart</span>
 
             </a>
 
 
-            <!-- NAVIGATION -->
+            <nav class="nav">
 
-            <nav class="navbar">
+                <a href="index.html">
+                    Home
+                </a>
 
-                <ul>
+                <a href="about.html">
+                    About
+                </a>
 
-                    <li>
-                        <a href="index.html">
-                            Home
-                        </a>
-                    </li>
+                <a href="shop.html" class="active">
+                    Shop
+                </a>
 
-                    <li>
-                        <a
-                            href="shop.html"
-                            class="active"
-                        >
-                            Shop
-                        </a>
-                    </li>
+                <a href="services.html">
+                    Services
+                </a>
 
-                    <li>
-                        <a href="about.html">
-                            About
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="delivery.html">
-                            Delivery
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="contacts.html">
-                            Contact
-                        </a>
-                    </li>
-
-                </ul>
+                <a href="contact.html">
+                    Contact
+                </a>
 
             </nav>
 
 
-            <!-- CART -->
+            <button
+                class="cart-button"
+                onclick="viewCart()"
+            >
 
-            <div class="nav-actions">
+                🛒 Cart
 
-                <a
-                    href="#"
-                    class="cart-button"
-                    aria-label="Shopping cart"
+                <span
+                    class="cart-count"
+                    id="cartCount"
                 >
+                    0
+                </span>
 
-                    <i class="fa-solid fa-cart-shopping"></i>
+            </button>
 
-                </a>
-
-            </div>
 
         </div>
 
     </header>
 
 
-    <!-- =====================================================
+
+    <!-- =========================================================
          HERO
-    ====================================================== -->
+    ========================================================= -->
 
     <section class="shop-hero">
 
-        <div class="container">
+        <div class="hero-content">
 
-            <div class="shop-hero-content">
+            <h1>
+                Shop <span>Bicycles</span>
+            </h1>
 
-                <span class="shop-label">
-                    Cycle Mart Kenya
-                </span>
-
-                <h1>
-                    Find Your
-                    <span>Perfect Bike.</span>
-                </h1>
-
-                <p>
-                    Explore our collection of quality
-                    Ex-UK bicycles. From mountain bikes
-                    to everyday commuter bicycles, find
-                    the right bike for your next ride.
-                </p>
-
-            </div>
+            <p>
+                Discover quality bicycles built for everyday
+                rides, adventure, fitness and everything in between.
+            </p>
 
         </div>
 
     </section>
 
 
-    <!-- =====================================================
+
+    <!-- =========================================================
          SHOP
-    ====================================================== -->
+    ========================================================= -->
 
-    <main>
+    <main class="shop-section">
 
-        <section class="shop-section">
 
-            <div class="container">
+        <div class="shop-heading">
 
+            <h2>
+                Our Bicycles
+            </h2>
 
-                <!-- SHOP TOOLBAR -->
+            <p>
+                Explore our complete collection of affordable
+                quality bicycles.
+            </p>
 
-                <div class="shop-toolbar">
+        </div>
 
-                    <div class="shop-heading">
-
-                        <h2>
-                            Bicycles For Sale
-                        </h2>
-
-                        <p>
-                            Browse our available bicycle collection.
-                        </p>
-
-                    </div>
-
-
-                    <select
-                        class="category-select"
-                        aria-label="Filter bicycles"
-                    >
-
-                        <option value="all">
-                            All Bicycles
-                        </option>
-
-                        <option value="mountain">
-                            Mountain Bikes
-                        </option>
-
-                        <option value="road">
-                            Road Bikes
-                        </option>
-
-                        <option value="hybrid">
-                            Hybrid Bikes
-                        </option>
-
-                        <option value="kids">
-                            Kids Bikes
-                        </option>
-
-                    </select>
-
-                </div>
-
-
-                <!-- =================================================
-                     PRODUCTS
-                ================================================== -->
-
-                <div class="products-grid">
-
-
-                    <!-- PRODUCT 1 -->
-
-                    <article class="product-card">
-
-                        <div class="product-image">
-
-                            <span class="product-badge">
-                                Featured
-                            </span>
-
-                            <img
-                                src="images/bikes/IMG-20260816-WA0022.jpg"
-                                alt="Ex-UK Mountain Bike"
-                                loading="lazy"
-                            >
-
-                        </div>
-
-                        <div class="product-info">
-
-                            <span class="product-category">
-                                Mountain Bike
-                            </span>
-
-                            <h3>
-                                Ex-UK Mountain Bike
-                            </h3>
-
-                            <p class="product-description">
-                                Quality imported bicycle suitable
-                                for road and off-road riding.
-                            </p>
-
-                            <div class="product-bottom">
-
-                                <strong class="product-price">
-                                    KSh 7,000
-                                </strong>
-
-                                <a
-                                    href="https://wa.me/254762346683?text=Hello%20Cycle%20Mart%2C%20I%20am%20interested%20in%20the%20Ex-UK%20Mountain%20Bike"
-                                    class="product-button"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-
-                                    <i class="fa-brands fa-whatsapp"></i>
-
-                                    Enquire
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCT 2 -->
-
-                    <article class="product-card">
-
-                        <div class="product-image">
-
-                            <span class="product-badge">
-                                Ex-UK
-                            </span>
-
-                            <img
-                                src="images/bikes/IMG-20260816-WA0023.jpg"
-                                alt="Ex-UK Road Bike"
-                                loading="lazy"
-                            >
-
-                        </div>
-
-                        <div class="product-info">
-
-                            <span class="product-category">
-                                Road Bike
-                            </span>
-
-                            <h3>
-                                Ex-UK Road Bike
-                            </h3>
-
-                            <p class="product-description">
-                                Lightweight bicycle designed for
-                                smooth and efficient road riding.
-                            </p>
-
-                            <div class="product-bottom">
-
-                                <strong class="product-price">
-                                    KSh 7,000
-                                </strong>
-
-                                <a
-                                    href="https://wa.me/254762346683?text=Hello%20Cycle%20Mart%2C%20I%20am%20interested%20in%20the%20Ex-UK%20Road%20Bike"
-                                    class="product-button"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-
-                                    <i class="fa-brands fa-whatsapp"></i>
-
-                                    Enquire
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCT 3 -->
-
-                    <article class="product-card">
-
-                        <div class="product-image">
-
-                            <span class="product-badge">
-                                Popular
-                            </span>
-
-                            <img
-                                src="images/bikes/IMG-20260816-WA0024.jpg"
-                                alt="Ex-UK Hybrid Bicycle"
-                                loading="lazy"
-                            >
-
-                        </div>
-
-                        <div class="product-info">
-
-                            <span class="product-category">
-                                Hybrid Bike
-                            </span>
-
-                            <h3>
-                                Ex-UK Hybrid Bike
-                            </h3>
-
-                            <p class="product-description">
-                                A versatile bicycle for commuting,
-                                fitness and everyday riding.
-                            </p>
-
-                            <div class="product-bottom">
-
-                                <strong class="product-price">
-                                    KSh 6,000
-                                </strong>
-
-                                <a
-                                    href="https://wa.me/254762346683?text=Hello%20Cycle%20Mart%2C%20I%20am%20interested%20in%20the%20Ex-UK%20Hybrid%20Bike"
-                                    class="product-button"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-
-                                    <i class="fa-brands fa-whatsapp"></i>
-
-                                    Enquire
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCT 4 -->
-
-                    <article class="product-card">
-
-                        <div class="product-image">
-
-                            <span class="product-badge">
-                                Available
-                            </span>
-
-                            <img
-                                src="images/bikes/IMG-20260816-WA0025.jpg"
-                                alt="Ex-UK Bicycle"
-                                loading="lazy"
-                            >
-
-                        </div>
-
-                        <div class="product-info">
-
-                            <span class="product-category">
-                                Bicycle
-                            </span>
-
-                            <h3>
-                                Ex-UK Premium Bicycle
-                            </h3>
-
-                            <p class="product-description">
-                                Carefully selected imported bicycle
-                                for comfortable everyday use.
-                            </p>
-
-                            <div class="product-bottom">
-
-                                <strong class="product-price">
-                                    KSh 7,000
-                                </strong>
-
-                                <a
-                                    href="https://wa.me/254762346683?text=Hello%20Cycle%20Mart%2C%20I%20am%20interested%20in%20the%20Ex-UK%20Premium%20Bicycle"
-                                    class="product-button"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-
-                                    <i class="fa-brands fa-whatsapp"></i>
-
-                                    Enquire
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCT 5 -->
-
-                    <article class="product-card">
-
-                        <div class="product-image">
-
-                            <img
-                                src="images/bikes/IMG-20260816-WA0026.jpg"
-                                alt="Ex-UK Kids Bicycle"
-                                loading="lazy"
-                            >
-
-                        </div>
-
-                        <div class="product-info">
-
-                            <span class="product-category">
-                                Kids Bike
-                            </span>
-
-                            <h3>
-                                Ex-UK Kids Bicycle
-                            </h3>
-
-                            <p class="product-description">
-                                Comfortable and fun bicycle for
-                                young riders.
-                            </p>
-
-                            <div class="product-bottom">
-
-                                <strong class="product-price">
-                                    KSh 6,000
-                                </strong>
-
-                                <a
-                                    href="https://wa.me/254762346683?text=Hello%20Cycle%20Mart%2C%20I%20am%20interested%20in%20the%20Ex-UK%20Kids%20Bicycle"
-                                    class="product-button"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-
-                                    <i class="fa-brands fa-whatsapp"></i>
-
-                                    Enquire
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCT 6 -->
-
-                    <article class="product-card">
-
-                        <div class="product-image">
-
-                            <img
-                                src="images/bikes/IMG-20260816-WA0027.jpg"
-                                alt="Ex-UK Mountain Bicycle"
-                                loading="lazy"
-                            >
-
-                        </div>
-
-                        <div class="product-info">
-
-                            <span class="product-category">
-                                Mountain Bike
-                            </span>
-
-                            <h3>
-                                Ex-UK MTB
-                            </h3>
-
-                            <p class="product-description">
-                                Strong and versatile bicycle suitable
-                                for different riding conditions.
-                            </p>
-
-                            <div class="product-bottom">
-
-                                <strong class="product-price">
-                                    KSh 7,000
-                                </strong>
-
-                                <a
-                                    href="https://wa.me/254762346683?text=Hello%20Cycle%20Mart%2C%20I%20am%20interested%20in%20the%20Ex-UK%20MTB"
-                                    class="product-button"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-
-                                    <i class="fa-brands fa-whatsapp"></i>
-
-                                    Enquire
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCT 7 -->
-
-                    <article class="product-card">
-
-                        <div class="product-image">
-
-                            <img
-                                src="images/bikes/IMG-20260816-WA0028.jpg"
-                                alt="Ex-UK Commuter Bicycle"
-                                loading="lazy"
-                            >
-
-                        </div>
-
-                        <div class="product-info">
-
-                            <span class="product-category">
-                                Commuter Bike
-                            </span>
-
-                            <h3>
-                                Ex-UK Commuter
-                            </h3>
-
-                            <p class="product-description">
-                                Practical bicycle designed for
-                                comfortable daily transportation.
-                            </p>
-
-                            <div class="product-bottom">
-
-                                <strong class="product-price">
-                                    KSh 6,000
-                                </strong>
-
-                                <a
-                                    href="https://wa.me/254762346683?text=Hello%20Cycle%20Mart%2C%20I%20am%20interested%20in%20the%20Ex-UK%20Commuter"
-                                    class="product-button"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-
-                                    <i class="fa-brands fa-whatsapp"></i>
-
-                                    Enquire
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCT 8 -->
-
-                    <article class="product-card">
-
-                        <div class="product-image">
-
-                            <img
-                                src="images/bikes/IMG-20260816-WA0029.jpg"
-                                alt="Premium Ex-UK Bicycle"
-                                loading="lazy"
-                            >
-
-                        </div>
-
-                        <div class="product-info">
-
-                            <span class="product-category">
-                                Premium
-                            </span>
-
-                            <h3>
-                                Premium Ex-UK Bike
-                            </h3>
-
-                            <p class="product-description">
-                                Premium imported bicycle selected
-                                for quality and performance.
-                            </p>
-
-                            <div class="product-bottom">
-
-                                <strong class="product-price">
-                                    KSh 7,000
-                                </strong>
-
-                                <a
-                                    href="https://wa.me/254762346683?text=Hello%20Cycle%20Mart%2C%20I%20am%20interested%20in%20the%20Premium%20Ex-UK%20Bike"
-                                    class="product-button"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-
-                                    <i class="fa-brands fa-whatsapp"></i>
-
-                                    Enquire
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCT 9 -->
-
-                    <article class="product-card">
-
-                        <div class="product-image">
-
-                            <img
-                                src="images/bikes/IMG-20260816-WA0030.jpg"
-                                alt="Ex-UK Bicycle"
-                                loading="lazy"
-                            >
-
-                        </div>
-
-                        <div class="product-info">
-
-                            <span class="product-category">
-                                Bicycle
-                            </span>
-
-                            <h3>
-                                Ex-UK City Bike
-                            </h3>
-
-                            <p class="product-description">
-                                Comfortable bicycle suitable for
-                                city riding and daily transport.
-                            </p>
-
-                            <div class="product-bottom">
-
-                                <strong class="product-price">
-                                    KSh 6,000
-                                </strong>
-
-                                <a
-                                    href="https://wa.me/254762346683?text=Hello%20Cycle%20Mart%2C%20I%20am%20interested%20in%20the%20Ex-UK%20City%20Bike"
-                                    class="product-button"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-
-                                    <i class="fa-brands fa-whatsapp"></i>
-
-                                    Enquire
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCT 10 -->
-
-                    <article class="product-card">
-
-                        <div class="product-image">
-
-                            <img
-                                src="images/bikes/IMG-20260816-WA0031.jpg"
-                                alt="Ex-UK Mountain Bike"
-                                loading="lazy"
-                            >
-
-                        </div>
-
-                        <div class="product-info">
-
-                            <span class="product-category">
-                                Mountain Bike
-                            </span>
-
-                            <h3>
-                                Ex-UK Trail Bike
-                            </h3>
-
-                            <p class="product-description">
-                                Versatile bicycle suitable for
-                                recreational and outdoor riding.
-                            </p>
-
-                            <div class="product-bottom">
-
-                                <strong class="product-price">
-                                    KSh 7,000
-                                </strong>
-
-                                <a
-                                    href="https://wa.me/254762346683?text=Hello%20Cycle%20Mart%2C%20I%20am%20interested%20in%20the%20Ex-UK%20Trail%20Bike"
-                                    class="product-button"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-
-                                    <i class="fa-brands fa-whatsapp"></i>
-
-                                    Enquire
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCT 11 -->
-
-                    <article class="product-card">
-
-                        <div class="product-image">
-
-                            <img
-                                src="images/bikes/IMG-20260816-WA0032.jpg"
-                                alt="Ex-UK Hybrid Bike"
-                                loading="lazy"
-                            >
-
-                        </div>
-
-                        <div class="product-info">
-
-                            <span class="product-category">
-                                Hybrid Bike
-                            </span>
-
-                            <h3>
-                                Ex-UK Hybrid Bicycle
-                            </h3>
-
-                            <p class="product-description">
-                                Practical and comfortable bicycle
-                                for everyday riding.
-                            </p>
-
-                            <div class="product-bottom">
-
-                                <strong class="product-price">
-                                    KSh 6,000
-                                </strong>
-
-                                <a
-                                    href="https://wa.me/254762346683?text=Hello%20Cycle%20Mart%2C%20I%20am%20interested%20in%20the%20Ex-UK%20Hybrid%20Bicycle"
-                                    class="product-button"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-
-                                    <i class="fa-brands fa-whatsapp"></i>
-
-                                    Enquire
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCT 12 -->
-
-                    <article class="product-card">
-
-                        <div class="product-image">
-
-                            <img
-                                src="images/bikes/IMG-20260816-WA0033.jpg"
-                                alt="Premium Ex-UK Bike"
-                                loading="lazy"
-                            >
-
-                        </div>
-
-                        <div class="product-info">
-
-                            <span class="product-category">
-                                Premium
-                            </span>
-
-                            <h3>
-                                Premium Ex-UK Bicycle
-                            </h3>
-
-                            <p class="product-description">
-                                Carefully selected imported bicycle
-                                for riders seeking quality.
-                            </p>
-
-                            <div class="product-bottom">
-
-                                <strong class="product-price">
-                                    KSh 7,000
-                                </strong>
-
-                                <a
-                                    href="https://wa.me/254762346683?text=Hello%20Cycle%20Mart%2C%20I%20am%20interested%20in%20the%20Premium%20Ex-UK%20Bicycle"
-                                    class="product-button"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-
-                                    <i class="fa-brands fa-whatsapp"></i>
-
-                                    Enquire
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCT 13 -->
-
-                    <article class="product-card">
-
-                        <div class="product-image">
-
-                            <img
-                                src="images/bikes/IMG-20260816-WA0034.jpg"
-                                alt="Ex-UK Bicycle"
-                                loading="lazy"
-                            >
-
-                        </div>
-
-                        <div class="product-info">
-
-                            <span class="product-category">
-                                Bicycle
-                            </span>
-
-                            <h3>
-                                Ex-UK Everyday Bike
-                            </h3>
-
-                            <p class="product-description">
-                                Reliable bicycle for commuting,
-                                exercise and everyday use.
-                            </p>
-
-                            <div class="product-bottom">
-
-                                <strong class="product-price">
-                                    KSh 6,000
-                                </strong>
-
-                                <a
-                                    href="https://wa.me/254762346683?text=Hello%20Cycle%20Mart%2C%20I%20am%20interested%20in%20the%20Ex-UK%20Everyday%20Bike"
-                                    class="product-button"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-
-                                    <i class="fa-brands fa-whatsapp"></i>
-
-                                    Enquire
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCT 14 -->
-
-                    <article class="product-card">
-
-                        <div class="product-image">
-
-                            <img
-                                src="images/bikes/IMG-20260816-WA0035.jpg"
-                                alt="Ex-UK MTB Bicycle"
-                                loading="lazy"
-                            >
-
-                        </div>
-
-                        <div class="product-info">
-
-                            <span class="product-category">
-                                Mountain Bike
-                            </span>
-
-                            <h3>
-                                Ex-UK MTB Bicycle
-                            </h3>
-
-                            <p class="product-description">
-                                Strong bicycle suitable for
-                                different riding conditions.
-                            </p>
-
-                            <div class="product-bottom">
-
-                                <strong class="product-price">
-                                    KSh 7,000
-                                </strong>
-
-                                <a
-                                    href="https://wa.me/254762346683?text=Hello%20Cycle%20Mart%2C%20I%20am%20interested%20in%20the%20Ex-UK%20MTB%20Bicycle"
-                                    class="product-button"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-
-                                    <i class="fa-brands fa-whatsapp"></i>
-
-                                    Enquire
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCT 15 -->
-
-                    <article class="product-card">
-
-                        <div class="product-image">
-
-                            <img
-                                src="images/bikes/IMG-20260816-WA0036.jpg"
-                                alt="Ex-UK City Bicycle"
-                                loading="lazy"
-                            >
-
-                        </div>
-
-                        <div class="product-info">
-
-                            <span class="product-category">
-                                City Bike
-                            </span>
-
-                            <h3>
-                                Ex-UK City Bicycle
-                            </h3>
-
-                            <p class="product-description">
-                                Comfortable bike for urban and
-                                everyday transportation.
-                            </p>
-
-                            <div class="product-bottom">
-
-                                <strong class="product-price">
-                                    KSh 6,000
-                                </strong>
-
-                                <a
-                                    href="https://wa.me/254762346683?text=Hello%20Cycle%20Mart%2C%20I%20am%20interested%20in%20the%20Ex-UK%20City%20Bicycle"
-                                    class="product-button"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-
-                                    <i class="fa-brands fa-whatsapp"></i>
-
-                                    Enquire
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCT 16 -->
-
-                    <article class="product-card">
-
-                        <div class="product-image">
-
-                            <img
-                                src="images/bikes/IMG-20260816-WA0037.jpg"
-                                alt="Ex-UK Premium Bike"
-                                loading="lazy"
-                            >
-
-                        </div>
-
-                        <div class="product-info">
-
-                            <span class="product-category">
-                                Premium
-                            </span>
-
-                            <h3>
-                                Ex-UK Premium Bike
-                            </h3>
-
-                            <p class="product-description">
-                                Quality imported bicycle selected
-                                for style and performance.
-                            </p>
-
-                            <div class="product-bottom">
-
-                                <strong class="product-price">
-                                    KSh 7,000
-                                </strong>
-
-                                <a
-                                    href="https://wa.me/254762346683?text=Hello%20Cycle%20Mart%2C%20I%20am%20interested%20in%20the%20Ex-UK%20Premium%20Bike"
-                                    class="product-button"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-
-                                    <i class="fa-brands fa-whatsapp"></i>
-
-                                    Enquire
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCT 17 -->
-
-                    <article class="product-card">
-
-                        <div class="product-image">
-
-                            <img
-                                src="images/bikes/IMG-20260816-WA0038.jpg"
-                                alt="Ex-UK Bicycle"
-                                loading="lazy"
-                            >
-
-                        </div>
-
-                        <div class="product-info">
-
-                            <span class="product-category">
-                                Bicycle
-                            </span>
-
-                            <h3>
-                                Ex-UK Classic Bicycle
-                            </h3>
-
-                            <p class="product-description">
-                                Stylish bicycle suitable for
-                                everyday riding.
-                            </p>
-
-                            <div class="product-bottom">
-
-                                <strong class="product-price">
-                                    KSh 6,000
-                                </strong>
-
-                                <a
-                                    href="https://wa.me/254762346683?text=Hello%20Cycle%20Mart%2C%20I%20am%20interested%20in%20the%20Ex-UK%20Classic%20Bicycle"
-                                    class="product-button"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-
-                                    <i class="fa-brands fa-whatsapp"></i>
-
-                                    Enquire
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCT 18 -->
-
-                    <article class="product-card">
-
-                        <div class="product-image">
-
-                            <img
-                                src="images/bikes/IMG-20260816-WA0039.jpg"
-                                alt="Ex-UK Mountain Bike"
-                                loading="lazy"
-                            >
-
-                        </div>
-
-                        <div class="product-info">
-
-                            <span class="product-category">
-                                Mountain Bike
-                            </span>
-
-                            <h3>
-                                Ex-UK Mountain Bike
-                            </h3>
-
-                            <p class="product-description">
-                                Versatile bike for trails,
-                                recreation and outdoor riding.
-                            </p>
-
-                            <div class="product-bottom">
-
-                                <strong class="product-price">
-                                    KSh 7,000
-                                </strong>
-
-                                <a
-                                    href="https://wa.me/254762346683?text=Hello%20Cycle%20Mart%2C%20I%20am%20interested%20in%20the%20Ex-UK%20Mountain%20Bike"
-                                    class="product-button"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-
-                                    <i class="fa-brands fa-whatsapp"></i>
-
-                                    Enquire
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCT 19 -->
-
-                    <article class="product-card">
-
-                        <div class="product-image">
-
-                            <img
-                                src="images/bikes/IMG-20260816-WA0040.jpg"
-                                alt="Ex-UK Hybrid Bicycle"
-                                loading="lazy"
-                            >
-
-                        </div>
-
-                        <div class="product-info">
-
-                            <span class="product-category">
-                                Hybrid Bike
-                            </span>
-
-                            <h3>
-                                Ex-UK Hybrid Bicycle
-                            </h3>
-
-                            <p class="product-description">
-                                Flexible bicycle for commuting
-                                and recreational riding.
-                            </p>
-
-                            <div class="product-bottom">
-
-                                <strong class="product-price">
-                                    KSh 6,000
-                                </strong>
-
-                                <a
-                                    href="https://wa.me/254762346683?text=Hello%20Cycle%20Mart%2C%20I%20am%20interested%20in%20the%20Ex-UK%20Hybrid%20Bicycle"
-                                    class="product-button"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-
-                                    <i class="fa-brands fa-whatsapp"></i>
-
-                                    Enquire
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCT 20 -->
-
-                    <article class="product-card">
-
-                        <div class="product-image">
-
-                            <img
-                                src="images/bikes/IMG-20260816-WA0041.jpg"
-                                alt="Ex-UK Premium Bicycle"
-                                loading="lazy"
-                            >
-
-                        </div>
-
-                        <div class="product-info">
-
-                            <span class="product-category">
-                                Premium
-                            </span>
-
-                            <h3>
-                                Ex-UK Premium Bicycle
-                            </h3>
-
-                            <p class="product-description">
-                                Carefully selected imported bicycle
-                                with quality components.
-                            </p>
-
-                            <div class="product-bottom">
-
-                                <strong class="product-price">
-                                    KSh 7,000
-                                </strong>
-
-                                <a
-                                    href="https://wa.me/254762346683?text=Hello%20Cycle%20Mart%2C%20I%20am%20interested%20in%20the%20Ex-UK%20Premium%20Bicycle"
-                                    class="product-button"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-
-                                    <i class="fa-brands fa-whatsapp"></i>
-
-                                    Enquire
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCT 21 -->
-
-                    <article class="product-card">
-
-                        <div class="product-image">
-
-                            <img
-                                src="images/bikes/IMG-20260816-WA0042.jpg"
-                                alt="Ex-UK Bicycle"
-                                loading="lazy"
-                            >
-
-                        </div>
-
-                        <div class="product-info">
-
-                            <span class="product-category">
-                                Bicycle
-                            </span>
-
-                            <h3>
-                                Ex-UK Everyday Bicycle
-                            </h3>
-
-                            <p class="product-description">
-                                Practical bicycle for everyday
-                                transport and fitness.
-                            </p>
-
-                            <div class="product-bottom">
-
-                                <strong class="product-price">
-                                    KSh 6,000
-                                </strong>
-
-                                <a
-                                    href="https://wa.me/254762346683?text=Hello%20Cycle%20Mart%2C%20I%20am%20interested%20in%20the%20Ex-UK%20Everyday%20Bicycle"
-                                    class="product-button"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-
-                                    <i class="fa-brands fa-whatsapp"></i>
-
-                                    Enquire
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCT 22 -->
-
-                    <article class="product-card">
-
-                        <div class="product-image">
-
-                            <img
-                                src="images/bikes/IMG-20260816-WA0043.jpg"
-                                alt="Ex-UK MTB"
-                                loading="lazy"
-                            >
-
-                        </div>
-
-                        <div class="product-info">
-
-                            <span class="product-category">
-                                Mountain Bike
-                            </span>
-
-                            <h3>
-                                Ex-UK MTB
-                            </h3>
-
-                            <p class="product-description">
-                                Strong and versatile bicycle for
-                                different riding conditions.
-                            </p>
-
-                            <div class="product-bottom">
-
-                                <strong class="product-price">
-                                    KSh 7,000
-                                </strong>
-
-                                <a
-                                    href="https://wa.me/254762346683?text=Hello%20Cycle%20Mart%2C%20I%20am%20interested%20in%20the%20Ex-UK%20MTB"
-                                    class="product-button"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-
-                                    <i class="fa-brands fa-whatsapp"></i>
-
-                                    Enquire
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCT 23 -->
-
-                    <article class="product-card">
-
-                        <div class="product-image">
-
-                            <img
-                                src="images/bikes/IMG-20260816-WA0044.jpg"
-                                alt="Ex-UK City Bike"
-                                loading="lazy"
-                            >
-
-                        </div>
-
-                        <div class="product-info">
-
-                            <span class="product-category">
-                                City Bike
-                            </span>
-
-                            <h3>
-                                Ex-UK City Bike
-                            </h3>
-
-                            <p class="product-description">
-                                Comfortable and practical bike
-                                for urban riding.
-                            </p>
-
-                            <div class="product-bottom">
-
-                                <strong class="product-price">
-                                    KSh 6,000
-                                </strong>
-
-                                <a
-                                    href="https://wa.me/254762346683?text=Hello%20Cycle%20Mart%2C%20I%20am%20interested%20in%20the%20Ex-UK%20City%20Bike"
-                                    class="product-button"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-
-                                    <i class="fa-brands fa-whatsapp"></i>
-
-                                    Enquire
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCT 24 -->
-
-                    <article class="product-card">
-
-                        <div class="product-image">
-
-                            <img
-                                src="images/bikes/IMG-20260816-WA0045.jpg"
-                                alt="Premium Ex-UK Bike"
-                                loading="lazy"
-                            >
-
-                        </div>
-
-                        <div class="product-info">
-
-                            <span class="product-category">
-                                Premium
-                            </span>
-
-                            <h3>
-                                Premium Ex-UK Bike
-                            </h3>
-
-                            <p class="product-description">
-                                Quality imported bicycle selected
-                                for performance and everyday use.
-                            </p>
-
-                            <div class="product-bottom">
-
-                                <strong class="product-price">
-                                    KSh 7,000
-                                </strong>
-
-                                <a
-                                    href="https://wa.me/254762346683?text=Hello%20Cycle%20Mart%2C%20I%20am%20interested%20in%20the%20Premium%20Ex-UK%20Bike"
-                                    class="product-button"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-
-                                    <i class="fa-brands fa-whatsapp"></i>
-
-                                    Enquire
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
 
 
         <!-- =====================================================
-             WHY CYCLE MART
-        ====================================================== -->
+             FILTERS
+        ===================================================== -->
 
-        <section class="why-shop">
-
-            <div class="container">
-
-                <div class="why-heading">
-
-                    <span>
-                        Why Cycle Mart
-                    </span>
-
-                    <h2>
-                        Ride With Confidence
-                    </h2>
-
-                </div>
+        <div class="filter-bar">
 
 
-                <div class="why-grid">
+            <div class="search-box">
 
-
-                    <div class="why-card">
-
-                        <i class="fa-solid fa-bicycle"></i>
-
-                        <h3>
-                            Quality Bikes
-                        </h3>
-
-                        <p>
-                            We focus on quality Ex-UK bicycles
-                            suitable for different riders and needs.
-                        </p>
-
-                    </div>
-
-
-                    <div class="why-card">
-
-                        <i class="fa-solid fa-tag"></i>
-
-                        <h3>
-                            Great Prices
-                        </h3>
-
-                        <p>
-                            Get quality bicycles at competitive
-                            prices in the Kenyan market.
-                        </p>
-
-                    </div>
-
-
-                    <div class="why-card">
-
-                        <i class="fa-solid fa-truck"></i>
-
-                        <h3>
-                            Delivery Available
-                        </h3>
-
-                        <p>
-                            Contact us to arrange bicycle delivery
-                            to your location.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-             CTA
-        ====================================================== -->
-
-        <section class="shop-cta">
-
-            <div class="container">
-
-                <h2>
-                    Can't Find Your Bike?
-                </h2>
-
-                <p>
-                    Contact Cycle Mart and tell us what type of
-                    bicycle you are looking for. We can help you
-                    find the right option.
-                </p>
-
-                <a
-                    href="https://wa.me/254762346683?text=Hello%20Cycle%20Mart%2C%20I%20am%20looking%20for%20a%20bicycle"
-                    class="cta-button"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search for a bicycle..."
                 >
 
-                    <i class="fa-brands fa-whatsapp"></i>
-
-                    Ask on WhatsApp
-
-                </a>
-
             </div>
 
-        </section>
+
+            <select
+                id="categoryFilter"
+                class="filter-select"
+            >
+
+                <option value="all">
+                    All Categories
+                </option>
+
+                <option value="Mountain">
+                    Mountain Bikes
+                </option>
+
+                <option value="Road">
+                    Road Bikes
+                </option>
+
+                <option value="Hybrid">
+                    Hybrid Bikes
+                </option>
+
+                <option value="City">
+                    City Bikes
+                </option>
+
+                <option value="Kids">
+                    Kids Bikes
+                </option>
+
+            </select>
+
+
+            <select
+                id="priceFilter"
+                class="filter-select"
+            >
+
+                <option value="default">
+                    Sort By
+                </option>
+
+                <option value="low">
+                    Price: Low to High
+                </option>
+
+                <option value="high">
+                    Price: High to Low
+                </option>
+
+                <option value="rating">
+                    Highest Rated
+                </option>
+
+            </select>
+
+
+        </div>
+
+
+
+        <!-- =====================================================
+             PRODUCT COUNT
+        ===================================================== -->
+
+        <div class="products-top">
+
+            <p>
+                Showing
+                <strong id="productCount">59</strong>
+                bicycles
+            </p>
+
+            <p>
+                Quality bicycles • Affordable prices
+            </p>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             PRODUCT GRID
+        ===================================================== -->
+
+        <div
+            class="products-grid"
+            id="productsGrid"
+        ></div>
+
+
+        <div
+            class="no-results"
+            id="noResults"
+        >
+
+            <h3>
+                No bicycles found
+            </h3>
+
+            <p>
+                Try changing your search or category filter.
+            </p>
+
+        </div>
+
 
     </main>
 
 
-    <!-- =====================================================
+
+    <!-- =========================================================
+         CART MESSAGE
+    ========================================================= -->
+
+    <div
+        class="cart-message"
+        id="cartMessage"
+    ></div>
+
+
+
+    <!-- =========================================================
          FOOTER
-    ====================================================== -->
+    ========================================================= -->
 
     <footer class="footer">
 
-        <div class="container">
 
-            <div class="footer-grid">
-
-
-                <div class="footer-brand">
-
-                    <a
-                        href="index.html"
-                        class="logo"
-                    >
-
-                        <!-- LOGO FROM IMAGES/LOGO -->
-                        <img
-                            src="images/logo/cycle-mart-logo.jpg"
-                            alt="Cycle Mart Logo"
-                        >
-
-                        <div class="logo-text">
-
-                            <strong class="logo-title">
-                                CYCLE MART
-                            </strong>
-
-                            <span class="logo-subtitle">
-                                EX-UK BICYCLES
-                            </span>
-
-                        </div>
-
-                    </a>
-
-                    <p>
-                        Quality Ex-UK bicycles for riders
-                        looking for value, style and performance.
-                    </p>
-
-                </div>
+        <div class="footer-container">
 
 
-                <div class="footer-column">
+            <div>
 
-                    <h3>
-                        Shop
-                    </h3>
-
-                    <ul>
-
-                        <li>
-                            <a href="shop.html">
-                                All Bicycles
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="shop.html">
-                                Mountain Bikes
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="shop.html">
-                                Road Bikes
-                            </a>
-                        </li>
-
-                    </ul>
-
-                </div>
-
-
-                <div class="footer-column">
-
-                    <h3>
-                        Company
-                    </h3>
-
-                    <ul>
-
-                        <li>
-                            <a href="index.html">
-                                Home
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="about.html">
-                                About Us
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="delivery.html">
-                                Delivery
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="contacts.html">
-                                Contact
-                            </a>
-                        </li>
-
-                    </ul>
-
-                </div>
-
-
-                <div class="footer-column">
-
-                    <h3>
-                        Contact
-                    </h3>
-
-                    <ul>
-
-                        <li>
-                            <i class="fa-brands fa-whatsapp"></i>
-                            WhatsApp
-                        </li>
-
-                        <li>
-                            <i class="fa-solid fa-bicycle"></i>
-                            Ex-UK Bicycles
-                        </li>
-
-                        <li>
-                            <i class="fa-solid fa-truck"></i>
-                            Delivery Available
-                        </li>
-
-                    </ul>
-
-                </div>
-
-            </div>
-
-
-            <div class="footer-bottom">
+                <h3>
+                    Cycle Mart
+                </h3>
 
                 <p>
-                    ©
-                    <span id="year"></span>
-                    Cycle Mart.
-                    All rights reserved.
+                    Your trusted destination for quality,
+                    affordable bicycles and cycling accessories.
+                </p>
+
+                <p>
+                    Ride more. Explore more. Live more.
                 </p>
 
             </div>
 
+
+            <div>
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About Us
+                </a>
+
+                <a href="shop.html">
+                    Shop
+                </a>
+
+                <a href="services.html">
+                    Services
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Categories
+                </h3>
+
+                <a href="shop.html">
+                    Mountain Bikes
+                </a>
+
+                <a href="shop.html">
+                    Road Bikes
+                </a>
+
+                <a href="shop.html">
+                    Hybrid Bikes
+                </a>
+
+                <a href="shop.html">
+                    City Bikes
+                </a>
+
+                <a href="shop.html">
+                    Kids Bikes
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+                    📍 Nairobi
+                </p>
+
+                <p>
+                    📞 +254 700 000 000
+                </p>
+
+                <p>
+                    ✉ info@cyclemart.com
+                </p>
+
+            </div>
+
+
         </div>
+
+
+        <div class="footer-bottom">
+
+            © 2026 Cycle Mart.
+            All Rights Reserved.
+
+        </div>
+
 
     </footer>
 
 
-    <!-- =====================================================
+
+    <!-- =========================================================
          JAVASCRIPT
-    ====================================================== -->
+    ========================================================= -->
 
     <script>
 
-        document.addEventListener(
-            "DOMContentLoaded",
-            function () {
 
-                const year =
-                    document.getElementById("year");
+        /* =========================================================
+           ALL 59 PRODUCTS
+        ========================================================= */
 
-                if (year) {
-                    year.textContent =
-                        new Date().getFullYear();
-                }
+        const products = [
+
+            /* -----------------------------------------------------
+               ORIGINAL IMAGES
+            ----------------------------------------------------- */
+
+            {
+                id: 1,
+                name: "Mountain Bike Pro 01",
+                category: "Mountain",
+                price: 6500,
+                rating: 4.8,
+                image: "images/bikes/images.jpeg"
+            },
+
+            {
+                id: 2,
+                name: "Mountain Bike Pro 02",
+                category: "Mountain",
+                price: 6800,
+                rating: 4.7,
+                image: "images/bikes/images (1).jpeg"
+            },
+
+            {
+                id: 3,
+                name: "Mountain Bike Pro 03",
+                category: "Mountain",
+                price: 6200,
+                rating: 4.6,
+                image: "images/bikes/images (2).jpeg"
+            },
+
+            {
+                id: 4,
+                name: "Mountain Bike Pro 04",
+                category: "Mountain",
+                price: 7000,
+                rating: 4.9,
+                image: "images/bikes/images (3).jpeg"
+            },
+
+            {
+                id: 5,
+                name: "Mountain Bike Pro 05",
+                category: "Mountain",
+                price: 6600,
+                rating: 4.7,
+                image: "images/bikes/images (4).jpeg"
+            },
+
+            {
+                id: 6,
+                name: "Mountain Bike Pro 06",
+                category: "Mountain",
+                price: 6400,
+                rating: 4.5,
+                image: "images/bikes/images (5).jpeg"
+            },
+
+            {
+                id: 7,
+                name: "Mountain Bike Pro 07",
+                category: "Mountain",
+                price: 6900,
+                rating: 4.8,
+                image: "images/bikes/images (6).jpeg"
+            },
+
+            {
+                id: 8,
+                name: "Mountain Bike Pro 08",
+                category: "Mountain",
+                price: 6300,
+                rating: 4.6,
+                image: "images/bikes/images (7).jpeg"
+            },
+
+            {
+                id: 9,
+                name: "Mountain Bike Pro 09",
+                category: "Mountain",
+                price: 6700,
+                rating: 4.7,
+                image: "images/bikes/images (8).jpeg"
+            },
+
+            {
+                id: 10,
+                name: "Mountain Bike Pro 10",
+                category: "Mountain",
+                price: 6500,
+                rating: 4.5,
+                image: "images/bikes/images (9).jpeg"
+            },
+
+            {
+                id: 11,
+                name: "Mountain Bike Pro 11",
+                category: "Mountain",
+                price: 6800,
+                rating: 4.8,
+                image: "images/bikes/images (10).jpeg"
+            },
+
+            {
+                id: 12,
+                name: "Mountain Bike Pro 12",
+                category: "Mountain",
+                price: 6100,
+                rating: 4.4,
+                image: "images/bikes/images (11).jpeg"
+            },
+
+            {
+                id: 13,
+                name: "Mountain Bike Pro 13",
+                category: "Mountain",
+                price: 6900,
+                rating: 4.9,
+                image: "images/bikes/images (12).jpeg"
+            },
+
+            {
+                id: 14,
+                name: "Mountain Bike Pro 14",
+                category: "Mountain",
+                price: 6600,
+                rating: 4.7,
+                image: "images/bikes/images (13).jpeg"
+            },
+
+            {
+                id: 15,
+                name: "Mountain Bike Pro 15",
+                category: "Mountain",
+                price: 6400,
+                rating: 4.6,
+                image: "images/bikes/images (14).jpeg"
+            },
+
+            {
+                id: 16,
+                name: "Mountain Bike Pro 16",
+                category: "Mountain",
+                price: 7000,
+                rating: 4.9,
+                image: "images/bikes/images (15).jpeg"
+            },
+
+            {
+                id: 17,
+                name: "Hybrid Bike 01",
+                category: "Hybrid",
+                price: 6700,
+                rating: 4.7,
+                image: "images/bikes/images (16).jpeg"
+            },
+
+            {
+                id: 18,
+                name: "Hybrid Bike 02",
+                category: "Hybrid",
+                price: 6300,
+                rating: 4.5,
+                image: "images/bikes/images (17).jpeg"
+            },
+
+            {
+                id: 19,
+                name: "Hybrid Bike 03",
+                category: "Hybrid",
+                price: 6800,
+                rating: 4.8,
+                image: "images/bikes/images (18).jpeg"
+            },
+
+            {
+                id: 20,
+                name: "Hybrid Bike 04",
+                category: "Hybrid",
+                price: 6500,
+                rating: 4.6,
+                image: "images/bikes/images (19).jpeg"
+            },
+
+            {
+                id: 21,
+                name: "Hybrid Bike 05",
+                category: "Hybrid",
+                price: 6900,
+                rating: 4.9,
+                image: "images/bikes/images (20).jpeg"
+            },
+
+            {
+                id: 22,
+                name: "Hybrid Bike 06",
+                category: "Hybrid",
+                price: 6200,
+                rating: 4.5,
+                image: "images/bikes/images (21).jpeg"
+            },
+
+            {
+                id: 23,
+                name: "Road Bike 01",
+                category: "Road",
+                price: 7000,
+                rating: 4.9,
+                image: "images/bikes/images (22).jpeg"
+            },
+
+            {
+                id: 24,
+                name: "Road Bike 02",
+                category: "Road",
+                price: 6800,
+                rating: 4.8,
+                image: "images/bikes/images (23).jpeg"
+            },
+
+            {
+                id: 25,
+                name: "Road Bike 03",
+                category: "Road",
+                price: 6600,
+                rating: 4.7,
+                image: "images/bikes/images (24).jpeg"
+            },
+
+            {
+                id: 26,
+                name: "Road Bike 04",
+                category: "Road",
+                price: 6400,
+                rating: 4.6,
+                image: "images/bikes/images (25).jpeg"
+            },
+
+            {
+                id: 27,
+                name: "Road Bike 05",
+                category: "Road",
+                price: 6900,
+                rating: 4.8,
+                image: "images/bikes/images (26).jpeg"
+            },
+
+            {
+                id: 28,
+                name: "Road Bike 06",
+                category: "Road",
+                price: 6300,
+                rating: 4.5,
+                image: "images/bikes/images (27).jpeg"
+            },
+
+            {
+                id: 29,
+                name: "City Bike 01",
+                category: "City",
+                price: 6000,
+                rating: 4.4,
+                image: "images/bikes/images (28).jpeg"
+            },
+
+            {
+                id: 30,
+                name: "City Bike 02",
+                category: "City",
+                price: 6200,
+                rating: 4.6,
+                image: "images/bikes/images (29).jpeg"
+            },
+
+            {
+                id: 31,
+                name: "City Bike 03",
+                category: "City",
+                price: 6500,
+                rating: 4.7,
+                image: "images/bikes/images (30).jpeg"
+            },
+
+            {
+                id: 32,
+                name: "City Bike 04",
+                category: "City",
+                price: 6700,
+                rating: 4.8,
+                image: "images/bikes/images (31).jpeg"
+            },
+
+            {
+                id: 33,
+                name: "City Bike 05",
+                category: "City",
+                price: 6100,
+                rating: 4.5,
+                image: "images/bikes/images (32).jpeg"
+            },
+
+            {
+                id: 34,
+                name: "City Bike 06",
+                category: "City",
+                price: 6800,
+                rating: 4.7,
+                image: "images/bikes/images (33).jpeg"
+            },
+
+            {
+                id: 35,
+                name: "Kids Bike 01",
+                category: "Kids",
+                price: 6000,
+                rating: 4.6,
+                image: "images/bikes/images (34).jpeg"
+            },
+
+
+            /* -----------------------------------------------------
+               WHATSAPP IMAGES
+            ----------------------------------------------------- */
+
+            {
+                id: 36,
+                name: "Kids Bike 02",
+                category: "Kids",
+                price: 6200,
+                rating: 4.7,
+                image: "images/bikes/IMG-20260816-WA0022.jpg"
+            },
+
+            {
+                id: 37,
+                name: "Kids Bike 03",
+                category: "Kids",
+                price: 6400,
+                rating: 4.5,
+                image: "images/bikes/IMG-20260816-WA0023.jpg"
+            },
+
+            {
+                id: 38,
+                name: "Kids Bike 04",
+                category: "Kids",
+                price: 6500,
+                rating: 4.8,
+                image: "images/bikes/IMG-20260816-WA0024.jpg"
+            },
+
+            {
+                id: 39,
+                name: "Kids Bike 05",
+                category: "Kids",
+                price: 6300,
+                rating: 4.6,
+                image: "images/bikes/IMG-20260816-WA0025.jpg"
+            },
+
+            {
+                id: 40,
+                name: "Kids Bike 06",
+                category: "Kids",
+                price: 6600,
+                rating: 4.7,
+                image: "images/bikes/IMG-20260816-WA0026.jpg"
+            },
+
+            {
+                id: 41,
+                name: "Kids Bike 07",
+                category: "Kids",
+                price: 6800,
+                rating: 4.8,
+                image: "images/bikes/IMG-20260816-WA0027.jpg"
+            },
+
+            {
+                id: 42,
+                name: "Kids Bike 08",
+                category: "Kids",
+                price: 6100,
+                rating: 4.5,
+                image: "images/bikes/IMG-20260816-WA0028.jpg"
+            },
+
+            {
+                id: 43,
+                name: "Kids Bike 09",
+                category: "Kids",
+                price: 6900,
+                rating: 4.9,
+                image: "images/bikes/IMG-20260816-WA0029.jpg"
+            },
+
+            {
+                id: 44,
+                name: "Kids Bike 10",
+                category: "Kids",
+                price: 6200,
+                rating: 4.6,
+                image: "images/bikes/IMG-20260816-WA0030.jpg"
+            },
+
+            {
+                id: 45,
+                name: "Kids Bike 11",
+                category: "Kids",
+                price: 6500,
+                rating: 4.7,
+                image: "images/bikes/IMG-20260816-WA0031.jpg"
+            },
+
+            {
+                id: 46,
+                name: "Kids Bike 12",
+                category: "Kids",
+                price: 6700,
+                rating: 4.8,
+                image: "images/bikes/IMG-20260816-WA0032.jpg"
+            },
+
+            {
+                id: 47,
+                name: "Kids Bike 13",
+                category: "Kids",
+                price: 6400,
+                rating: 4.6,
+                image: "images/bikes/IMG-20260816-WA0033.jpg"
+            },
+
+            {
+                id: 48,
+                name: "Kids Bike 14",
+                category: "Kids",
+                price: 7000,
+                rating: 4.9,
+                image: "images/bikes/IMG-20260816-WA0034.jpg"
+            },
+
+            {
+                id: 49,
+                name: "Kids Bike 15",
+                category: "Kids",
+                price: 6300,
+                rating: 4.5,
+                image: "images/bikes/IMG-20260816-WA0035.jpg"
+            },
+
+            {
+                id: 50,
+                name: "Kids Bike 16",
+                category: "Kids",
+                price: 6600,
+                rating: 4.7,
+                image: "images/bikes/IMG-20260816-WA0036.jpg"
+            },
+
+            {
+                id: 51,
+                name: "Kids Bike 17",
+                category: "Kids",
+                price: 6800,
+                rating: 4.8,
+                image: "images/bikes/IMG-20260816-WA0037.jpg"
+            },
+
+            {
+                id: 52,
+                name: "Kids Bike 18",
+                category: "Kids",
+                price: 6100,
+                rating: 4.5,
+                image: "images/bikes/IMG-20260816-WA0038.jpg"
+            },
+
+            {
+                id: 53,
+                name: "Kids Bike 19",
+                category: "Kids",
+                price: 6900,
+                rating: 4.9,
+                image: "images/bikes/IMG-20260816-WA0039.jpg"
+            },
+
+            {
+                id: 54,
+                name: "Kids Bike 20",
+                category: "Kids",
+                price: 6200,
+                rating: 4.6,
+                image: "images/bikes/IMG-20260816-WA0040.jpg"
+            },
+
+            {
+                id: 55,
+                name: "Kids Bike 21",
+                category: "Kids",
+                price: 6500,
+                rating: 4.7,
+                image: "images/bikes/IMG-20260816-WA0041.jpg"
+            },
+
+            {
+                id: 56,
+                name: "Kids Bike 22",
+                category: "Kids",
+                price: 6700,
+                rating: 4.8,
+                image: "images/bikes/IMG-20260816-WA0042.jpg"
+            },
+
+            {
+                id: 57,
+                name: "Kids Bike 23",
+                category: "Kids",
+                price: 6400,
+                rating: 4.6,
+                image: "images/bikes/IMG-20260816-WA0043.jpg"
+            },
+
+            {
+                id: 58,
+                name: "Kids Bike 24",
+                category: "Kids",
+                price: 6800,
+                rating: 4.8,
+                image: "images/bikes/IMG-20260816-WA0044.jpg"
+            },
+
+            {
+                id: 59,
+                name: "Kids Bike 25",
+                category: "Kids",
+                price: 7000,
+                rating: 4.9,
+                image: "images/bikes/IMG-20260816-WA0045.jpg"
+            }
+
+        ];
+
+
+
+        /* =========================================================
+           ELEMENTS
+        ========================================================= */
+
+        const productsGrid =
+            document.getElementById("productsGrid");
+
+        const productCount =
+            document.getElementById("productCount");
+
+        const noResults =
+            document.getElementById("noResults");
+
+        const searchInput =
+            document.getElementById("searchInput");
+
+        const categoryFilter =
+            document.getElementById("categoryFilter");
+
+        const priceFilter =
+            document.getElementById("priceFilter");
+
+
+
+        /* =========================================================
+           DISPLAY PRODUCTS
+        ========================================================= */
+
+        function displayProducts(items) {
+
+            productsGrid.innerHTML = "";
+
+            productCount.textContent = items.length;
+
+
+            if (items.length === 0) {
+
+                noResults.style.display = "block";
+
+                return;
+            }
+
+
+            noResults.style.display = "none";
+
+
+            items.forEach(product => {
+
+                const card =
+                    document.createElement("article");
+
+                card.className = "product-card";
+
+
+                card.innerHTML = `
+
+                    <div class="product-image">
+
+                        <img
+                            src="${product.image}"
+                            alt="${product.name}"
+                            loading="lazy"
+                            onerror="this.src='images/bikes/images.jpeg'"
+                        >
+
+                        <span class="category-badge">
+                            ${product.category}
+                        </span>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <h3>
+                            ${product.name}
+                        </h3>
+
+                        <p class="product-category">
+                            ${product.category} Bicycle
+                        </p>
+
+
+                        <div class="rating">
+
+                            ★★★★★
+
+                            <span>
+                                ${product.rating}
+                            </span>
+
+                        </div>
+
+
+                        <div class="product-bottom">
+
+                            <div class="price">
+                                KSh ${product.price.toLocaleString()}
+                            </div>
+
+
+                            <button
+                                class="add-cart"
+                                onclick="addToCart(${product.id})"
+                            >
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                `;
+
+
+                productsGrid.appendChild(card);
+
+            });
+
+        }
+
+
+
+        /* =========================================================
+           FILTER PRODUCTS
+        ========================================================= */
+
+        function filterProducts() {
+
+            const search =
+                searchInput.value
+                    .toLowerCase()
+                    .trim();
+
+
+            const category =
+                categoryFilter.value;
+
+
+            const sort =
+                priceFilter.value;
+
+
+            let filtered =
+                products.filter(product => {
+
+                    const matchesSearch =
+
+                        product.name
+                            .toLowerCase()
+                            .includes(search)
+
+                        ||
+
+                        product.category
+                            .toLowerCase()
+                            .includes(search);
+
+
+                    const matchesCategory =
+
+                        category === "all"
+
+                        ||
+
+                        product.category === category;
+
+
+                    return (
+                        matchesSearch &&
+                        matchesCategory
+                    );
+
+                });
+
+
+
+            /* PRICE LOW TO HIGH */
+
+            if (sort === "low") {
+
+                filtered.sort(
+                    (a, b) =>
+                        a.price - b.price
+                );
 
             }
+
+
+
+            /* PRICE HIGH TO LOW */
+
+            if (sort === "high") {
+
+                filtered.sort(
+                    (a, b) =>
+                        b.price - a.price
+                );
+
+            }
+
+
+
+            /* HIGHEST RATING */
+
+            if (sort === "rating") {
+
+                filtered.sort(
+                    (a, b) =>
+                        b.rating - a.rating
+                );
+
+            }
+
+
+            displayProducts(filtered);
+
+        }
+
+
+
+        /* =========================================================
+           FILTER EVENTS
+        ========================================================= */
+
+        searchInput.addEventListener(
+            "input",
+            filterProducts
         );
 
+        categoryFilter.addEventListener(
+            "change",
+            filterProducts
+        );
+
+        priceFilter.addEventListener(
+            "change",
+            filterProducts
+        );
+
+
+
+        /* =========================================================
+           CART
+        ========================================================= */
+
+        let cart =
+            JSON.parse(
+                localStorage.getItem(
+                    "cycleMartCart"
+                )
+            ) || [];
+
+
+
+        /* =========================================================
+           UPDATE CART COUNT
+        ========================================================= */
+
+        function updateCartCount() {
+
+            const total =
+                cart.reduce(
+                    (sum, item) =>
+                        sum + item.quantity,
+                    0
+                );
+
+
+            document.getElementById(
+                "cartCount"
+            ).textContent = total;
+
+        }
+
+
+
+        /* =========================================================
+           ADD TO CART
+        ========================================================= */
+
+        function addToCart(productId) {
+
+            const product =
+                products.find(
+                    item =>
+                        item.id === productId
+                );
+
+
+            if (!product) {
+                return;
+            }
+
+
+            const existing =
+                cart.find(
+                    item =>
+                        item.id === productId
+                );
+
+
+            if (existing) {
+
+                existing.quantity++;
+
+            } else {
+
+                cart.push({
+
+                    id: product.id,
+
+                    name: product.name,
+
+                    price: product.price,
+
+                    image: product.image,
+
+                    quantity: 1
+
+                });
+
+            }
+
+
+            localStorage.setItem(
+                "cycleMartCart",
+                JSON.stringify(cart)
+            );
+
+
+            updateCartCount();
+
+
+            showCartMessage(
+                `${product.name} added to your cart.`
+            );
+
+        }
+
+
+
+        /* =========================================================
+           CART MESSAGE
+        ========================================================= */
+
+        function showCartMessage(message) {
+
+            const messageBox =
+                document.getElementById(
+                    "cartMessage"
+                );
+
+
+            messageBox.innerHTML =
+                `<strong>✓</strong> ${message}`;
+
+
+            messageBox.classList.add("show");
+
+
+            setTimeout(() => {
+
+                messageBox.classList.remove(
+                    "show"
+                );
+
+            }, 2500);
+
+        }
+
+
+
+        /* =========================================================
+           VIEW CART
+        ========================================================= */
+
+        function viewCart() {
+
+            window.location.href =
+                "cart.html";
+
+        }
+
+
+
+        /* =========================================================
+           INITIALIZE SHOP
+        ========================================================= */
+
+        displayProducts(products);
+
+        updateCartCount();
+
     </script>
+
 
 </body>
 
